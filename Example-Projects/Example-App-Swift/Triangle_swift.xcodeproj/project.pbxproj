@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D677445D1BB46B24009AA09B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D677445C1BB46B24009AA09B /* AppDelegate.swift */; };
+		D677445F1BB46B24009AA09B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D677445E1BB46B24009AA09B /* ViewController.swift */; };
+		D67744621BB46B24009AA09B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67744601BB46B24009AA09B /* Main.storyboard */; };
+		D67744641BB46B24009AA09B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67744631BB46B24009AA09B /* Assets.xcassets */; };
+		D67744671BB46B24009AA09B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67744651BB46B24009AA09B /* LaunchScreen.storyboard */; };
+		D67744701BB46B54009AA09B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D677446F1BB46B54009AA09B /* GoogleMobileAds.framework */; settings = {ASSET_TAGS = (); }; };
+		D67744731BB46B5B009AA09B /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D67744711BB46B5B009AA09B /* AppNotice.bundle */; settings = {ASSET_TAGS = (); }; };
+		D67744741BB46B5B009AA09B /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67744721BB46B5B009AA09B /* AppNoticeSDKFramework.framework */; settings = {ASSET_TAGS = (); }; };
+		D677447C1BB46B75009AA09B /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D677447B1BB46B75009AA09B /* README.txt */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D67744591BB46B24009AA09B /* Triangle_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D677445C1BB46B24009AA09B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D677445E1BB46B24009AA09B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D67744611BB46B24009AA09B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D67744631BB46B24009AA09B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D67744661BB46B24009AA09B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D67744681BB46B24009AA09B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D677446F1BB46B54009AA09B /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		D67744711BB46B5B009AA09B /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
+		D67744721BB46B5B009AA09B /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
+		D67744761BB46B75009AA09B /* GADMAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		D67744771BB46B75009AA09B /* GADMAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		D67744781BB46B75009AA09B /* GADMEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMEnums.h; sourceTree = "<group>"; };
+		D67744791BB46B75009AA09B /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		D677447A1BB46B75009AA09B /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		D677447B1BB46B75009AA09B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D677447D1BB46DC3009AA09B /* Triangle_swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Triangle_swift-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D67744561BB46B24009AA09B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67744741BB46B5B009AA09B /* AppNoticeSDKFramework.framework in Frameworks */,
+				D67744701BB46B54009AA09B /* GoogleMobileAds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D67744501BB46B24009AA09B = {
+			isa = PBXGroup;
+			children = (
+				D677445B1BB46B24009AA09B /* Triangle_swift */,
+				D677445A1BB46B24009AA09B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D677445A1BB46B24009AA09B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D67744591BB46B24009AA09B /* Triangle_swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D677445B1BB46B24009AA09B /* Triangle_swift */ = {
+			isa = PBXGroup;
+			children = (
+				D677445C1BB46B24009AA09B /* AppDelegate.swift */,
+				D677445E1BB46B24009AA09B /* ViewController.swift */,
+				D67744601BB46B24009AA09B /* Main.storyboard */,
+				D67744631BB46B24009AA09B /* Assets.xcassets */,
+				D67744651BB46B24009AA09B /* LaunchScreen.storyboard */,
+				D67744681BB46B24009AA09B /* Info.plist */,
+				D677446E1BB46B43009AA09B /* Frameworks */,
+				D677447D1BB46DC3009AA09B /* Triangle_swift-Bridging-Header.h */,
+			);
+			path = Triangle_swift;
+			sourceTree = "<group>";
+		};
+		D677446E1BB46B43009AA09B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D67744751BB46B75009AA09B /* Mediation Adapters */,
+				D67744711BB46B5B009AA09B /* AppNotice.bundle */,
+				D67744721BB46B5B009AA09B /* AppNoticeSDKFramework.framework */,
+				D677446F1BB46B54009AA09B /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D67744751BB46B75009AA09B /* Mediation Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				D67744761BB46B75009AA09B /* GADMAdNetworkAdapterProtocol.h */,
+				D67744771BB46B75009AA09B /* GADMAdNetworkConnectorProtocol.h */,
+				D67744781BB46B75009AA09B /* GADMEnums.h */,
+				D67744791BB46B75009AA09B /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */,
+				D677447A1BB46B75009AA09B /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */,
+				D677447B1BB46B75009AA09B /* README.txt */,
+			);
+			path = "Mediation Adapters";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D67744581BB46B24009AA09B /* Triangle_swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D677446B1BB46B24009AA09B /* Build configuration list for PBXNativeTarget "Triangle_swift" */;
+			buildPhases = (
+				D67744551BB46B24009AA09B /* Sources */,
+				D67744561BB46B24009AA09B /* Frameworks */,
+				D67744571BB46B24009AA09B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Triangle_swift;
+			productName = Triangle_swift;
+			productReference = D67744591BB46B24009AA09B /* Triangle_swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D67744511BB46B24009AA09B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Ghostery;
+				TargetAttributes = {
+					D67744581BB46B24009AA09B = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = D67744541BB46B24009AA09B /* Build configuration list for PBXProject "Triangle_swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D67744501BB46B24009AA09B;
+			productRefGroup = D677445A1BB46B24009AA09B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D67744581BB46B24009AA09B /* Triangle_swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D67744571BB46B24009AA09B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67744671BB46B24009AA09B /* LaunchScreen.storyboard in Resources */,
+				D67744641BB46B24009AA09B /* Assets.xcassets in Resources */,
+				D67744621BB46B24009AA09B /* Main.storyboard in Resources */,
+				D67744731BB46B5B009AA09B /* AppNotice.bundle in Resources */,
+				D677447C1BB46B75009AA09B /* README.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D67744551BB46B24009AA09B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D677445F1BB46B24009AA09B /* ViewController.swift in Sources */,
+				D677445D1BB46B24009AA09B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D67744601BB46B24009AA09B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D67744611BB46B24009AA09B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D67744651BB46B24009AA09B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D67744661BB46B24009AA09B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D67744691BB46B24009AA09B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D677446A1BB46B24009AA09B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D677446C1BB46B24009AA09B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Triangle_swift",
+				);
+				INFOPLIST_FILE = Triangle_swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ghostery.Privacy.Triangle-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		D677446D1BB46B24009AA09B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Triangle_swift",
+				);
+				INFOPLIST_FILE = Triangle_swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ghostery.Privacy.Triangle-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D67744541BB46B24009AA09B /* Build configuration list for PBXProject "Triangle_swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D67744691BB46B24009AA09B /* Debug */,
+				D677446A1BB46B24009AA09B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D677446B1BB46B24009AA09B /* Build configuration list for PBXNativeTarget "Triangle_swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D677446C1BB46B24009AA09B /* Debug */,
+				D677446D1BB46B24009AA09B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D67744511BB46B24009AA09B /* Project object */;
+}
