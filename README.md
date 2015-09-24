@@ -1,4 +1,4 @@
-<div style="text-align:center;max-height:50px"><img src ="http://i.imgur.com/Gn6FomW.png" /></div>
+<div style="text-align:center;"><img src ="http://i.imgur.com/yDr7WeL.png" />ttt</div>
 
 
 # AppNoticeSDK-iOS
