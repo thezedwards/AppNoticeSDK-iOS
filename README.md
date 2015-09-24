@@ -122,6 +122,7 @@ Users can toggle trackers On and Off. To present the tracking preferences screen
         
     }];
 ```
+##### Swift
 
 ```swift
 AppNoticeSDK.sharedInstance().showManagePreferences { () -> Void in
@@ -144,9 +145,13 @@ By default this `Configuration.plist` file will not be used and the SDK will ins
 
 To use your local file you need to set `useRemoteValues` to `false`:
 
+##### Objective-C
+
 ```objective-c
 [AppNoticeSDK sharedInstance].useRemoteValues = NO;
 ```
+
+##### Swift
 
 ```swift
 AppNoticeSDK.sharedInstance().useRemoteValues = false
