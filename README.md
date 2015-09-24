@@ -77,6 +77,37 @@ You must activate the SDK before you can use the SDK features. You do so using y
 AppNoticeSDK.sharedInstance().activateWithCompanyId("242", pubNoticeId: "6107")
 ```
 
+### Asking For Consent
+
+There are two types of consent, **Implied** and **Explicit**. Implied consent only need appear to the user and does not have **Accept** or **Decline** options. Explicit consent must be accepted or declined. If declined, user should not be permitted to use your application features until consent is accepted.
+
+Implied or Explicit is determined by your Publisher Notice Id. You make one call to present the consent dialog:
+
+##### Objective-C
+
+```objective-c
+[[AppNoticeSDK sharedInstance]showConsentFlowWithOnClose:^(BOOL consentAccepted, BOOL consentSkipped, NSDictionary *trackers) {
+        //Handle what you want to do if the user gives consent or not. This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences
+        
+        //The trackers available to your application. Each tracker has an id and a status. The id is the unique id for that tracker, and the status is a boolean value of on or off
+        NSLog(@"Trackers: %@",[trackers debugDescription]);
+        
+    }];
+```
+
+##### Swift
+
+```swift
+AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose { (consentAccepted, consentSkipped, trackers) -> Void in
+            //Handle what you want to do if the user gives consent or not. This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences
+            
+            //The trackers available to your application. Each tracker has an id and a status. The id is the unique id for that tracker, and the status is a boolean value of on or off
+            
+            print("Trackers: \(trackers.debugDescription)")
+
+        }
+```
+
 ## FAQ
 
 ### What's the origin of the name Alamofire?
