@@ -18,6 +18,10 @@ Ghostery AppNoticeSDK
 - iOS 8.0+
 - Xcode 7.0+
 
+##Example Projects
+
+This repo comes with two example projects - one in Objective-C and the other in Swift. They demonstrate how to use the SDK
+
 ## Installation
 
 To use the AppNoticeSDK first download or clone this repository
