@@ -28,10 +28,17 @@ $ git clone git@github.com:ghostery/AppNoticeSDK-iOS.git
 
 To integrate AppNoticeSDK into your Xcode project:
 
-  1.  Copy/drag `AppNoticeSDKFramework.framework` and `AppNotice.bundle` into your Xcode project:
+Copy/drag `AppNoticeSDKFramework.framework` and `AppNotice.bundle` into your Xcode project:
   
 ![](http://i.imgur.com/5YOGvkP.png)
 
+### Objective-C
+
+Simply include the framework import statement wherever you want to use it
+
+```objective-c
+#import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
+```
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
