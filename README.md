@@ -79,7 +79,7 @@ AppNoticeSDK.sharedInstance().activateWithCompanyId("242", pubNoticeId: "6107")
 
 ### Asking For Consent
 
-There are two types of consent, **Implied** and **Explicit**. Implied consent only need appear to the user and does not have **Accept** or **Decline** options. Explicit consent must be accepted or declined. If declined, user should not be permitted to use your application features until consent is accepted.
+There are two types of consent, **Implied** and **Explicit**. Implied consent only need appear to the user and does not have **Accept** or **Decline** options. Explicit consent must be accepted or declined. If declined, user should not be permitted to use your application features until consent is accepted. You should show this dialog as soon as possible in your application.
 
 Implied or Explicit is determined by your Publisher Notice Id. You make one call to present the consent dialog:
 
@@ -105,6 +105,32 @@ AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose { (consentAccepted, con
             
             print("Trackers: \(trackers.debugDescription)")
 
+        }
+```
+
+### Tracking Preferences
+Users can toggle trackers On and Off. To present the tracking preferences screen:
+
+##### Objective-C
+
+```objective-c
+[[AppNoticeSDK sharedInstance]showManagePreferences:^{
+        //Handle what you want to do after the preferences screen is closed
+        
+        //Get the newly updated tracker preferences
+        NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance]getTrackerPreferences];
+        
+    }];
+```
+
+```swift
+AppNoticeSDK.sharedInstance().showManagePreferences { () -> Void in
+            //Handle what you want to do after the preferences screen is closed
+            
+            //Get the newly updated tracker preferences
+            if let updatedTrackers = AppNoticeSDK.sharedInstance().getTrackerPreferences() as? Dictionary<String, NSNumber> {
+                //Do something with updated trackers
+            }
         }
 ```
 
