@@ -134,6 +134,12 @@ AppNoticeSDK.sharedInstance().showManagePreferences { () -> Void in
         }
 ```
 
+### Configuration
+
+In the `AppNotice.bundle` there is a `Configuration.plist` that you can configure to customize your specific application:
+
+![](http://i.imgur.com/GHQamgR.png)
+
 ## FAQ
 
 ### What's the origin of the name Alamofire?
