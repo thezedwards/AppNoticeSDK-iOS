@@ -30,7 +30,7 @@ To integrate AppNoticeSDK into your Xcode project:
 
   1.  Copy/drag `AppNoticeSDKFramework.framework` and `AppNotice.bundle` into your Xcode project:
   
-![](http://i.imgur.com/vQdMeCA.png?1)
+![](http://i.imgur.com/5YOGvkP.png)
 
 
 ```ruby
