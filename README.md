@@ -1,2 +1,3 @@
 # AppNoticeSDK-iOS
 Ghostery AppNoticeSDK
+.
