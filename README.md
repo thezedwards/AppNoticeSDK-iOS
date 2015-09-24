@@ -39,6 +39,10 @@ Simply include the framework import statement wherever you want to use it
 ```objective-c
 #import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
 ```
+### Swift
+
+  1.  Creating a bridging header file:
+![](http://i.imgur.com/WOWD1gH.png)
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
