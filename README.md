@@ -140,22 +140,24 @@ In the `AppNotice.bundle` there is a `Configuration.plist` that you can configur
 
 ![](http://i.imgur.com/GHQamgR.png)
 
-## FAQ
+By default this `Configuration.plist` file will not be used and the SDK will instead grab settings from the server (remote).
 
-### What's the origin of the name Alamofire?
+To use your local file you need to set `useRemoteValues` to `false`:
 
-Alamofire is named after the [Alamo Fire flower](https://aggie-horticulture.tamu.edu/wildseed/alamofire.html), a hybrid variant of the Bluebonnet, the official state flower of Texas.
+```objective-c
+[AppNoticeSDK sharedInstance].useRemoteValues = NO;
+```
 
----
+```swift
+AppNoticeSDK.sharedInstance().useRemoteValues = false
+```
 
-## Credits
 
-Alamofire is owned and maintained by the [Alamofire Software Foundation](http://alamofire.org). You can follow them on Twitter at [@AlamofireSF](https://twitter.com/AlamofireSF) for project updates and releases.
 
 ### Security Disclosure
 
-If you believe you have identified a security vulnerability with Alamofire, you should report it as soon as possible via email to security@alamofire.org. Please do not post it to a public issue tracker.
+?????
 
 ## License
 
-Alamofire is released under the MIT license. See LICENSE for details.
+???
