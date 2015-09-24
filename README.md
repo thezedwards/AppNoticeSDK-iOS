@@ -42,15 +42,22 @@ Simply include the framework import statement wherever you want to use it
 ### Swift
 
   1.  Creating a bridging header file:
+  <br>
 ![](http://i.imgur.com/WOWD1gH.png)
 
-```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
-use_frameworks!
+  2.  Include the Objective-C import inside that bridging header:
 
-pod 'Alamofire', '~> 2.0'
+```objective-c
+//  Triangle_swift-Bridging-Header.h
+//  Triangle_swift
+//
+//  Created by Mark Price on 9/24/15.
+//  Copyright © 2015 Ghostery. All rights reserved.
+//
+
+#import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
 ```
+
 
 Then, run the following command:
 
