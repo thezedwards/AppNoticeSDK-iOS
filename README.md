@@ -1,4 +1,4 @@
-![](http://i.imgur.com/Gn6FomW.png =300x)
+![](http://i.imgur.com/Gn6FomW.png =500x)
 
 
 # AppNoticeSDK-iOS
