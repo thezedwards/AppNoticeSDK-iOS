@@ -14,8 +14,8 @@
 		D67744671BB46B24009AA09B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67744651BB46B24009AA09B /* LaunchScreen.storyboard */; };
 		D67744701BB46B54009AA09B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D677446F1BB46B54009AA09B /* GoogleMobileAds.framework */; settings = {ASSET_TAGS = (); }; };
 		D67744731BB46B5B009AA09B /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D67744711BB46B5B009AA09B /* AppNotice.bundle */; settings = {ASSET_TAGS = (); }; };
-		D67744741BB46B5B009AA09B /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67744721BB46B5B009AA09B /* AppNoticeSDKFramework.framework */; settings = {ASSET_TAGS = (); }; };
 		D677447C1BB46B75009AA09B /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D677447B1BB46B75009AA09B /* README.txt */; settings = {ASSET_TAGS = (); }; };
+		D6F8B4C11BBAD789003BF010 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F8B4C01BBAD789003BF010 /* AppNoticeSDKFramework.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,6 @@
 		D67744681BB46B24009AA09B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D677446F1BB46B54009AA09B /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		D67744711BB46B5B009AA09B /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
-		D67744721BB46B5B009AA09B /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
 		D67744761BB46B75009AA09B /* GADMAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
 		D67744771BB46B75009AA09B /* GADMAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
 		D67744781BB46B75009AA09B /* GADMEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMEnums.h; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		D677447A1BB46B75009AA09B /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
 		D677447B1BB46B75009AA09B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		D677447D1BB46DC3009AA09B /* Triangle_swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Triangle_swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		D6F8B4C01BBAD789003BF010 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D67744741BB46B5B009AA09B /* AppNoticeSDKFramework.framework in Frameworks */,
+				D6F8B4C11BBAD789003BF010 /* AppNoticeSDKFramework.framework in Frameworks */,
 				D67744701BB46B54009AA09B /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,9 +85,9 @@
 		D677446E1BB46B43009AA09B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6F8B4C01BBAD789003BF010 /* AppNoticeSDKFramework.framework */,
 				D67744751BB46B75009AA09B /* Mediation Adapters */,
 				D67744711BB46B5B009AA09B /* AppNotice.bundle */,
-				D67744721BB46B5B009AA09B /* AppNoticeSDKFramework.framework */,
 				D677446F1BB46B54009AA09B /* GoogleMobileAds.framework */,
 			);
 			name = Frameworks;
@@ -341,6 +341,7 @@
 				D677446D1BB46B24009AA09B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

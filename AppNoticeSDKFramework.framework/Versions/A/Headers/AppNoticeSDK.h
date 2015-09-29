@@ -38,16 +38,20 @@ typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NS
    Presents the user with a consent dialog. Depending on your pub notice id the user will be presented with either an explicit or an implied consent dialog.
  
    @param onClose The on close block to be called after the dialog is closed
+   @param presentingViewController The UIViewController that the preferences screen will be presented from (if the user opens the preferences from the consent dialog)
  
  */
-- (void)showConsentFlowWithOnClose:(AppNoticeSDKConsentFlowCompletionBlock)onClose;
+- (void)showConsentFlowWithOnClose:(AppNoticeSDKConsentFlowCompletionBlock)onClose presentingViewController:(UIViewController*)vc;
 
 
 /** 
-   Presents the user the preferences view controller. The preferences view controller allows the user to toggle trackers
+   Presents the user the preferences view controller. The preferences view controller allows the user to toggle trackers. A UINavigationController is presented modally from the view controller you pass in, keep this in mind in your application design.
+ 
+   @param onClose The on close block to be called after the dialog is closed
+   @param presentingViewController The UIViewController that you will present the preferences from
  
  */
-- (void)showManagePreferences:(AppNoticeSDKPreferencesClosedBlock)onClose;
+- (void)showManagePreferences:(AppNoticeSDKPreferencesClosedBlock)onClose presentingViewController:(UIViewController*)vc;
 
 /**
    Gets the most recent/updated tracker preferences. Grab this prior to toggling trackers.
