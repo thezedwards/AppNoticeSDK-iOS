@@ -160,13 +160,3 @@ To use your local file you need to set `useRemoteValues` to `false`:
 ```swift
 AppNoticeSDK.sharedInstance().useRemoteValues = false
 ```
-
-
-
-### Security Disclosure
-
-?????
-
-## License
-
-???
