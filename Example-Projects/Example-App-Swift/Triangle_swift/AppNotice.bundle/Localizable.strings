@@ -1,0 +1,114 @@
+/*
+Localizable.strings
+Ghostery, Inc.
+Customizable list of strings
+*/
+
+
+/*  */
+"Version" = "Version";
+
+/*  */
+"Network Connection" = "Network Connection";
+
+/*  */
+"Not Found Network" = "No Network Connection Found.";
+
+/*  */
+"Please Wait" = "Please Wait...";
+
+/*  */
+"Close" = "Close";
+
+/*  */
+"OptOut" = "OptOut";
+
+/*  */
+"ManagePrefTrackerTitle" = "OptOut of Trackers";
+
+/*  */
+"ManagePrefTrackerSubTitle" = "To all trackers listed below.";
+
+/*  */
+"Opt In" = "Opt In";
+
+/*  */
+"None" = "None";
+
+/*  */
+"All" = "All";
+
+/*  */
+"Learn More" = "Learn More";
+
+/*  */
+"Back" = "Back";
+
+/*  */
+"Accept" = "Accept";
+
+/*  */
+"Decline" = "Decline";
+
+/*  */
+"Privacy Policy Not Provided" = "Privacy Policy Not Provided";
+
+/*  */
+"To all trackers listed below." = "To all trackers listed below.";
+
+/*  */
+"Tracker Detail" = "Tracker Detail";
+
+/*  */
+"Learn More" = "Learn More";
+
+/*  */
+"Tracker Info" = "Tracker Info";
+
+/*  */
+"Privacy Policy" = "Privacy Policy";
+
+/*  */
+"CompanyId Blank" = "Company Identifier can't be blank";
+
+/*  */
+"Notice Identifier Blank" = "Notice Identifier can't be blank";
+
+/*  */
+"To all trackers listed below." = "To all trackers listed below.";
+
+/*  */
+"Manage Preferences" = "Manage Preferences";
+
+/*  */
+"Detail View" = "Detail View";
+
+/*  */
+"Privacy Policy Not Provided" = "Privacy Policy Not Provided";
+
+/*  */
+"Default Bundle" = "The contents of this screen all come from the Manage Preferences Resources Bundle.";
+
+/*  */
+"No Trackers" = "No trackers to display.";
+
+/*  */
+"Default Learn More" = "To learn more about how we collect and use information for mobile apps, please visit:";
+
+/*  */
+"Default Manage Preferences Description" = "Our application uses technologies so that we, and our partners, can remember you and understand how you use our app. To see a complete list of these technologies and to explicitly tell us whether they can be used on your device, click on the \"Manage Preferences\" button below. To give us your consent, click on the \"Accept\" button.";
+
+/*  */
+"We Care About Your Privacy" = "We Care About Your Privacy";
+
+/*  */
+"Default Description" = "Our application uses technologies so that we, and our partners, can remember you and understand how you use our app. To see a complete list of these technologies and to tell us whether they can be used on your device, click on the \"Manage Preferences\" button below. Further use of this app will be considered consent.";
+
+/*  */
+"Default Partners" = "Our company with help from our partners, collects data about your use of this app. We respect your privacy and if you would like to limit the data we collect please use the control panel below. To find out more about how we use data please visit our privacy policy.";
+
+/*  */
+"The list of trackers could not be loaded. Please ensure you have internet access, and try again later." = "The list of trackers could not be loaded. Please ensure you have internet access, and try again later.";
+
+
+
