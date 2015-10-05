@@ -16,7 +16,7 @@
 		3E979A6B1B8CE45B003475FA /* Mediation Adapters in Resources */ = {isa = PBXBuildFile; fileRef = 3E979A691B8CE45B003475FA /* Mediation Adapters */; };
 		D68885431BB33D69001EF980 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68885421BB33D69001EF980 /* GoogleMobileAds.framework */; settings = {ASSET_TAGS = (); }; };
 		D69D1C2D1BB4583A00D469AB /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D69D1C2B1BB4583A00D469AB /* AppNotice.bundle */; settings = {ASSET_TAGS = (); }; };
-		D69D1C371BB45ECE00D469AB /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69D1C361BB45ECE00D469AB /* AppNoticeSDKFramework.framework */; settings = {ASSET_TAGS = (); }; };
+		D6F8B4BF1BBAD6D3003BF010 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F8B4BE1BBAD6D3003BF010 /* AppNoticeSDKFramework.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		3E979A691B8CE45B003475FA /* Mediation Adapters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Mediation Adapters"; sourceTree = "<group>"; };
 		D68885421BB33D69001EF980 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		D69D1C2B1BB4583A00D469AB /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
-		D69D1C361BB45ECE00D469AB /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
+		D6F8B4BE1BBAD6D3003BF010 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D69D1C371BB45ECE00D469AB /* AppNoticeSDKFramework.framework in Frameworks */,
+				D6F8B4BF1BBAD6D3003BF010 /* AppNoticeSDKFramework.framework in Frameworks */,
 				D68885431BB33D69001EF980 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,7 +94,7 @@
 		3E979A6C1B8CE460003475FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D69D1C361BB45ECE00D469AB /* AppNoticeSDKFramework.framework */,
+				D6F8B4BE1BBAD6D3003BF010 /* AppNoticeSDKFramework.framework */,
 				D69D1C2B1BB4583A00D469AB /* AppNotice.bundle */,
 				D68885421BB33D69001EF980 /* GoogleMobileAds.framework */,
 			);

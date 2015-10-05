@@ -23,7 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [[AppNoticeSDK sharedInstance]showConsentFlowWithOnClose:^(BOOL consentAccepted, BOOL consentSkipped, NSDictionary *trackers) {
+    [[AppNoticeSDK sharedInstance]showConsentFlowWithOnClose:^(BOOL consentAccepted, BOOL consentSkipped, NSDictionary * _Nonnull trackers) {
+        
         //Handle what you want to do if the user gives consent or not. This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences
         
         //The trackers available to your application. Each tracker has an id and a status. The id is the unique id for that tracker, and the status is a boolean value of on or off
@@ -32,7 +33,7 @@
         self.trackers = trackers;
         
         [self toggleTrackers];
-    }];
+    } presentingViewController:self];
 }
 
 //You will want to toggle all of your trackers in a similar manner based on the user's tracker preferences. Ensure that the trackers are not working behind the scenes
@@ -63,6 +64,7 @@
             self.bannerView.hidden = YES;
         }
     }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,7 +81,7 @@
         self.trackers = [[AppNoticeSDK sharedInstance]getTrackerPreferences];
         
         [self toggleTrackers];
-    }];
+    } presentingViewController:self];
 }
 
 @end

@@ -20,7 +20,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose { (consentAccepted, consentSkipped, trackers) -> Void in
+        AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose({ (consentAccepted, consentSkipped, trackers) -> Void in
+            
             //Handle what you want to do if the user gives consent or not. This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences
             
             //The trackers available to your application. Each tracker has an id and a status. The id is the unique id for that tracker, and the status is a boolean value of on or off
@@ -32,8 +33,7 @@ class ViewController: UIViewController {
             }
             
             self.toggleTrackers()
-        }
-        
+            }, presentingViewController: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,7 +42,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func openPrefs(sender: AnyObject) {
-        AppNoticeSDK.sharedInstance().showManagePreferences { () -> Void in
+        
+        AppNoticeSDK.sharedInstance().showManagePreferences({ () -> Void in
             //Handle what you want to do after the preferences screen is closed
             
             //Get the newly updated tracker preferences
@@ -50,7 +51,7 @@ class ViewController: UIViewController {
                 self.trackers = trackers
                 self.toggleTrackers()
             }
-        }
+            }, presentingViewController: self)
     }
     
     //You will want to toggle all of your trackers in a similar manner based on the user's tracker preferences. Ensure that the trackers are not working behind the scenes
