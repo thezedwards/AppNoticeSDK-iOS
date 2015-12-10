@@ -72,7 +72,7 @@ You must activate the SDK before you can use the SDK features. You do so using y
 ##### Objective-C
 
 ```objective-c
-[[AppNoticeSDK sharedInstance]activateWithCompanyId:@"242" pubNoticeId:@"6107"];
+[[AppNoticeSDK sharedInstance] activateWithCompanyId:@"242" pubNoticeId:@"6107"];
 ```
 
 ##### Swift
@@ -83,60 +83,63 @@ AppNoticeSDK.sharedInstance().activateWithCompanyId("242", pubNoticeId: "6107")
 
 ### Asking For Consent
 
-There are two types of consent, **Implied** and **Explicit**. Implied consent only need appear to the user and does not have **Accept** or **Decline** options. Explicit consent must be accepted or declined. If declined, user should not be permitted to use your application features until consent is accepted. You should show this dialog as soon as possible in your application.
+There are two types of consent, **Implied** and **Explicit**. Implied consent is a read only option that does not have **Accept** or **Decline** options. Explicit consent must be accepted or declined. If declined, the user should not be permitted to use your app features until consent is accepted. You should show this dialog as early as possible after your application launches.
 
 Implied or Explicit is determined by your Publisher Notice Id. You make one call to present the consent dialog:
 
 ##### Objective-C
 
 ```objective-c
-[[AppNoticeSDK sharedInstance]showConsentFlowWithOnClose:^(BOOL consentAccepted, BOOL consentSkipped, NSDictionary *trackers) {
-        //Handle what you want to do if the user gives consent or not. This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences
+[[AppNoticeSDK sharedInstance] showConsentFlowWithOnClose:^(BOOL consentAccepted, BOOL consentSkipped, NSDictionary *trackers) {
+    // TODO: Handle what you want to do based on whether the user accepted or declined consent.
+    // This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences.
         
-        //The trackers available to your application. Each tracker has an id and a status. The id is the unique id for that tracker, and the status is a boolean value of on or off
-        NSLog(@"Trackers: %@",[trackers debugDescription]);
+    // The trackers available to your application. Each tracker has an id and a status.
+    // The id is the unique id for that tracker, and the status is a boolean value (YES or NO).
+    NSLog(@"Trackers: %@",[trackers debugDescription]);
         
-    }];
+}];
 ```
 
 ##### Swift
 
 ```swift
 AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose { (consentAccepted, consentSkipped, trackers) -> Void in
-            //Handle what you want to do if the user gives consent or not. This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences
+    // TODO: Handle what you want to do based on whether the user accepted or declined consent.
+    // This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences.
             
-            //The trackers available to your application. Each tracker has an id and a status. The id is the unique id for that tracker, and the status is a boolean value of on or off
-            
-            print("Trackers: \(trackers.debugDescription)")
+    // The trackers available to your application. Each tracker has an id and a status.
+    // The id is the unique id for that tracker, and the status is a boolean value (true or false).            
+    print("Trackers: \(trackers.debugDescription)")
 
-        }
+}
 ```
 
 ### Tracking Preferences
-Users can toggle trackers On and Off. To present the tracking preferences screen:
+Users can toggle trackers on or off. To present the tracking preferences screen:
 
 ##### Objective-C
 
 ```objective-c
 [[AppNoticeSDK sharedInstance]showManagePreferences:^{
-        //Handle what you want to do after the preferences screen is closed
+    // TODO: Handle what you want to do after the preferences screen is closed.
         
-        //Get the newly updated tracker preferences
-        NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance]getTrackerPreferences];
+    //Get the newly updated tracker preferences
+    NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance] getTrackerPreferences];
         
-    }];
+}];
 ```
 ##### Swift
 
 ```swift
 AppNoticeSDK.sharedInstance().showManagePreferences { () -> Void in
-            //Handle what you want to do after the preferences screen is closed
+    // TODO: Handle what you want to do after the preferences screen is closed.
             
-            //Get the newly updated tracker preferences
-            if let updatedTrackers = AppNoticeSDK.sharedInstance().getTrackerPreferences() as? Dictionary<String, NSNumber> {
-                //Do something with updated trackers
-            }
-        }
+    // Get the newly updated tracker preferences
+    if let updatedTrackers = AppNoticeSDK.sharedInstance().getTrackerPreferences() as? Dictionary<String, NSNumber> {
+        // TODO: Do something with the updated trackers
+    }
+}
 ```
 
 ### Configuration
