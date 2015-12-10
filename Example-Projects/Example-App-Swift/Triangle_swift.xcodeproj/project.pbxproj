@@ -12,10 +12,10 @@
 		D67744621BB46B24009AA09B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67744601BB46B24009AA09B /* Main.storyboard */; };
 		D67744641BB46B24009AA09B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67744631BB46B24009AA09B /* Assets.xcassets */; };
 		D67744671BB46B24009AA09B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67744651BB46B24009AA09B /* LaunchScreen.storyboard */; };
-		D67744701BB46B54009AA09B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D677446F1BB46B54009AA09B /* GoogleMobileAds.framework */; settings = {ASSET_TAGS = (); }; };
-		D67744731BB46B5B009AA09B /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D67744711BB46B5B009AA09B /* AppNotice.bundle */; settings = {ASSET_TAGS = (); }; };
-		D677447C1BB46B75009AA09B /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D677447B1BB46B75009AA09B /* README.txt */; settings = {ASSET_TAGS = (); }; };
-		D6F8B4C11BBAD789003BF010 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F8B4C01BBAD789003BF010 /* AppNoticeSDKFramework.framework */; settings = {ASSET_TAGS = (); }; };
+		D67744701BB46B54009AA09B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D677446F1BB46B54009AA09B /* GoogleMobileAds.framework */; };
+		D67744731BB46B5B009AA09B /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D67744711BB46B5B009AA09B /* AppNotice.bundle */; };
+		D677447C1BB46B75009AA09B /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D677447B1BB46B75009AA09B /* README.txt */; };
+		D6F8B4C11BBAD789003BF010 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F8B4C01BBAD789003BF010 /* AppNoticeSDKFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */

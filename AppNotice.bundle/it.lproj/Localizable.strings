@@ -1,0 +1,62 @@
+/*
+Localizable.strings
+Ghostery, Inc.
+Customizable list of strings
+*/
+
+"ghostery_default_manage_preferences_description" = "Our application uses technologies so that we, and our partners, can remember you and understand how you use our app. To see a complete list of these technologies and to explicitly tell us whether they can be used on your device, click on the \"Manage Preferences\" button below. To give us your consent, click on the \"Accept\" button.";
+
+
+"ghostery_privacy" = "We Care About Your Privacy";
+
+
+"ghostery_default_description" = "Our application uses technologies so that we, and our partners, can remember you and understand how you use our app. To see a complete list of these technologies and to tell us whether they can be used on your device, click on the \"Manage Preferences\" button below. Further use of this app will be considered consent.";
+
+
+"ghostery_default_partners" = "Our company with help from our partners, collects data about your use of this app. We respect your privacy and if you would like to limit the data we collect please use the control panel below. To find out more about how we use data please visit our privacy policy.";
+
+
+"ghostery_trackers_failed" = "The list of trackers could not be loaded. Please ensure you have internet access, and try again later.";
+
+
+"ghostery_dialog_button_close" = "Chiudi";
+
+"ghostery_dialog_button_consent"= "Accetta";
+
+"ghostery_dialog_button_decline"= "Rifiuta";
+
+"ghostery_all"= "Tutti";
+
+"ghostery_none"= "Nessuno";
+
+"ghostery_dialog_button_preferences"= "Gestisci preferenze";
+
+"ghostery_dialog_explicit_message"= "La nostra applicazione utilizza tecnologie per consentire a noi e ai nostri partner di ricordarci di te e capire come utilizzi la nostra app.  Per visualizzare un elenco completo di queste tecnologie e comunicarci in modo chiaro se possono essere utilizzate sul tuo dispositivo, fai clic sul pulsante seguente \&quot;Gestisci preferenze\&quot;. Per fornirci il consenso, fai clic sul pulsante \&quot;Accetta\&quot;.";
+
+"ghostery_dialog_header_text"= "Per noi la tua privacy è importante";
+
+"ghostery_dialog_implicit_message"= "La nostra applicazione utilizza tecnologie per consentire a noi e ai nostri partner di ricordarci di te e capire come utilizzi la nostra app.  Per visualizzare un elenco completo di queste tecnologie e comunicarci se possono essere utilizzate sul tuo dispositivo, fai clic sul pulsante seguente \&quot;Gestisci preferenze\&quot;. L&apos;ulteriore utilizzo dell&apos;app varrà come consenso.";
+
+"ghostery_dialog_pleaseWait"= "Attendere...";
+
+
+"ghostery_manage_preferences_description"= "La nostra azienda, con l&apos;aiuto dei nostri partner, raccoglie i dati relativi al tuo utilizzo di questa app. Rispettiamo la tua privacy e se desideri limitare la raccolta dei dati da parte nostra, utilizza il seguente pannello di controllo. Per saperne di più sul nostro utilizzo dei dati, visita la pagina della nostra politica sulla privacy.";
+
+"ghostery_manage_preferences_detail_learnmore"= "Per maggiori informazioni sul modo in cui raccogliamo e utilizziamo le informazioni per le app per dispositivi mobili, visita:";
+
+"ghostery_manage_preferences_detail_learnmore_not_provided"= "Politica sulla privacy non fornita";
+
+"ghostery_manage_preferences_detail_trackerinfo"= "Informazioni sul tracker";
+
+"ghostery_manage_preferences_empty_list"= "Impossibile caricare l&apos;elenco di tracker. Verificare l&apos;accesso a Internet e riprovare più tardi.";
+
+"ghostery_manage_preferences_header"= "Gestisci preferenze";
+
+"ghostery_manage_preferences_optin_header"= "Consenti";
+
+"ghostery_manage_preferences_optin_text"= "Tutti i tracker elencati di seguito.";
+
+"ghostery_tracker_detail_title"= "Dettaglio del tracker";
+
+"ghostery_tracker_learnmore_title"= "Scopri di più";
+

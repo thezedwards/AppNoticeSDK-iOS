@@ -1,0 +1,83 @@
+/*
+Localizable.strings
+Ghostery, Inc.
+Customizable list of strings
+*/
+
+
+"ghostery_version" = "Version";
+
+"ghostery_network_connection" = "Network Connection";
+
+"ghostery_no_network" = "No Network Connection Found.";
+
+"ghostery_please_wait" = "Please Wait...";
+
+"ghostery_opt_out" = "OptOut";
+
+"ghostery_none" = "None";
+
+"ghostery_all" = "All";
+
+"ghostery_back" = "Back";
+
+"ghostery_tracker_detail" = "Tracker Detail";
+
+"ghostery_learn_more" = "Learn More";
+
+"ghostery_tracker_info" = "Tracker Info";
+
+"ghostery_privacy_policy" = "Privacy Policy";
+
+"ghostery_company_id_blank" = "Company Identifier can't be blank";
+
+"ghostery_notice_id_blank" = "Notice Identifier can't be blank";
+
+"ghostery_manage_preferences" = "Manage Preferences";
+
+"ghostery_detail_view" = "Detail View";
+
+"ghostery_no_privacy_policy" = "Privacy Policy Not Provided";
+
+"ghostery_default_bundle" = "The contents of this screen all come from the Manage Preferences Resources Bundle.";
+
+"ghostery_no_trackers" = "No trackers to display.";
+
+"ghostery_default_learn_more" = "To learn more about how we collect and use information for mobile apps, please visit:";
+
+"ghostery_dialog_button_close" = "Close";
+
+"ghostery_dialog_button_consent"= "Accept";
+
+"ghostery_dialog_button_decline"= "Decline";
+
+"ghostery_dialog_button_preferences"= "Manage Preferences";
+
+"ghostery_dialog_explicit_message"= "Our application uses technologies so that we, and our partners, can remember you and understand how you use our app. To see a complete list of these technologies and to explicitly tell us whether they can be used on your device, click on the \"Manage Preferences\" button below. To give us your consent, click on the \"Accept\" button.";
+
+"ghostery_dialog_header_text"= "We Care About Your Privacy";
+
+"ghostery_dialog_implicit_message"= "Our application uses technologies so that we, and our partners, can remember you and understand how you use our app. To see a complete list of these technologies and to tell us whether they can be used on your device, click on the \"Manage Preferences\" button below. Further use of this app will be considered consent.";
+
+"ghostery_dialog_pleaseWait" = "Please Wait...";
+
+"ghostery_manage_preferences_description"= "Our company with help from our partners, collects data about your use of this app. We respect your privacy and if you would like to limit the data we collect please use the control panel below. To find out more about how we use data please visit our privacy policy.";
+
+"ghostery_manage_preferences_detail_learnmore"= "To learn more about how we collect and use information for mobile apps, please visit:";
+
+"ghostery_manage_preferences_detail_learnmore_not_provided"= "Privacy Policy Not Provided";
+
+"ghostery_manage_preferences_detail_trackerinfo"= "Tracker Info";
+
+"ghostery_manage_preferences_empty_list"= "The list of trackers could not be loaded. Please ensure you have internet access, and try again later.";
+
+"ghostery_manage_preferences_header"= "Manage Preferences";
+
+"ghostery_manage_preferences_optin_header"= "Opt In";
+
+"ghostery_manage_preferences_optin_text"= "To all trackers listed below.";
+
+"ghostery_tracker_detail_title"= "Tracker Detail";
+
+"ghostery_tracker_learnmore_title"= "Learn More";
+
