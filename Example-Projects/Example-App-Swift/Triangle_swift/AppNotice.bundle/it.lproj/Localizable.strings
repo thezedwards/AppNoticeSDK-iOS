@@ -18,6 +18,7 @@ Customizable list of strings
 
 "ghostery_trackers_failed" = "The list of trackers could not be loaded. Please ensure you have internet access, and try again later.";
 
+"ghostery_tracker_details" = "Dettaglio del Tracker";
 
 "ghostery_dialog_button_close" = "Chiudi";
 
@@ -26,8 +27,8 @@ Customizable list of strings
 "ghostery_dialog_button_decline"= "Rifiuta";
 
 "ghostery_all"= "Tutti";
-
 "ghostery_none"= "Nessuno";
+"ghostery_back" = "Indietro";
 
 "ghostery_dialog_button_preferences"= "Gestisci preferenze";
 

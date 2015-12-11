@@ -35,7 +35,7 @@ Customizable list of strings
 
 "ghostery_manage_preferences" = "Manage Preferences";
 
-"ghostery_detail_view" = "Detail View";
+"ghostery_tracker_details" = "Tracker Detail";
 
 "ghostery_no_privacy_policy" = "Privacy Policy Not Provided";
 
@@ -61,7 +61,7 @@ Customizable list of strings
 
 "ghostery_dialog_pleaseWait" = "Please Wait...";
 
-"ghostery_manage_preferences_description"= "Our company with help from our partners, collects data about your use of this app. We respect your privacy and if you would like to limit the data we collect please use the control panel below. To find out more about how we use data please visit our privacy policy.";
+"ghostery_manage_preferences_description"= "Our company, with help from our partners, collects data about your use of this app. We respect your privacy and if you would like to limit the data we collect please use the control panel below. To find out more about how we use data please visit our privacy policy.";
 
 "ghostery_manage_preferences_detail_learnmore"= "To learn more about how we collect and use information for mobile apps, please visit:";
 

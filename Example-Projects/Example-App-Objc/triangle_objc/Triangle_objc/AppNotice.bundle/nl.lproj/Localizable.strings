@@ -24,7 +24,9 @@ Customizable list of strings
 "ghostery_tracker_learnmore_title"= "Meer informatie";
 "ghostery_all"= "Alle";
 "ghostery_none"= "Geen";
+"ghostery_back" = "Terug";
 
+"ghostery_tracker_details" = "Tracker Details";
 
 "ghostery_dialog_button_close" = "Sluiten";
 
