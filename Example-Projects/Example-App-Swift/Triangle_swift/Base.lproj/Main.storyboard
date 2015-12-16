@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8dY-vh-1bo">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
@@ -32,13 +33,24 @@
                                     <constraint firstAttribute="height" constant="50" id="ItP-21-Iz6"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6Q-OB-q2D">
+                                <rect key="frame" x="261.5" y="486" width="77" height="32"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Reset SDK"/>
+                                <connections>
+                                    <action selector="resetSdkButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="brZ-pL-2g2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aFW-ZS-GUY" secondAttribute="bottom" id="B40-Ea-DkE"/>
+                            <constraint firstItem="f6Q-OB-q2D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BdP-Rh-KHR"/>
                             <constraint firstItem="NCi-1X-OuJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="X23-uz-Waj"/>
                             <constraint firstItem="aFW-ZS-GUY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bBb-4o-Mkv"/>
+                            <constraint firstItem="aFW-ZS-GUY" firstAttribute="top" secondItem="f6Q-OB-q2D" secondAttribute="bottom" constant="32" id="gVM-Jr-Cgy"/>
                             <constraint firstAttribute="trailing" secondItem="aFW-ZS-GUY" secondAttribute="trailing" id="jX4-C3-T4t"/>
                             <constraint firstItem="NCi-1X-OuJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vA3-1c-9sz"/>
                         </constraints>

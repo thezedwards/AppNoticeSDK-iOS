@@ -79,5 +79,10 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func resetSdkButtonPressed(sender: AnyObject) {
+        AppNoticeSDK.sharedInstance().resetSDK()
+        let alertView = UIAlertView.init(title: "Reset SDK", message: "The App Notice SDK has been reset. Please kill the app (double-tap home button and swipe it off screen) and run again.", delegate: nil, cancelButtonTitle: "OK")
+        alertView.show()
+    }
 }
 
