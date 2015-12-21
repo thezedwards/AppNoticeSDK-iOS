@@ -143,9 +143,9 @@ NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance] getTrackerPrefere
 }];
 ```
 
-### Configuration
+### UI and Message Customization
 
-In the `AppNotice.bundle` there is a `Configuration.plist` that you can configure to customize your specific application:
+In the `AppNotice.bundle` there is a `Configuration.plist` file. This file allows you to customize UI properties and the text shown when your application asks the user for consent:
 
 ![](http://i.imgur.com/GHQamgR.png)
 
@@ -167,10 +167,10 @@ AppNoticeSDK.sharedInstance().useRemoteValues = false
 [AppNoticeSDK sharedInstance].useRemoteValues = NO;
 ```
 
-#### Text Customization and Localization
+### Localization
 
-The AppNotice SDK supports multiple languages (currently English, French, Italian, Dutch, German, and Spanish). In order for your app to see localized text, you must simply have a localization file in your project for one of the languages the SDK supports.
+The AppNotice SDK supports multiple languages (currently English, French, Italian, Dutch, German, and Spanish). If your app supports localization for a supported language, the AppNotice SDK will also be displayed in that langauge. To localize your app, you simply need a localization file in your project for each language you support.
 
-To customize any of the strings shown in the SDK, simply open the localization file in the AppNotice.bundle for the language you want to customize, change the value (not the key). For example, this screenshot highlights the text to change for the 'ghostery_dialog_explicit_message' key:
+To customize any of the strings shown in the SDK, simply open the localization file in the `AppNotice.bundle` for the language you want to customize and change the value (not the key). For example, this screenshot highlights the English text to change for the `ghostery_dialog_explicit_message` key:
 
 ![](http://i.imgur.com/09ZRYXx.png)
