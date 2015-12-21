@@ -147,7 +147,7 @@ NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance] getTrackerPrefere
 
 In the `AppNotice.bundle` there is a `Configuration.plist` file. This file allows you to customize UI properties and the text shown when your application asks the user for consent:
 
-![](http://i.imgur.com/GHQamgR.png)
+![](http://i.imgur.com/m2GissI.png)
 
 By default this `Configuration.plist` file will not be used and the SDK will instead grab settings from the server (remote).
 
