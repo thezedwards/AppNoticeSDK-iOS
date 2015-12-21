@@ -151,6 +151,8 @@ In the `AppNotice.bundle` there is a `Configuration.plist` that you can configur
 
 By default this `Configuration.plist` file will not be used and the SDK will instead grab settings from the server (remote).
 
+#### Use Remote Values
+
 To use your local file you need to set `useRemoteValues` to `false`:
 
 ##### Swift
@@ -164,3 +166,11 @@ AppNoticeSDK.sharedInstance().useRemoteValues = false
 ```objective-c
 [AppNoticeSDK sharedInstance].useRemoteValues = NO;
 ```
+
+#### Text Customization and Localization
+
+The AppNotice SDK supports multiple languages (currently English, French, Italian, Dutch, German, and Spanish). In order for your app to see localized text, you must simply have a localization file in your project for one of the languages the SDK supports.
+
+To customize any of the strings shown in the SDK, simply open the localization file in the AppNotice.bundle for the language you want to customize, change the value (not the key). For example, this screenshot highlights the text to change for the 'ghostery_dialog_explicit_message' key:
+
+![](http://i.imgur.com/09ZRYXx.png)
