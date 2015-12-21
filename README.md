@@ -143,7 +143,7 @@ NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance] getTrackerPrefere
 }];
 ```
 
-### UI and Message Customization
+### Customization of UI and Consent Messages
 
 In the `AppNotice.bundle` there is a `Configuration.plist` file. This file allows you to customize UI properties and the text shown when your application asks the user for consent:
 
