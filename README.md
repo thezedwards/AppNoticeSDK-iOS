@@ -20,11 +20,11 @@ Ghostery AppNoticeSDK
 
 ##Example Projects
 
-This repo comes with two example projects - one in Objective-C and the other in Swift. They demonstrate how to use the SDK
+This repo comes with two example projects to demonstrate how to use the SDK. One project is in Swift and the other in Objective-C.
 
 ## Installation
 
-To use the AppNoticeSDK first download or clone this repository
+To use the AppNoticeSDK first download or clone this repository:
 
 ```bash
 $ git clone git@github.com:ghostery/AppNoticeSDK-iOS.git
@@ -36,13 +36,6 @@ Copy/drag `AppNoticeSDKFramework.framework` and `AppNotice.bundle` into your Xco
   
 ![](http://i.imgur.com/5YOGvkP.png)
 
-### Objective-C
-
-Simply include the framework import statement wherever you want to use it
-
-```objective-c
-#import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
-```
 ### Swift
 
   1.  Creating a bridging header file:
@@ -62,6 +55,13 @@ Simply include the framework import statement wherever you want to use it
 #import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
 ```
 
+### Objective-C
+
+Simply include the framework import statement wherever you want to use it
+
+```objective-c
+#import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
+```
 
 ## Usage
 
@@ -69,37 +69,23 @@ Simply include the framework import statement wherever you want to use it
 
 You must activate the SDK before you can use the SDK features. You do so using your Company Id and Publisher Notice Id.
 
-##### Objective-C
-
-```objective-c
-[[AppNoticeSDK sharedInstance] activateWithCompanyId:@"242" pubNoticeId:@"6107"];
-```
-
 ##### Swift
 
 ```swift
 AppNoticeSDK.sharedInstance().activateWithCompanyId("242", pubNoticeId: "6107")
 ```
 
-### Asking For Consent
-
-There are two types of consent, **Implied** and **Explicit**. Implied consent is a read only option that does not have **Accept** or **Decline** options. Explicit consent must be accepted or declined. If declined, the user should not be permitted to use your app features until consent is accepted. You should show this dialog as early as possible after your application launches.
-
-Implied or Explicit is determined by your Publisher Notice Id. You make one call to present the consent dialog:
-
 ##### Objective-C
 
 ```objective-c
-[[AppNoticeSDK sharedInstance] showConsentFlowWithOnClose:^(BOOL consentAccepted, BOOL consentSkipped, NSDictionary *trackers) {
-    // TODO: Handle what you want to do based on whether the user accepted or declined consent.
-    // This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences.
-        
-    // The trackers available to your application. Each tracker has an id and a status.
-    // The id is the unique id for that tracker, and the status is a boolean value (YES or NO).
-    NSLog(@"Trackers: %@",[trackers debugDescription]);
-        
-}];
+[[AppNoticeSDK sharedInstance] activateWithCompanyId:@"242" pubNoticeId:@"6107"];
 ```
+
+### Asking For Consent
+
+There are two types of consent, **Implied** and **Explicit**. Implied consent is a read-only option that does not have **Accept** or **Decline** options. Explicit consent must be accepted or declined. If declined, the user should not be permitted to use your app features until consent has been given. You should show this dialog as early as possible after your application launches.
+
+Implied or Explicit is determined by your Publisher Notice Id. You make one call to present the consent dialog:
 
 ##### Swift
 
@@ -115,20 +101,23 @@ AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose { (consentAccepted, con
 }
 ```
 
-### Tracking Preferences
-Users can toggle trackers on or off. To present the tracking preferences screen:
-
 ##### Objective-C
 
 ```objective-c
-[[AppNoticeSDK sharedInstance]showManagePreferences:^{
-    // TODO: Handle what you want to do after the preferences screen is closed.
-        
-    //Get the newly updated tracker preferences
-    NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance] getTrackerPreferences];
-        
+[[AppNoticeSDK sharedInstance] showConsentFlowWithOnClose:^(BOOL consentAccepted, BOOL consentSkipped, NSDictionary *trackers) {
+// TODO: Handle what you want to do based on whether the user accepted or declined consent.
+// This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences.
+
+// The trackers available to your application. Each tracker has an id and a status.
+// The id is the unique id for that tracker, and the status is a boolean value (YES or NO).
+NSLog(@"Trackers: %@",[trackers debugDescription]);
+
 }];
 ```
+
+### Tracking Preferences
+Users can toggle trackers on or off. To present the tracking preferences screen:
+
 ##### Swift
 
 ```swift
@@ -142,6 +131,18 @@ AppNoticeSDK.sharedInstance().showManagePreferences { () -> Void in
 }
 ```
 
+##### Objective-C
+
+```objective-c
+[[AppNoticeSDK sharedInstance]showManagePreferences:^{
+// TODO: Handle what you want to do after the preferences screen is closed.
+
+//Get the newly updated tracker preferences
+NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance] getTrackerPreferences];
+
+}];
+```
+
 ### Configuration
 
 In the `AppNotice.bundle` there is a `Configuration.plist` that you can configure to customize your specific application:
@@ -152,14 +153,14 @@ By default this `Configuration.plist` file will not be used and the SDK will ins
 
 To use your local file you need to set `useRemoteValues` to `false`:
 
-##### Objective-C
-
-```objective-c
-[AppNoticeSDK sharedInstance].useRemoteValues = NO;
-```
-
 ##### Swift
 
 ```swift
 AppNoticeSDK.sharedInstance().useRemoteValues = false
+```
+
+##### Objective-C
+
+```objective-c
+[AppNoticeSDK sharedInstance].useRemoteValues = NO;
 ```
