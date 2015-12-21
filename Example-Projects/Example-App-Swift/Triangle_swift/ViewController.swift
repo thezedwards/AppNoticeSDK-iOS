@@ -19,23 +19,46 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose({ (consentAccepted, consentSkipped, trackers) -> Void in
-            
-            //Handle what you want to do if the user gives consent or not. This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences
-            
-            //The trackers available to your application. Each tracker has an id and a status. The id is the unique id for that tracker, and the status is a boolean value of on or off
-            
-            print("Trackers: \(trackers.debugDescription)")
-            
-            if let trackers = trackers as? Dictionary<String, NSNumber> {
-                self.trackers = trackers
-            }
-            
-            self.toggleTrackers()
-            }, presentingViewController: self)
     }
 
+    override func viewDidAppear(animated: Bool) {
+        showPrivacyConsentFlow();
+    }
+    
+    func showPrivacyConsentFlow() {
+        AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose({ (consentAccepted, consentSkipped, trackers) -> Void in
+            
+            // Handle what you want to do based on the user's consent choice.
+            if consentAccepted {
+                // Decide which trackers/ads to use/show based on the trackersArray preferences.
+                // Each tracker has an id and a status. The id is the unique id for that tracker, and the status is a boolean value.
+                print("Trackers: \(trackers.debugDescription)")
+                
+                if let trackers = trackers as? Dictionary<String, NSNumber> {
+                    self.trackers = trackers
+                }
+                
+                self.toggleTrackers()
+            }
+            else {
+                // Consent was declined
+                let alertController = UIAlertController(title: "Consent Declined",
+                    message: "This app can not be used without giving consent.",
+                    preferredStyle: .Alert)
+                
+                let okAction = UIAlertAction(title: "OK", style: .Default, handler: { (UIAlertAction) -> Void in
+                    self.showPrivacyConsentFlow()
+                })
+                alertController.addAction(okAction)
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+                return;
+            }
+            
+        }, presentingViewController: self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -81,7 +104,7 @@ class ViewController: UIViewController {
 
     @IBAction func resetSdkButtonPressed(sender: AnyObject) {
         AppNoticeSDK.sharedInstance().resetSDK()
-        let alertView = UIAlertView.init(title: "Reset SDK", message: "The App Notice SDK has been reset. Please kill the app (double-tap home button and swipe it off screen) and run again.", delegate: nil, cancelButtonTitle: "OK")
+        let alertView = UIAlertView.init(title: "Reset SDK", message: "The App Notice SDK has been reset.", delegate: nil, cancelButtonTitle: "OK")
         alertView.show()
     }
 }
