@@ -65,7 +65,7 @@ Simply include the framework import statement wherever you want to use it
 
 ## Usage
 
-### Activation
+### Activation<a name="activation"></a>
 
 You must activate the SDK before you can use the SDK features. You do so using your Company Id and Publisher Notice Id.
 
@@ -174,3 +174,9 @@ The AppNotice SDK supports multiple languages (currently English, French, Italia
 To customize any of the strings shown in the SDK, simply open the localization file in the `AppNotice.bundle` for the language you want to customize and change the value (not the key). For example, this screenshot highlights the English text to change for the `ghostery_dialog_explicit_message` key:
 
 ![](http://i.imgur.com/09ZRYXx.png)
+
+### Supporting Multiple App Versions
+
+To support versions of your app that each have a different set of trackers, use unique App Notice configurations in each version of your app. Use the Ghostery control panel (https://my.ghosteryenterprise.com) to create an App Notice configuration for each version of your app that has a different combination of trackers.
+
+After creating an App Notice, make sure to use the correct App Notice ID in your app when you initialize the SDK as [shown above](#activation).
