@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Must activate the SDK before you can use it
         AppNoticeSDK.sharedInstance().activateWithCompanyId("242", pubNoticeId: "6107")
+        AppNoticeSDK.sharedInstance().useRemoteValues = false
         
         return true
     }

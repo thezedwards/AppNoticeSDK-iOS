@@ -13,6 +13,7 @@ let ADMOB_ID = "464"
 class ViewController: UIViewController {
 
     @IBOutlet weak var bannerView: GADBannerView!
+    var isShowingConsentDialog = false
     
     var trackers: Dictionary<String, NSNumber>!
     
@@ -21,11 +22,28 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func viewWillAppear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().addObserver(self,
+            selector: "showPrivacyConsentFlow",
+            name: UIApplicationDidBecomeActiveNotification,
+            object: nil)
+    }
+    
     override func viewDidAppear(animated: Bool) {
-        showPrivacyConsentFlow();
+        // show the privacy consent flow if it's not already being shown
+        if !self.isShowingConsentDialog {
+            showPrivacyConsentFlow();
+        }
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().removeObserver(self,
+            name: UIApplicationDidBecomeActiveNotification,
+            object: nil)
     }
     
     func showPrivacyConsentFlow() {
+        isShowingConsentDialog = true
         AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose({ (consentAccepted, consentSkipped, trackers) -> Void in
             
             // Handle what you want to do based on the user's consent choice.
@@ -43,19 +61,18 @@ class ViewController: UIViewController {
             else {
                 // Consent was declined
                 let alertController = UIAlertController(title: "Consent Declined",
-                    message: "This app can not be used without giving consent.",
+                    message: "To enjoy the full functionality of this app, you must accept the privacy preferences. To do so, either open preferences or restart the app. The app will now continue with limited functionality.",
                     preferredStyle: .Alert)
                 
                 let okAction = UIAlertAction(title: "OK", style: .Default, handler: { (UIAlertAction) -> Void in
-                    self.showPrivacyConsentFlow()
+                    // Limit app functionality here
                 })
                 alertController.addAction(okAction)
                 
                 self.presentViewController(alertController, animated: true, completion: nil)
-                
-                return;
             }
-            
+
+            self.isShowingConsentDialog = false
         }, presentingViewController: self)
     }
     
