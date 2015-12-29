@@ -15,7 +15,10 @@
 #import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
 
 @interface ViewController ()
+
+@property (nonatomic, assign) BOOL isShowingConsentDialog;
 @property (nonatomic) NSDictionary *trackers;
+
 @end
 
 @implementation ViewController
@@ -23,16 +26,57 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.isShowingConsentDialog = NO;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showPrivacyConsentFlow)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    // show the privacy consent flow if it's not already being shown
+    if (!self.isShowingConsentDialog) {
+        [self showPrivacyConsentFlow];
+    }
+}
+
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:UIApplicationDidBecomeActiveNotification
+                                                  object:nil];
+}
+
+
+- (void)showPrivacyConsentFlow {
+    self.isShowingConsentDialog = YES;
     [[AppNoticeSDK sharedInstance]showConsentFlowWithOnClose:^(BOOL consentAccepted, BOOL consentSkipped, NSDictionary * _Nonnull trackers) {
         
         //Handle what you want to do if the user gives consent or not. This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences
+        if (consentAccepted) {
+            //The trackers available to your application. Each tracker has an id and a status. The id is the unique id for that tracker, and the status is a boolean value of on or off
+            NSLog(@"Trackers: %@",[trackers debugDescription]);
+            
+            self.trackers = trackers;
+            
+            [self toggleTrackers];
+        }
+        else {
+            // Consent was declined
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Consent Declined"
+                                                                           message:@"To enjoy the full functionality of this app, you must accept the privacy preferences. To do so, either open preferences or restart the app. The app will now continue with limited functionality." preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                // Limit app functionality here
+            }];
+            [alert addAction:okAction];
+            
+            [self presentViewController:alert animated:YES completion:nil];
+        }
+        self.isShowingConsentDialog = NO;
         
-        //The trackers available to your application. Each tracker has an id and a status. The id is the unique id for that tracker, and the status is a boolean value of on or off
-        NSLog(@"Trackers: %@",[trackers debugDescription]);
-        
-        self.trackers = trackers;
-        
-        [self toggleTrackers];
     } presentingViewController:self];
 }
 

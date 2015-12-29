@@ -21,7 +21,8 @@
     // Override point for customization after application launch.
     
     //Must activate the SDK before you can use it
-    [[AppNoticeSDK sharedInstance]activateWithCompanyId:@"242" pubNoticeId:@"6107"];
+    [[AppNoticeSDK sharedInstance] activateWithCompanyId:@"242" pubNoticeId:@"6107"];
+    [AppNoticeSDK sharedInstance].useRemoteValues = NO;
     
     return YES;
 }

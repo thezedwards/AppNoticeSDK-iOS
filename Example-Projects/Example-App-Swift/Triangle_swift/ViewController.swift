@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         // show the privacy consent flow if it's not already being shown
         if !self.isShowingConsentDialog {
-            showPrivacyConsentFlow();
+            showPrivacyConsentFlow()
         }
     }
     
