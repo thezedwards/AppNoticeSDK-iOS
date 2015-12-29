@@ -67,7 +67,7 @@ Simply include the framework import statement wherever you want to use it
 
 ### Activation<a name="activation"></a>
 
-You must activate the SDK before you can use the SDK features. You do so using your Company Id and Publisher Notice Id.
+You must activate the SDK before you can use the SDK features. You do so using your Company ID and Publisher Notice ID.
 
 ##### Swift
 
@@ -85,7 +85,7 @@ AppNoticeSDK.sharedInstance().activateWithCompanyId("242", pubNoticeId: "6107")
 
 There are two types of consent, **Implied** and **Explicit**. Implied consent is a read-only option that does not have **Accept** or **Decline** options. Explicit consent must be accepted or declined. If declined, the user should not be permitted to use your app features until consent has been given. You should show this dialog as early as possible after your application launches.
 
-Implied or Explicit is determined by your Publisher Notice Id. You make one call to present the consent dialog:
+Implied or Explicit is determined by your Publisher Notice ID. You make one call to present the consent dialog:
 
 ##### Swift
 
