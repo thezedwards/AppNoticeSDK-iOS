@@ -1,8 +1,9 @@
 <div style="text-align:center;margin-left:15px"><img src="http://i.imgur.com/yDr7WeL.png" /></div>
 
 
-# AppNoticeSDK-iOS Installation and Customization
-Current Version: 1.1 (January 1, 2016)
+# App Notice SDK for iOS: Installation and Customization
+-Version: 1.1
+-Date: January 1, 2016
 
 ## Features
 
