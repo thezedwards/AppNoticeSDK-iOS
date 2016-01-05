@@ -1,8 +1,9 @@
 <div style="text-align:center;margin-left:15px"><img src="http://i.imgur.com/yDr7WeL.png" /></div>
 
 
-# AppNoticeSDK-iOS
-Ghostery AppNoticeSDK
+# App Notice SDK for iOS<br/>Installation and Customization
+*Version: 1.1*</br>
+January 2016
 
 ## Features
 
@@ -17,6 +18,7 @@ Ghostery AppNoticeSDK
 
 - iOS 8.0+
 - Xcode 7.0+
+- A valid App Notice ID from the Ghostery control panel. See the [App Notice SDK Companion Guide](Ghostery SDK Companion Guide.pdf) for details.
 
 ##Example Projects
 
