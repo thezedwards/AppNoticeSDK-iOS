@@ -85,9 +85,20 @@ AppNoticeSDK.sharedInstance().activateWithCompanyId("242", pubNoticeId: "6107")
 
 ### Asking For Consent
 
-There are two types of consent, **Implied** and **Explicit**. Implied consent is a read-only option that does not have **Accept** or **Decline** options. Explicit consent must be accepted or declined. If declined, the user should not be permitted to use your app features until consent has been given. You should show this dialog as early as possible after your application launches.
+There are two types of consent: **Implied** and **Explicit**. This setting is determined by your Publisher Notice ID.
 
-Implied or Explicit is determined by your Publisher Notice ID. You make one call to present the consent dialog:
+#### Implied Consent
+Implied consent is a read-only option. It basically informs the user that he is automaticaly giving consent simply by continuing to use the app. Therefore, it does not include **Accept** or **Decline** options.
+
+#### Explicit Consent
+Explicit consent must either be accepted or declined by the user. If consent is accepted, your app may proceed as usual. However, if consent is declined there are a few cases that you'll need to handle:
+- If your app is fully functional without depending on any third party trackers, you can simply disable all trackers and let the user continue using the app.
+- If your app depends on any trackers that cannot be disabled, you must prevent the user from using the app (or at least the parts of the app that require trackers). If your app will allow the user to continue to use the app with limited functionality, notify the user about the limitations. You might say something like: "To enjoy the full functionality of this app, you must accept the privacy preferences in the app's settings. This app will now continue with limited functionality."
+- Inform the user if your app requires a restart before any newly changed tracker settings can take effect. Some trackers may require an app restart to be fully enabled/disabled.
+- Users have the right to withdraw consent at any time, even after they've already given it. The SDK's [Manage Preferences View](#preferences) should be accessible from within your app for this purpose. (This may typically be in some kind of app settings or preferences view, for example.)
+
+#### Presenting the Consent Dialog
+To be fully compliant with privacy regulations, you should ask for the user's consent as early as possible after your app launches. You can do this by presenting the SDK's consent dialog:
 
 ##### Swift
 
@@ -117,7 +128,7 @@ NSLog(@"Trackers: %@",[trackers debugDescription]);
 }];
 ```
 
-### Tracking Preferences
+### Tracking Preferences <a name="preferences"></a>
 Users can toggle trackers on or off. To present the tracking preferences screen:
 
 ##### Swift
