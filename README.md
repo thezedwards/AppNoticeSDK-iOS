@@ -14,7 +14,7 @@ January 2016
 - [x] User Tracking Toggling
 - [x] iOS 9 Support
 
-## Requirements
+## Prerequisites
 
 - iOS 8.0+
 - Xcode 7.0+
