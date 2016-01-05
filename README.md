@@ -2,7 +2,7 @@
 
 
 # AppNoticeSDK-iOS
-Ghostery AppNoticeSDK
+Ghostery AppNoticeSDK 1.1
 
 ## Features
 
