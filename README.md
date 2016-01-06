@@ -18,7 +18,7 @@ January 2016
 
 - iOS 8.0+
 - Xcode 7.0+
-- A valid App Notice ID from the Ghostery control panel. See the [App Notice SDK Companion Guide](Ghostery SDK Companion Guide.pdf) for details.
+- A valid App Notice ID from the Ghostery control panel. See the [Companion Guide](Ghostery SDK Companion Guide.pdf) for details.
 
 ##Example Projects
 
