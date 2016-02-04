@@ -21,7 +21,7 @@ January 2016
 
 ##Example Projects
 
-This repo comes with two example projects to demonstrate how to use the SDK. One project is in Swift and the other in Objective-C.
+This repo comes with two example projects to demonstrate how to use the SDK. One project is in Swift and the other in Objective-C. These are located in the Example-Projects folder in this project.
 
 ## Installation
 
