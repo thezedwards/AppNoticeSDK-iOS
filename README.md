@@ -39,7 +39,7 @@ Copy/drag `AppNoticeSDKFramework.framework` and `AppNotice.bundle` into your Xco
   
 ![](http://i.imgur.com/5YOGvkP.png)
 
-### Swift
+#### Swift
 
   1.  Creating a bridging header file:
   <br>
@@ -58,7 +58,7 @@ Copy/drag `AppNoticeSDKFramework.framework` and `AppNotice.bundle` into your Xco
 #import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
 ```
 
-### Objective-C
+#### Objective-C
 
 Simply include the framework import statement wherever you want to use it
 
