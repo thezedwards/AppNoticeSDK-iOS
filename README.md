@@ -17,7 +17,7 @@ January 2016
 
 - iOS 8.0+
 - Xcode 7.0+
-- A valid App Notice ID from the Ghostery control panel. See the [Companion Guide](Ghostery SDK Companion Guide.pdf) for details.
+- A valid App Notice ID from the Ghostery control panel. See your Ghostery customer success manager for details.
 
 ##Example Projects
 
@@ -176,15 +176,18 @@ NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance] getTrackerPrefere
 
 You can customize the displayed text and various background and text colors in the AppNotice views. Note that this requires turning off remote values as described above.
 
-#### Localization
+#### Text and Localization
 
 The AppNotice SDK supports multiple languages (currently English, French, Italian, Dutch, German, and Spanish). If your app supports localization for a supported language, the AppNotice SDK will also be displayed in that langauge. To localize your app, you simply need a localization file in your project for each language you support.
 
-To customize any of the strings shown in the SDK, simply open the localization file in the `AppNotice.bundle` for the language you want to customize and change the value (not the key). For example, this screenshot highlights the English text to change for the `ghostery_dialog_explicit_message` key:
+To customize any of the strings shown in the SDK, simply open the Localizable.strings file in the `AppNotice.bundle` for the language you want to customize and change the value (not the key). For example, this screenshot highlights the English text to change for the `ghostery_dialog_explicit_message` field:
 
 ![](http://i.imgur.com/09ZRYXx.png)
 
-#### UI Customization
+Or, to change the consent dialog title from "We Care About Your Privacy" to something else, edit the `ghostery_dialog_header_text` field. If you want to apply the same change for other languages, just edit the same `ghostery_dialog_header_text` field for each language (en.lproj/Localizable.strings for English, de.lproj/Localizable.strings for German, es.lproj/Localizable.strings for Spanish, etc.).
+
+
+#### Custom Colors
 
 In the `AppNotice.bundle` there is a `Configuration.plist` file. This file allows you to customize various UI color properties:
 
