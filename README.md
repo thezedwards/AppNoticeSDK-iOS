@@ -9,10 +9,9 @@ January 2016
 
 - [x] Implied Consent Tracking
 - [x] Explicit Consent Tracking
+- [x] Customize Text With Localization
 - [x] Customize SDK Colors
-- [x] Remote and Offline Support
 - [x] User Tracking Toggling
-- [x] iOS 9 Support
 
 ## Prerequisites
 
@@ -25,6 +24,8 @@ January 2016
 This repo comes with two example projects to demonstrate how to use the SDK. One project is in Swift and the other in Objective-C.
 
 ## Installation
+
+### 1. Add the Framework
 
 To use the AppNoticeSDK first download or clone this repository:
 
@@ -65,9 +66,22 @@ Simply include the framework import statement wherever you want to use it
 #import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
 ```
 
-## Usage
+### 2. Disable Remote Values
 
-### Activation<a name="activation"></a>
+Set the `useRemoteValues` property to `false`. This will make it so your local settings are used instead of server settings.
+
+#### Swift
+
+```swift
+AppNoticeSDK.sharedInstance().useRemoteValues = false
+```
+#### Objective-C
+
+```objective-c
+[AppNoticeSDK sharedInstance].useRemoteValues = NO;
+```
+
+### 3. Activate the SDK <a name="activation"></a>
 
 You must activate the SDK before you can use the SDK features. You do so using your Company ID and Publisher Notice ID.
 
@@ -82,6 +96,8 @@ AppNoticeSDK.sharedInstance().activateWithCompanyId("242", pubNoticeId: "6107")
 ```objective-c
 [[AppNoticeSDK sharedInstance] activateWithCompanyId:@"242" pubNoticeId:@"6107"];
 ```
+
+## Usage
 
 ### Asking For Consent
 
@@ -156,37 +172,23 @@ NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance] getTrackerPrefere
 }];
 ```
 
-### Customization of UI and Consent Messages
+### Customization
 
-In the `AppNotice.bundle` there is a `Configuration.plist` file. This file allows you to customize UI properties and the text shown when your application asks the user for consent:
+You can customize the displayed text and various background and text colors in the AppNotice views. Note that this requires turning off remote values as described above.
 
-![](http://i.imgur.com/m2GissI.png)
-
-By default this `Configuration.plist` file will not be used and the SDK will instead grab settings from the server (remote).
-
-#### Use Remote Values
-
-To use your local file you need to set `useRemoteValues` to `false`:
-
-##### Swift
-
-```swift
-AppNoticeSDK.sharedInstance().useRemoteValues = false
-```
-
-##### Objective-C
-
-```objective-c
-[AppNoticeSDK sharedInstance].useRemoteValues = NO;
-```
-
-### Localization
+#### Localization
 
 The AppNotice SDK supports multiple languages (currently English, French, Italian, Dutch, German, and Spanish). If your app supports localization for a supported language, the AppNotice SDK will also be displayed in that langauge. To localize your app, you simply need a localization file in your project for each language you support.
 
 To customize any of the strings shown in the SDK, simply open the localization file in the `AppNotice.bundle` for the language you want to customize and change the value (not the key). For example, this screenshot highlights the English text to change for the `ghostery_dialog_explicit_message` key:
 
 ![](http://i.imgur.com/09ZRYXx.png)
+
+#### UI Customization
+
+In the `AppNotice.bundle` there is a `Configuration.plist` file. This file allows you to customize various UI color properties:
+
+![](http://i.imgur.com/m2GissI.png)
 
 ### Supporting Multiple App Versions
 
