@@ -17,7 +17,7 @@ January 2016
 
 - iOS 8.0+
 - Xcode 7.0+
-- A valid App Notice ID from the Ghostery control panel. See your Ghostery customer success manager for details.
+- A valid App Notice ID from the Ghostery control panel. See your Ghostery Customer Success Manager for details.
 
 ##Example Projects
 
