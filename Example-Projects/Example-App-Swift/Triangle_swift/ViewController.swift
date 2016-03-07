@@ -10,7 +10,7 @@ import UIKit
 
 let ADMOB_ID = "464"
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AppNoticeSDKProtocol {
 
     @IBOutlet weak var bannerView: GADBannerView!
     var isShowingConsentDialog = false
@@ -19,7 +19,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Set the app notice delegate if you need to show a custom view when the
+        // Manage Preferences button is pressed.s
+        AppNoticeSDK.sharedInstance().delegate = self
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -124,5 +127,19 @@ class ViewController: UIViewController {
         let alertView = UIAlertView.init(title: "Reset SDK", message: "The App Notice SDK has been reset.", delegate: nil, cancelButtonTitle: "OK")
         alertView.show()
     }
+    
+
+    // MARK: - AppNoticeSDKProtocol
+    
+    func managePreferencesButtonPressed() -> Bool {
+        // Show your custom view and return true, or return false and do nothing.
+
+        if let controller = storyboard?.instantiateViewControllerWithIdentifier("HybridSettingsView") {
+            navigationController?.pushViewController(controller, animated: true)
+        }
+        
+        return true
+    }
+
 }
 
