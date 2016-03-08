@@ -14,15 +14,30 @@ typedef void (^AppNoticeSDKPreferencesClosedBlock)();
 typedef void (^AppNoticeSDKConsentFlowCompletionBlock)(BOOL consentAccepted, BOOL consentSkipped, NSDictionary *trackers);
 typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NSError *error);
 
+
+@protocol AppNoticeSDKProtocol <NSObject>
+
+// Returns true if the app needs to show any custom view at this point, or false if not.
+// For default behavior, return false.
+- (BOOL)managePreferencesButtonPressed;
+
+@end
+
+
 @interface AppNoticeSDK : NSObject
 
-+(instancetype)sharedInstance;
++ (instancetype)sharedInstance;
 
 /**
- Determines whether the app should use values from the server (remote) or values from the local Configuration.plist file. Default value is `YES/true`
+ Determines whether the app should use values from the server (remote) or values from the local Configuration.plist file.
+ Default value is `false`.
  */
 @property (nonatomic, assign) BOOL useRemoteValues;
 
+/**
+ The delegate to use for App Notice SDK callbacks.
+ */
+@property (nonatomic, weak) id<AppNoticeSDKProtocol> delegate;
 
 /** 
    Activates the SDK with your company id and pub notice id. Must be called before using SDK
@@ -43,6 +58,10 @@ typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NS
  */
 - (void)showConsentFlowWithOnClose:(AppNoticeSDKConsentFlowCompletionBlock)onClose presentingViewController:(UIViewController*)vc;
 
+/**
+ @return Whether the SDK is currently presenting a view or not.
+ */
+-(BOOL)isPresentingView;
 
 /** 
    Presents the user the preferences view controller. The preferences view controller allows the user to toggle trackers. A UINavigationController is presented modally from the view controller you pass in, keep this in mind in your application design.
