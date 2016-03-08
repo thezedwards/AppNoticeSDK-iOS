@@ -17,7 +17,7 @@ February 5, 2016
 
 - iOS 8.0+
 - Xcode 7.0+
-- A valid App Notice ID from the Ghostery control panel. See your Ghostery customer success manager for details.
+- A valid App Notice ID from the Ghostery control panel. See your Ghostery Customer Success Manager for details.
 
 ##Example Projects
 
@@ -174,7 +174,7 @@ NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance] getTrackerPrefere
 
 ### Customization
 
-You can customize the displayed text and various background and text colors in the AppNotice views. Note that this requires turning off remote values as described above.
+You can customize the displayed text and colors in the AppNotice views (which requires turning off remote values as described above). You can also override the behavior of some actions to present your own custom view.
 
 #### Text and Localization
 
@@ -192,6 +192,15 @@ Or, to change the consent dialog title from "We Care About Your Privacy" to some
 In the `AppNotice.bundle` there is a `Configuration.plist` file. This file allows you to customize various UI color properties:
 
 ![](http://i.imgur.com/m2GissI.png)
+
+#### Custom Preferences View
+
+Some apps may need to display a custom preferences view instead of the default Manage Preferences view. To do this:
+ 1. Implement the AppNoticeSDKProtocol.
+ 2. Implement the managePreferencesButtonPressed method.
+ 3. Display your own view in managePreferencesButtonPressed and return true.
+
+If you want to implement the AppNoticeSDKProtocol without presenting a custom view, return false in the managePreferencesButtonPressed method.
 
 ### Supporting Multiple App Versions
 

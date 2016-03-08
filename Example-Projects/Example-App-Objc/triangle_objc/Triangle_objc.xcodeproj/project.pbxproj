@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341D38BB1C8E2E47007A1740 /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 341D38B91C8E2E47007A1740 /* AppNotice.bundle */; };
+		341D38BC1C8E2E47007A1740 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341D38BA1C8E2E47007A1740 /* AppNoticeSDKFramework.framework */; };
+		341D38BF1C8E38FE007A1740 /* HybridSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341D38BE1C8E38FE007A1740 /* HybridSettingsViewController.m */; };
 		3E979A451B8CE306003475FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E979A441B8CE306003475FA /* main.m */; };
 		3E979A481B8CE306003475FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E979A471B8CE306003475FA /* AppDelegate.m */; };
 		3E979A4B1B8CE306003475FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E979A4A1B8CE306003475FA /* ViewController.m */; };
@@ -15,11 +18,13 @@
 		3E979A531B8CE306003475FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E979A511B8CE306003475FA /* LaunchScreen.xib */; };
 		3E979A6B1B8CE45B003475FA /* Mediation Adapters in Resources */ = {isa = PBXBuildFile; fileRef = 3E979A691B8CE45B003475FA /* Mediation Adapters */; };
 		D68885431BB33D69001EF980 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68885421BB33D69001EF980 /* GoogleMobileAds.framework */; };
-		D69D1C2D1BB4583A00D469AB /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D69D1C2B1BB4583A00D469AB /* AppNotice.bundle */; };
-		D6F8B4BF1BBAD6D3003BF010 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F8B4BE1BBAD6D3003BF010 /* AppNoticeSDKFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		341D38B91C8E2E47007A1740 /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
+		341D38BA1C8E2E47007A1740 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
+		341D38BD1C8E38FE007A1740 /* HybridSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HybridSettingsViewController.h; sourceTree = "<group>"; };
+		341D38BE1C8E38FE007A1740 /* HybridSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HybridSettingsViewController.m; sourceTree = "<group>"; };
 		3E979A3F1B8CE306003475FA /* Triangle_objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle_objc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E979A431B8CE306003475FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E979A441B8CE306003475FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -32,8 +37,6 @@
 		3E979A521B8CE306003475FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3E979A691B8CE45B003475FA /* Mediation Adapters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Mediation Adapters"; sourceTree = "<group>"; };
 		D68885421BB33D69001EF980 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		D69D1C2B1BB4583A00D469AB /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
-		D6F8B4BE1BBAD6D3003BF010 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6F8B4BF1BBAD6D3003BF010 /* AppNoticeSDKFramework.framework in Frameworks */,
+				341D38BC1C8E2E47007A1740 /* AppNoticeSDKFramework.framework in Frameworks */,
 				D68885431BB33D69001EF980 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +75,8 @@
 				3E979A471B8CE306003475FA /* AppDelegate.m */,
 				3E979A491B8CE306003475FA /* ViewController.h */,
 				3E979A4A1B8CE306003475FA /* ViewController.m */,
+				341D38BD1C8E38FE007A1740 /* HybridSettingsViewController.h */,
+				341D38BE1C8E38FE007A1740 /* HybridSettingsViewController.m */,
 				3E979A4C1B8CE306003475FA /* Main.storyboard */,
 				3E979A4F1B8CE306003475FA /* Images.xcassets */,
 				3E979A511B8CE306003475FA /* LaunchScreen.xib */,
@@ -94,8 +99,8 @@
 		3E979A6C1B8CE460003475FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D6F8B4BE1BBAD6D3003BF010 /* AppNoticeSDKFramework.framework */,
-				D69D1C2B1BB4583A00D469AB /* AppNotice.bundle */,
+				341D38B91C8E2E47007A1740 /* AppNotice.bundle */,
+				341D38BA1C8E2E47007A1740 /* AppNoticeSDKFramework.framework */,
 				D68885421BB33D69001EF980 /* GoogleMobileAds.framework */,
 			);
 			name = Frameworks;
@@ -159,7 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D69D1C2D1BB4583A00D469AB /* AppNotice.bundle in Resources */,
+				341D38BB1C8E2E47007A1740 /* AppNotice.bundle in Resources */,
 				3E979A6B1B8CE45B003475FA /* Mediation Adapters in Resources */,
 				3E979A4E1B8CE306003475FA /* Main.storyboard in Resources */,
 				3E979A531B8CE306003475FA /* LaunchScreen.xib in Resources */,
@@ -177,6 +182,7 @@
 				3E979A4B1B8CE306003475FA /* ViewController.m in Sources */,
 				3E979A481B8CE306003475FA /* AppDelegate.m in Sources */,
 				3E979A451B8CE306003475FA /* main.m in Sources */,
+				341D38BF1C8E38FE007A1740 /* HybridSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

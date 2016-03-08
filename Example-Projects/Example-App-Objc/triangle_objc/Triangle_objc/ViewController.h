@@ -9,8 +9,9 @@
 @import GoogleMobileAds;
 
 #import <UIKit/UIKit.h>
+#import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AppNoticeSDKProtocol>
 
 @property(nonatomic, weak) IBOutlet GADBannerView *bannerView;
 

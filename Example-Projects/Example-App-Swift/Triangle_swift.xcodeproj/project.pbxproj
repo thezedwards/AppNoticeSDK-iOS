@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341D38AC1C8DFF3D007A1740 /* HybridSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D38AB1C8DFF3D007A1740 /* HybridSettingsView.swift */; };
+		341D38B71C8E2E38007A1740 /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 341D38B51C8E2E38007A1740 /* AppNotice.bundle */; };
+		341D38B81C8E2E38007A1740 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341D38B61C8E2E38007A1740 /* AppNoticeSDKFramework.framework */; };
 		D677445D1BB46B24009AA09B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D677445C1BB46B24009AA09B /* AppDelegate.swift */; };
 		D677445F1BB46B24009AA09B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D677445E1BB46B24009AA09B /* ViewController.swift */; };
 		D67744621BB46B24009AA09B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67744601BB46B24009AA09B /* Main.storyboard */; };
 		D67744641BB46B24009AA09B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67744631BB46B24009AA09B /* Assets.xcassets */; };
 		D67744671BB46B24009AA09B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67744651BB46B24009AA09B /* LaunchScreen.storyboard */; };
 		D67744701BB46B54009AA09B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D677446F1BB46B54009AA09B /* GoogleMobileAds.framework */; };
-		D67744731BB46B5B009AA09B /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D67744711BB46B5B009AA09B /* AppNotice.bundle */; };
 		D677447C1BB46B75009AA09B /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D677447B1BB46B75009AA09B /* README.txt */; };
-		D6F8B4C11BBAD789003BF010 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F8B4C01BBAD789003BF010 /* AppNoticeSDKFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		341D38AB1C8DFF3D007A1740 /* HybridSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HybridSettingsView.swift; sourceTree = "<group>"; };
+		341D38B51C8E2E38007A1740 /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
+		341D38B61C8E2E38007A1740 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
 		344899181C1B816400230AB3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		344899191C1B816A00230AB3 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		3448991A1C1B817300230AB3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
@@ -32,7 +36,6 @@
 		D67744661BB46B24009AA09B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D67744681BB46B24009AA09B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D677446F1BB46B54009AA09B /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		D67744711BB46B5B009AA09B /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
 		D67744761BB46B75009AA09B /* GADMAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
 		D67744771BB46B75009AA09B /* GADMAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
 		D67744781BB46B75009AA09B /* GADMEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMEnums.h; sourceTree = "<group>"; };
@@ -40,7 +43,6 @@
 		D677447A1BB46B75009AA09B /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
 		D677447B1BB46B75009AA09B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		D677447D1BB46DC3009AA09B /* Triangle_swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Triangle_swift-Bridging-Header.h"; sourceTree = "<group>"; };
-		D6F8B4C01BBAD789003BF010 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6F8B4C11BBAD789003BF010 /* AppNoticeSDKFramework.framework in Frameworks */,
+				341D38B81C8E2E38007A1740 /* AppNoticeSDKFramework.framework in Frameworks */,
 				D67744701BB46B54009AA09B /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,12 +79,13 @@
 			children = (
 				D677445C1BB46B24009AA09B /* AppDelegate.swift */,
 				D677445E1BB46B24009AA09B /* ViewController.swift */,
+				D677447D1BB46DC3009AA09B /* Triangle_swift-Bridging-Header.h */,
+				341D38AB1C8DFF3D007A1740 /* HybridSettingsView.swift */,
 				D67744601BB46B24009AA09B /* Main.storyboard */,
 				D67744631BB46B24009AA09B /* Assets.xcassets */,
 				D67744651BB46B24009AA09B /* LaunchScreen.storyboard */,
 				D67744681BB46B24009AA09B /* Info.plist */,
 				D677446E1BB46B43009AA09B /* Frameworks */,
-				D677447D1BB46DC3009AA09B /* Triangle_swift-Bridging-Header.h */,
 			);
 			path = Triangle_swift;
 			sourceTree = "<group>";
@@ -90,9 +93,9 @@
 		D677446E1BB46B43009AA09B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D6F8B4C01BBAD789003BF010 /* AppNoticeSDKFramework.framework */,
+				341D38B51C8E2E38007A1740 /* AppNotice.bundle */,
+				341D38B61C8E2E38007A1740 /* AppNoticeSDKFramework.framework */,
 				D67744751BB46B75009AA09B /* Mediation Adapters */,
-				D67744711BB46B5B009AA09B /* AppNotice.bundle */,
 				D677446F1BB46B54009AA09B /* GoogleMobileAds.framework */,
 			);
 			name = Frameworks;
@@ -168,10 +171,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341D38B71C8E2E38007A1740 /* AppNotice.bundle in Resources */,
 				D67744671BB46B24009AA09B /* LaunchScreen.storyboard in Resources */,
 				D67744641BB46B24009AA09B /* Assets.xcassets in Resources */,
 				D67744621BB46B24009AA09B /* Main.storyboard in Resources */,
-				D67744731BB46B5B009AA09B /* AppNotice.bundle in Resources */,
 				D677447C1BB46B75009AA09B /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D677445F1BB46B24009AA09B /* ViewController.swift in Sources */,
+				341D38AC1C8DFF3D007A1740 /* HybridSettingsView.swift in Sources */,
 				D677445D1BB46B24009AA09B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

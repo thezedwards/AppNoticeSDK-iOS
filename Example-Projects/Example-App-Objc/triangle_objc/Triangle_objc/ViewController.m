@@ -12,7 +12,6 @@
 @import GoogleMobileAds;
 
 #import "ViewController.h"
-#import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
 
 @interface ViewController ()
 
@@ -27,6 +26,7 @@
     [super viewDidLoad];
     
     self.isShowingConsentDialog = NO;
+    [AppNoticeSDK sharedInstance].delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -117,15 +117,26 @@
 }
 
 - (IBAction)openPrefs:(id)sender {
+    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"HybridSettingsView"];
+    [self.navigationController pushViewController:controller animated:YES];
     
-    [[AppNoticeSDK sharedInstance]showManagePreferences:^{
+    /*[[AppNoticeSDK sharedInstance]showManagePreferences:^{
         //Handle what you want to do after the preferences screen is closed
         
         //Get the newly updated tracker preferences
         self.trackers = [[AppNoticeSDK sharedInstance]getTrackerPreferences];
         
         [self toggleTrackers];
-    } presentingViewController:self];
+    } presentingViewController:self];*/
+}
+
+#pragma mark - AppNoticeSDKProtocol
+
+- (BOOL)managePreferencesButtonPressed {
+    // Show your custom view and return true, or return false and do nothing.
+    [self openPrefs:self];
+    
+    return YES;
 }
 
 @end
