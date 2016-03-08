@@ -196,9 +196,9 @@ In the `AppNotice.bundle` there is a `Configuration.plist` file. This file allow
 #### Custom Preferences View
 
 Some apps may need to display a custom preferences view instead of the default Manage Preferences view. To do this:
-1. Implement the AppNoticeSDKProtocol.
-2. Implement the managePreferencesButtonPressed method.
-3. Display your own view in managePreferencesButtonPressed and return true.
+ 1. Implement the AppNoticeSDKProtocol.
+ 2. Implement the managePreferencesButtonPressed method.
+ 3. Display your own view in managePreferencesButtonPressed and return true.
 
 If you want to implement the AppNoticeSDKProtocol without presenting a custom view, return false in the managePreferencesButtonPressed method.
 
