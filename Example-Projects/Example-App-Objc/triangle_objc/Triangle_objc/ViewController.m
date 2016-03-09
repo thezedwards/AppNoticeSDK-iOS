@@ -32,11 +32,15 @@
                                              selector:@selector(showPrivacyConsentFlow)
                                                  name:UIApplicationDidBecomeActiveNotification
                                                object:nil];
+    
+    [super viewWillAppear:animated];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     // show the privacy consent flow (if needed)
     [self showPrivacyConsentFlow];
+    
+    [super viewDidAppear:animated];
 }
 
 
@@ -44,6 +48,8 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:UIApplicationDidBecomeActiveNotification
                                                   object:nil];
+    
+    [super viewDidDisappear:animated];
 }
 
 
