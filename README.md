@@ -2,8 +2,8 @@
 
 
 # App Notice SDK for iOS<br/>Installation and Customization
-*Version: 1.1*</br>
-February 5, 2016
+*Version: 1.2*</br>
+March 9, 2016
 
 ## Features
 
@@ -66,22 +66,7 @@ Simply include the framework import statement wherever you want to use it
 #import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
 ```
 
-### 2. Disable Remote Values
-
-Set the `useRemoteValues` property to `false`. This will make it so your local settings are used instead of server settings.
-
-#### Swift
-
-```swift
-AppNoticeSDK.sharedInstance().useRemoteValues = false
-```
-#### Objective-C
-
-```objective-c
-[AppNoticeSDK sharedInstance].useRemoteValues = NO;
-```
-
-### 3. Activate the SDK <a name="activation"></a>
+### 2. Activate the SDK <a name="activation"></a>
 
 You must activate the SDK before you can use the SDK features. You do so using your Company ID and Publisher Notice ID.
 
@@ -114,34 +99,52 @@ Explicit consent must either be accepted or declined by the user. If consent is 
 - Users have the right to withdraw consent at any time, even after they've already given it. The SDK's [Manage Preferences View](#preferences) should be accessible from within your app for this purpose. (This may typically be in some kind of app settings or preferences view, for example.)
 
 #### Presenting the Consent Dialog
-To be fully compliant with privacy regulations, you should ask for the user's consent as early as possible after your app launches. You can do this by presenting the SDK's consent dialog:
+To be fully compliant with privacy regulations, you should ask for the user's consent as early as possible after your app launches.
+
+Call showConsentFlowWithOnClose in the viewDidAppear method of your main view controller. This way, the SDK can determine whether the dialog needs to be shown or not.
 
 ##### Swift
 
 ```swift
-AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose { (consentAccepted, consentSkipped, trackers) -> Void in
-    // TODO: Handle what you want to do based on whether the user accepted or declined consent.
-    // This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences.
-            
-    // The trackers available to your application. Each tracker has an id and a status.
-    // The id is the unique id for that tracker, and the status is a boolean value (true or false).            
-    print("Trackers: \(trackers.debugDescription)")
+override func viewDidAppear(animated: Bool) {
+  showPrivacyConsentFlow()
+    
+  super.viewDidAppear(animated)
+}
 
+func showPrivacyConsentFlow() {
+  AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose { (result, trackers) -> Void in
+      // TODO: Handle what you want to do based on whether the user accepted or declined consent.
+      // This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences.
+            
+      // The trackers available to your application. Each tracker has an id and a status.
+      // The id is the unique id for that tracker, and the status is a boolean value (true or false).            
+      print("Trackers: \(trackers.debugDescription)")
+    }
 }
 ```
 
 ##### Objective-C
 
 ```objective-c
-[[AppNoticeSDK sharedInstance] showConsentFlowWithOnClose:^(BOOL consentAccepted, BOOL consentSkipped, NSDictionary *trackers) {
-// TODO: Handle what you want to do based on whether the user accepted or declined consent.
-// This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences.
 
-// The trackers available to your application. Each tracker has an id and a status.
-// The id is the unique id for that tracker, and the status is a boolean value (YES or NO).
-NSLog(@"Trackers: %@",[trackers debugDescription]);
+- (void)viewDidAppear:(BOOL)animated {
+  // show the privacy consent flow (if needed)
+  [self showPrivacyConsentFlow];
+    
+  [super viewDidAppear:animated];
+}
 
-}];
+- (void)showPrivacyConsentFlow {
+  [[AppNoticeSDK sharedInstance] showConsentFlowWithOnClose:^(AppNoticeConsent result, NSDictionary *trackers) {
+    // TODO: Handle what you want to do based on whether the user accepted or declined consent.
+    // This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences.
+
+    // The trackers available to your application. Each tracker has an id and a status.
+    // The id is the unique id for that tracker, and the status is a boolean value (YES or NO).
+    NSLog(@"Trackers: %@",[trackers debugDescription]);
+  }];
+}
 ```
 
 ### Tracking Preferences <a name="preferences"></a>
