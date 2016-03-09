@@ -37,6 +37,8 @@ Customizable list of strings
 
 "ghostery_manage_preferences"= "Voreinstellungen Verwalten";
 
+"ghostery_manage_preferences_button"= "Gérer Préférences";
+
 "ghostery_manage_preferences_optin_header"= "Opt In";
 
 "ghostery_manage_preferences_optin_text"= "Zu allen unten aufgelisteten Trackers.";

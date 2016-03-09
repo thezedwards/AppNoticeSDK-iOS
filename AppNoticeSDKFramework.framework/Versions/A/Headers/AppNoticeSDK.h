@@ -9,9 +9,16 @@
 
 @class AppNoticeSDKConfiguration;
 
+typedef enum : NSUInteger {
+    AppNoticeConsentNeeded,     // consent is needed
+    AppNoticeConsentAccepted,   // consent given
+    AppNoticeConsentDeclined,   // consent declined
+    AppNoticeConsentSkipped,    // consent previously shown
+} AppNoticeConsent;
+
 NS_ASSUME_NONNULL_BEGIN
 typedef void (^AppNoticeSDKPreferencesClosedBlock)();
-typedef void (^AppNoticeSDKConsentFlowCompletionBlock)(BOOL consentAccepted, BOOL consentSkipped, NSDictionary *trackers);
+typedef void (^AppNoticeSDKConsentFlowCompletionBlock)(AppNoticeConsent result, NSDictionary *trackers);
 typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NSError *error);
 
 
@@ -58,10 +65,6 @@ typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NS
  */
 - (void)showConsentFlowWithOnClose:(AppNoticeSDKConsentFlowCompletionBlock)onClose presentingViewController:(UIViewController*)vc;
 
-/**
- @return Whether the SDK is currently presenting a view or not.
- */
--(BOOL)isPresentingView;
 
 /** 
    Presents the user the preferences view controller. The preferences view controller allows the user to toggle trackers. A UINavigationController is presented modally from the view controller you pass in, keep this in mind in your application design.

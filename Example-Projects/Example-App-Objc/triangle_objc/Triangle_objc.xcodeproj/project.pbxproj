@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		341D38BB1C8E2E47007A1740 /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 341D38B91C8E2E47007A1740 /* AppNotice.bundle */; };
-		341D38BC1C8E2E47007A1740 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341D38BA1C8E2E47007A1740 /* AppNoticeSDKFramework.framework */; };
 		341D38BF1C8E38FE007A1740 /* HybridSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341D38BE1C8E38FE007A1740 /* HybridSettingsViewController.m */; };
+		347B8D661C90B57000F11257 /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 347B8D641C90B57000F11257 /* AppNotice.bundle */; };
+		347B8D671C90B57000F11257 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347B8D651C90B57000F11257 /* AppNoticeSDKFramework.framework */; };
 		3E979A451B8CE306003475FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E979A441B8CE306003475FA /* main.m */; };
 		3E979A481B8CE306003475FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E979A471B8CE306003475FA /* AppDelegate.m */; };
 		3E979A4B1B8CE306003475FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E979A4A1B8CE306003475FA /* ViewController.m */; };
@@ -21,10 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		341D38B91C8E2E47007A1740 /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
-		341D38BA1C8E2E47007A1740 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
 		341D38BD1C8E38FE007A1740 /* HybridSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HybridSettingsViewController.h; sourceTree = "<group>"; };
 		341D38BE1C8E38FE007A1740 /* HybridSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HybridSettingsViewController.m; sourceTree = "<group>"; };
+		347B8D641C90B57000F11257 /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
+		347B8D651C90B57000F11257 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
 		3E979A3F1B8CE306003475FA /* Triangle_objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle_objc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E979A431B8CE306003475FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E979A441B8CE306003475FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				341D38BC1C8E2E47007A1740 /* AppNoticeSDKFramework.framework in Frameworks */,
+				347B8D671C90B57000F11257 /* AppNoticeSDKFramework.framework in Frameworks */,
 				D68885431BB33D69001EF980 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,8 +99,8 @@
 		3E979A6C1B8CE460003475FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				341D38B91C8E2E47007A1740 /* AppNotice.bundle */,
-				341D38BA1C8E2E47007A1740 /* AppNoticeSDKFramework.framework */,
+				347B8D641C90B57000F11257 /* AppNotice.bundle */,
+				347B8D651C90B57000F11257 /* AppNoticeSDKFramework.framework */,
 				D68885421BB33D69001EF980 /* GoogleMobileAds.framework */,
 			);
 			name = Frameworks;
@@ -164,7 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				341D38BB1C8E2E47007A1740 /* AppNotice.bundle in Resources */,
+				347B8D661C90B57000F11257 /* AppNotice.bundle in Resources */,
 				3E979A6B1B8CE45B003475FA /* Mediation Adapters in Resources */,
 				3E979A4E1B8CE306003475FA /* Main.storyboard in Resources */,
 				3E979A531B8CE306003475FA /* LaunchScreen.xib in Resources */,

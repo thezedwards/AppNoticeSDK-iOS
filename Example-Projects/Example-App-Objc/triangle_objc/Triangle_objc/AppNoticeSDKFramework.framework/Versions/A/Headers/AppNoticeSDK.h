@@ -9,9 +9,16 @@
 
 @class AppNoticeSDKConfiguration;
 
+typedef enum : NSUInteger {
+    AppNoticeConsentNeeded,     // consent is needed
+    AppNoticeConsentAccepted,   // consent given
+    AppNoticeConsentDeclined,   // consent declined
+    AppNoticeConsentSkipped,    // consent previously shown
+} AppNoticeConsent;
+
 NS_ASSUME_NONNULL_BEGIN
 typedef void (^AppNoticeSDKPreferencesClosedBlock)();
-typedef void (^AppNoticeSDKConsentFlowCompletionBlock)(BOOL consentAccepted, BOOL consentSkipped, NSDictionary *trackers);
+typedef void (^AppNoticeSDKConsentFlowCompletionBlock)(AppNoticeConsent result, NSDictionary *trackers);
 typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NSError *error);
 
 
