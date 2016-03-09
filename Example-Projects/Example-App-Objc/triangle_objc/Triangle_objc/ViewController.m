@@ -15,7 +15,6 @@
 
 @interface ViewController ()
 
-@property (nonatomic, assign) BOOL isShowingConsentDialog;
 @property (nonatomic) NSDictionary *trackers;
 
 @end
@@ -25,7 +24,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.isShowingConsentDialog = NO;
     [AppNoticeSDK sharedInstance].delegate = self;
 }
 
@@ -37,10 +35,8 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    // show the privacy consent flow if it's not already being shown
-    if (!self.isShowingConsentDialog) {
-        [self showPrivacyConsentFlow];
-    }
+    // show the privacy consent flow (if needed)
+    [self showPrivacyConsentFlow];
 }
 
 
@@ -52,7 +48,6 @@
 
 
 - (void)showPrivacyConsentFlow {
-    self.isShowingConsentDialog = YES;
     [[AppNoticeSDK sharedInstance]showConsentFlowWithOnClose:^(AppNoticeConsent result, NSDictionary * _Nonnull trackers) {
         
         //Handle what you want to do if the user gives consent or not. This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences
@@ -75,7 +70,6 @@
             
             [self presentViewController:alert animated:YES completion:nil];
         }
-        self.isShowingConsentDialog = NO;
         
     } presentingViewController:self];
 }
