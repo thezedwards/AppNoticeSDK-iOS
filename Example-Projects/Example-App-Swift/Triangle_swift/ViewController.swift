@@ -30,27 +30,30 @@ class ViewController: UIViewController, AppNoticeSDKProtocol {
             selector: "showPrivacyConsentFlow",
             name: UIApplicationDidBecomeActiveNotification,
             object: nil)
+        
+        super.viewWillAppear(animated)
     }
     
     override func viewDidAppear(animated: Bool) {
-        // show the privacy consent flow if it's not already being shown
-        if !self.isShowingConsentDialog {
-            showPrivacyConsentFlow()
-        }
+        // show the privacy consent flow if needed
+        showPrivacyConsentFlow()
+        
+        super.viewDidAppear(animated)
     }
     
     override func viewDidDisappear(animated: Bool) {
         NSNotificationCenter.defaultCenter().removeObserver(self,
             name: UIApplicationDidBecomeActiveNotification,
             object: nil)
+        
+        super.viewDidDisappear(animated)
     }
     
     func showPrivacyConsentFlow() {
-        isShowingConsentDialog = true
-        AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose({ (consentAccepted, consentSkipped, trackers) -> Void in
+        AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose({ (result, trackers) -> Void in
             
             // Handle what you want to do based on the user's consent choice.
-            if consentAccepted {
+            if result == AppNoticeConsentAccepted {
                 // Decide which trackers/ads to use/show based on the trackersArray preferences.
                 // Each tracker has an id and a status. The id is the unique id for that tracker, and the status is a boolean value.
                 print("Trackers: \(trackers.debugDescription)")
@@ -61,7 +64,7 @@ class ViewController: UIViewController, AppNoticeSDKProtocol {
                 
                 self.toggleTrackers()
             }
-            else {
+            else if result == AppNoticeConsentDeclined {
                 // Consent was declined
                 let alertController = UIAlertController(title: "Consent Declined",
                     message: "To enjoy the full functionality of this app, you must accept the privacy preferences. To do so, either open preferences or restart the app. The app will now continue with limited functionality.",
@@ -75,7 +78,6 @@ class ViewController: UIViewController, AppNoticeSDKProtocol {
                 self.presentViewController(alertController, animated: true, completion: nil)
             }
 
-            self.isShowingConsentDialog = false
         }, presentingViewController: self)
     }
     
@@ -133,7 +135,6 @@ class ViewController: UIViewController, AppNoticeSDKProtocol {
     
     func managePreferencesButtonPressed() -> Bool {
         // Show your custom view and return true, or return false and do nothing.
-
         if let controller = storyboard?.instantiateViewControllerWithIdentifier("HybridSettingsView") {
             navigationController?.pushViewController(controller, animated: true)
         }
