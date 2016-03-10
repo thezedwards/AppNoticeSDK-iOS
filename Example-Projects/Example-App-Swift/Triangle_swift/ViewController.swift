@@ -50,10 +50,6 @@ class ViewController: UIViewController, AppNoticeSDKProtocol {
     }
     
     func showPrivacyConsentFlow() {
-        AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose({ (result: AppNoticeConsent, trackers) -> Void in
-            
-            }, presentingViewController: self)
-        
         AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose({ (result, trackers) -> Void in
             
             // Handle what you want to do based on the user's consent choice.

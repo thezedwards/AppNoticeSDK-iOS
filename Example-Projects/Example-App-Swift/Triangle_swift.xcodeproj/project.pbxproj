@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		341D38AC1C8DFF3D007A1740 /* HybridSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D38AB1C8DFF3D007A1740 /* HybridSettingsView.swift */; };
-		347B8DAF1C90E83C00F11257 /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 347B8DAD1C90E83C00F11257 /* AppNotice.bundle */; };
-		347B8DB01C90E83C00F11257 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347B8DAE1C90E83C00F11257 /* AppNoticeSDKFramework.framework */; };
+		347B8DC41C91DF6300F11257 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347B8DC21C91DF6300F11257 /* AppNoticeSDKFramework.framework */; };
+		347B8DC51C91DF6300F11257 /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 347B8DC31C91DF6300F11257 /* AppNotice.bundle */; };
 		D677445D1BB46B24009AA09B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D677445C1BB46B24009AA09B /* AppDelegate.swift */; };
 		D677445F1BB46B24009AA09B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D677445E1BB46B24009AA09B /* ViewController.swift */; };
 		D67744621BB46B24009AA09B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67744601BB46B24009AA09B /* Main.storyboard */; };
@@ -26,8 +26,8 @@
 		3448991A1C1B817300230AB3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		3448991B1C1B817A00230AB3 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
 		3448991C1C1B818000230AB3 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
-		347B8DAD1C90E83C00F11257 /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
-		347B8DAE1C90E83C00F11257 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
+		347B8DC21C91DF6300F11257 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
+		347B8DC31C91DF6300F11257 /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
 		D67744591BB46B24009AA09B /* Triangle_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D677445C1BB46B24009AA09B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D677445E1BB46B24009AA09B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				347B8DB01C90E83C00F11257 /* AppNoticeSDKFramework.framework in Frameworks */,
+				347B8DC41C91DF6300F11257 /* AppNoticeSDKFramework.framework in Frameworks */,
 				D67744701BB46B54009AA09B /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,8 +93,8 @@
 		D677446E1BB46B43009AA09B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				347B8DAD1C90E83C00F11257 /* AppNotice.bundle */,
-				347B8DAE1C90E83C00F11257 /* AppNoticeSDKFramework.framework */,
+				347B8DC21C91DF6300F11257 /* AppNoticeSDKFramework.framework */,
+				347B8DC31C91DF6300F11257 /* AppNotice.bundle */,
 				D67744751BB46B75009AA09B /* Mediation Adapters */,
 				D677446F1BB46B54009AA09B /* GoogleMobileAds.framework */,
 			);
@@ -171,7 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				347B8DAF1C90E83C00F11257 /* AppNotice.bundle in Resources */,
+				347B8DC51C91DF6300F11257 /* AppNotice.bundle in Resources */,
 				D67744671BB46B24009AA09B /* LaunchScreen.storyboard in Resources */,
 				D67744641BB46B24009AA09B /* Assets.xcassets in Resources */,
 				D67744621BB46B24009AA09B /* Main.storyboard in Resources */,
