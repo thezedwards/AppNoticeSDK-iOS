@@ -194,7 +194,7 @@ Or, to change the consent dialog title from "We Care About Your Privacy" to some
 
 In the `AppNotice.bundle` there is a `Configuration.plist` file. This file allows you to customize various UI color properties:
 
-![](http://i.imgur.com/m2GissI.png)
+![](http://i.imgur.com/vPugJ7S.png)
 
 #### Custom Preferences View
 
