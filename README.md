@@ -2,8 +2,8 @@
 
 
 # App Notice SDK for iOS<br/>Installation and Customization
-*Version: 1.2.1*</br>
-March 21, 2016
+*Version: 1.2.2*</br>
+April 5, 2016
 
 ## Features
 
