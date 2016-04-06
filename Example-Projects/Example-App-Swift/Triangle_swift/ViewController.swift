@@ -27,7 +27,7 @@ class ViewController: UIViewController, AppNoticeSDKProtocol {
 
     override func viewWillAppear(animated: Bool) {
         NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: #selector(ViewController.showPrivacyConsentFlow),
+            selector: #selector(showPrivacyConsentFlow),
             name: UIApplicationDidBecomeActiveNotification,
             object: nil)
         
