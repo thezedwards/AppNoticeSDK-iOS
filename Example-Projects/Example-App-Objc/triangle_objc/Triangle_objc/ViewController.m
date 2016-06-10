@@ -21,12 +21,6 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    [AppNoticeSDK sharedInstance].delegate = self;
-}
-
 - (void)viewWillAppear:(BOOL)animated {
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(showPrivacyConsentFlow)
@@ -77,7 +71,7 @@
             [self presentViewController:alert animated:YES completion:nil];
         }
         
-    } presentingViewController:self];
+    } presentingViewController:self repeatEvery30Days:YES];
 }
 
 //You will want to toggle all of your trackers in a similar manner based on the user's tracker preferences. Ensure that the trackers are not working behind the scenes

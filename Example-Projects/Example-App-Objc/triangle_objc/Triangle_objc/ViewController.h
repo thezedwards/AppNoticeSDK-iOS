@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 #import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
 
-@interface ViewController : UIViewController <AppNoticeSDKProtocol>
+@interface ViewController : UIViewController
 
 @property(nonatomic, weak) IBOutlet GADBannerView *bannerView;
 

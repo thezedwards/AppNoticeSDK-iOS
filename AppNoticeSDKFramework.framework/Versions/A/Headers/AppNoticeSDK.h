@@ -22,29 +22,9 @@ typedef void (^AppNoticeSDKConsentFlowCompletionBlock)(AppNoticeConsent result, 
 typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NSError *error);
 
 
-@protocol AppNoticeSDKProtocol <NSObject>
-
-// Returns true if the app needs to show any custom view at this point, or false if not.
-// For default behavior, return false.
-- (BOOL)managePreferencesButtonPressed;
-
-@end
-
-
 @interface AppNoticeSDK : NSObject
 
 + (instancetype)sharedInstance;
-
-/**
- Determines whether the app should use values from the server (remote) or values from the local Configuration.plist file.
- Default value is `false`.
- */
-@property (nonatomic, assign) BOOL useRemoteValues;
-
-/**
- The delegate to use for App Notice SDK callbacks.
- */
-@property (nonatomic, weak) id<AppNoticeSDKProtocol> delegate;
 
 /** 
    Activates the SDK with your company id and pub notice id. Must be called before using SDK
@@ -57,16 +37,25 @@ typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NS
 
 
 /** 
-   Presents the user with a consent dialog. Depending on your pub notice id the user will be presented with either an explicit or an implied consent dialog.
+   Presents the user with an explicit consent dialog.
  
    @param onClose The on close block to be called after the dialog is closed
    @param presentingViewController The UIViewController that the preferences screen will be presented from (if the user opens the preferences from the consent dialog)
  
  */
-- (void)showConsentFlowWithOnClose:(AppNoticeSDKConsentFlowCompletionBlock)onClose presentingViewController:(UIViewController*)vc;
+- (void)showExplicitConsentFlowWithOnClose:(AppNoticeSDKConsentFlowCompletionBlock)onClose presentingViewController:(UIViewController*)vc;
 
+/**
+ Presents the user with an implied consent dialog.
+ 
+ @param onClose The on close block to be called after the dialog is closed
+ @param presentingViewController The UIViewController that the preferences screen will be presented from (if the user opens the preferences from the consent dialog)
+ @param repeatEvery30Days Causes the consent dialog to be shown every 30 days.
+ 
+ */
+- (void)showConsentFlowWithOnClose:(AppNoticeSDKConsentFlowCompletionBlock)onClose presentingViewController:(UIViewController*)vc repeatEvery30Days:(BOOL)repeat;
 
-/** 
+/**
    Presents the user the preferences view controller. The preferences view controller allows the user to toggle trackers. A UINavigationController is presented modally from the view controller you pass in, keep this in mind in your application design.
  
    @param onClose The on close block to be called after the dialog is closed

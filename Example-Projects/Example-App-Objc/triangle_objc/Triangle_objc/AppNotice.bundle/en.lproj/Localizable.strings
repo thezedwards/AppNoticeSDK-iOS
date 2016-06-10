@@ -35,11 +35,11 @@ Customizable list of strings
 
 "ghostery_dialog_button_decline"= "Decline";
 
-"ghostery_dialog_explicit_message"= "Our application uses technologies so that we, and our partners, can remember you and understand how you use our app. To see a complete list of these technologies and to explicitly tell us whether they can be used on your device, click on the \"Manage Preferences\" button below. To give us your consent, click on the \"Accept\" button.";
+"ghostery_dialog_explicit_message"= "Our application uses technologies so that we, and our partners, can remember you and understand how you use our app.\n\nTo see a complete list of these technologies and to explicitly tell us whether they can be used on your device, tap the \"Manage Preferences\" button below. To give us your consent, tap the \"Accept\" button.";
 
 "ghostery_dialog_header_text"= "We Care About Your Privacy";
 
-"ghostery_dialog_implicit_message"= "Our application uses technologies so that we, and our partners, can remember you and understand how you use our app. To see a complete list of these technologies and to tell us whether they can be used on your device, click on the \"Manage Preferences\" button below. Further use of this app will be considered consent.";
+"ghostery_dialog_implicit_message"= "Our application uses technologies so that we, and our partners, can remember you and understand how you use our app.\n\nTo see a complete list of these technologies and to tell us whether they can be used on your device, tap the \"Manage Preferences\" button below. Further use of this app will be considered consent.";
 
 "ghostery_dialog_pleaseWait" = "Please Wait...";
 

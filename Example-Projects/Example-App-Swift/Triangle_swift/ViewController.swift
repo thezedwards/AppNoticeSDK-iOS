@@ -10,21 +10,13 @@ import UIKit
 
 let ADMOB_ID = "464"
 
-class ViewController: UIViewController, AppNoticeSDKProtocol {
+class ViewController: UIViewController {
 
     @IBOutlet weak var bannerView: GADBannerView!
     var isShowingConsentDialog = false
     
     var trackers: Dictionary<String, NSNumber>!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Set the app notice delegate if you need to show a custom view when the
-        // Manage Preferences button is pressed.s
-        AppNoticeSDK.sharedInstance().delegate = self
-    }
-
     override func viewWillAppear(animated: Bool) {
         NSNotificationCenter.defaultCenter().addObserver(self,
             selector: #selector(showPrivacyConsentFlow),
@@ -50,8 +42,7 @@ class ViewController: UIViewController, AppNoticeSDKProtocol {
     }
     
     func showPrivacyConsentFlow() {
-        AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose({ (result, trackers) -> Void in
-            
+        AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose({ (result, trackers) in
             // Handle what you want to do based on the user's consent choice.
             if result == AppNoticeConsentAccepted {
                 // Decide which trackers/ads to use/show based on the trackersArray preferences.
@@ -78,9 +69,9 @@ class ViewController: UIViewController, AppNoticeSDKProtocol {
                 self.presentViewController(alertController, animated: true, completion: nil)
             }
 
-        }, presentingViewController: self)
+        }, presentingViewController: self, repeatEvery30Days:true)
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
