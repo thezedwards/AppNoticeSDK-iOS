@@ -2,15 +2,14 @@
 
 
 # App Notice SDK for iOS<br/>Installation and Customization
-*Version: 1.2.3*</br>
-April 6, 2016
+*Version: 1.3*</br>
+June 2016
 
 ## Features
 
 - [x] Implied Consent Tracking
 - [x] Explicit Consent Tracking
 - [x] Customize Text With Localization
-- [x] Customize SDK Colors
 - [x] User Tracking Toggling
 
 ## Prerequisites
@@ -86,22 +85,12 @@ AppNoticeSDK.sharedInstance().activateWithCompanyId("242", pubNoticeId: "6107")
 
 ### Asking For Consent
 
-There are two types of consent: **Implied** and **Explicit**. This setting is determined by your Publisher Notice ID.
+There are two types of consent: **Implied** and **Explicit**. Implied is the recommended (and simpler) option, but you can choose either one based on which *showConsentFlow* SDK method you call. To be fully compliant with privacy regulations, you should ask for the user's consent as early as possible after your app launches.
+
+Call the *showConsentFlow* (or *showExplicitConsentFlow*) method from the viewDidAppear method of your main view controller. This way, the SDK can determine whether the dialog needs to be shown or not.
 
 #### Implied Consent
-Implied consent is a read-only option. It basically informs the user that he is automaticaly giving consent simply by continuing to use the app. Therefore, it does not include **Accept** or **Decline** options.
-
-#### Explicit Consent
-Explicit consent must either be accepted or declined by the user. If consent is accepted, your app may proceed as usual. However, if consent is declined there are a few cases that you'll need to handle:
-- If your app is fully functional without depending on any third party trackers, you can simply disable all trackers and let the user continue using the app.
-- If your app depends on any trackers that cannot be disabled, you must prevent the user from using the app (or at least the parts of the app that require trackers). If your app will allow the user to continue to use the app with limited functionality, notify the user about the limitations. You might say something like: "To enjoy the full functionality of this app, you must accept the privacy preferences in the app's settings. This app will now continue with limited functionality."
-- Inform the user if your app requires a restart before any newly changed tracker settings can take effect. Some trackers may require an app restart to be fully enabled/disabled.
-- Users have the right to withdraw consent at any time, even after they've already given it. The SDK's [Manage Preferences View](#preferences) should be accessible from within your app for this purpose. (This may typically be in some kind of app settings or preferences view, for example.)
-
-#### Presenting the Consent Dialog
-To be fully compliant with privacy regulations, you should ask for the user's consent as early as possible after your app launches.
-
-Call showConsentFlowWithOnClose in the viewDidAppear method of your main view controller. This way, the SDK can determine whether the dialog needs to be shown or not.
+Implied consent is essentially a read-only option. It informs the user that he is automaticaly giving consent simply by continuing to use the app. Therefore, it does not include **Accept** or **Decline** options. It also includes the *repeatEvery30Days* parameter, which causes the consent dialog to be redisplayed every 30 days if true. If false, the dialog will only appear once.
 
 ##### Swift
 
@@ -113,14 +102,10 @@ override func viewDidAppear(animated: Bool) {
 }
 
 func showPrivacyConsentFlow() {
-  AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose { (result, trackers) -> Void in
-      // TODO: Handle what you want to do based on whether the user accepted or declined consent.
-      // This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences.
-            
-      // The trackers available to your application. Each tracker has an id and a status.
-      // The id is the unique id for that tracker, and the status is a boolean value (true or false).            
-      print("Trackers: \(trackers.debugDescription)")
-    }
+  AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose({ (result, trackers) in
+    // TODO: Handle what you want to do based on whether the user accepted or declined consent.
+    // You should also allow or block specific trackers/ads based on the 'trackers' array contents.
+  }, presentingViewController:self, repeatEvery30Days:false)
 }
 ```
 
@@ -138,12 +123,51 @@ func showPrivacyConsentFlow() {
 - (void)showPrivacyConsentFlow {
   [[AppNoticeSDK sharedInstance] showConsentFlowWithOnClose:^(AppNoticeConsent result, NSDictionary *trackers) {
     // TODO: Handle what you want to do based on whether the user accepted or declined consent.
-    // This is also where you can decide which trackers/ads to use/show based on the trackersArray preferences.
+    // You should also allow or block specific trackers/ads based on the 'trackers' array contents.
+  } presentingViewController:self repeatEvery30Days:NO];
+}
+```
 
-    // The trackers available to your application. Each tracker has an id and a status.
-    // The id is the unique id for that tracker, and the status is a boolean value (YES or NO).
-    NSLog(@"Trackers: %@",[trackers debugDescription]);
-  }];
+#### Explicit Consent
+Explicit consent must either be accepted or declined by the user. If consent is accepted, your app may proceed as usual. However, if consent is declined there are a few cases that you'll need to handle:
+- If your app is fully functional without depending on any third party trackers, you can simply disable all trackers and let the user continue using the app.
+- If your app depends on any trackers that cannot be disabled, you must prevent the user from using the app (or at least the parts of the app that require trackers). If your app will allow the user to continue to use the app with limited functionality, notify the user about the limitations. You might say something like: "To enjoy the full functionality of this app, you must accept the privacy preferences in the app's settings. This app will now continue with limited functionality."
+- Inform the user if your app requires a restart before any newly changed tracker settings can take effect. Some trackers may require an app restart to be fully enabled/disabled.
+- Users have the right to withdraw consent at any time, even after they've already given it. The SDK's [Manage Preferences View](#preferences) should be accessible from within your app for this purpose. (This may typically be in some kind of app settings or preferences view, for example.)
+
+##### Swift
+
+```swift
+override func viewDidAppear(animated: Bool) {
+  showPrivacyConsentFlow()
+    
+  super.viewDidAppear(animated)
+}
+
+func showPrivacyConsentFlow() {
+  AppNoticeSDK.sharedInstance().showExplicitConsentFlowWithOnClose({ (result, trackers) in
+    // TODO: Handle what you want to do based on whether the user accepted or declined consent.
+    // You should also allow or block specific trackers/ads based on the 'trackers' array contents.
+    }, presentingViewController: self)
+}
+```
+
+##### Objective-C
+
+```objective-c
+
+- (void)viewDidAppear:(BOOL)animated {
+  // show the privacy consent flow (if needed)
+  [self showPrivacyConsentFlow];
+    
+  [super viewDidAppear:animated];
+}
+
+- (void)showPrivacyConsentFlow {
+  [[AppNoticeSDK sharedInstance] showExplicitConsentFlowWithOnClose:^(AppNoticeConsent result, NSDictionary *trackers) {
+    // TODO: Handle what you want to do based on whether the user accepted or declined consent.
+    // You should also allow or block specific trackers/ads based on the 'trackers' array contents.
+  } presentingViewController:self];
 }
 ```
 
@@ -175,11 +199,7 @@ NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance] getTrackerPrefere
 }];
 ```
 
-### Customization
-
-You can customize the displayed text and colors in the AppNotice views (which requires turning off remote values as described above). You can also override the behavior of some actions to present your own custom view.
-
-#### Text and Localization
+### Localization and Text Customization
 
 The AppNotice SDK supports multiple languages (currently English, French, Italian, Dutch, German, and Spanish). If your app supports localization for a supported language, the AppNotice SDK will also be displayed in that langauge. To localize your app, you simply need a localization file in your project for each language you support.
 
@@ -188,22 +208,6 @@ To customize any of the strings shown in the SDK, simply open the Localizable.st
 ![](http://i.imgur.com/09ZRYXx.png)
 
 Or, to change the consent dialog title from "We Care About Your Privacy" to something else, edit the `ghostery_dialog_header_text` field. If you want to apply the same change for other languages, just edit the same `ghostery_dialog_header_text` field for each language (en.lproj/Localizable.strings for English, de.lproj/Localizable.strings for German, es.lproj/Localizable.strings for Spanish, etc.).
-
-
-#### Custom Colors
-
-In the `AppNotice.bundle` there is a `Configuration.plist` file. This file allows you to customize various UI color properties:
-
-![](http://i.imgur.com/vPugJ7S.png)
-
-#### Custom Preferences View
-
-Some apps may need to display a custom preferences view instead of the default Manage Preferences view. To do this:
- 1. Implement the AppNoticeSDKProtocol.
- 2. Implement the managePreferencesButtonPressed method.
- 3. Display your own view in managePreferencesButtonPressed and return true.
-
-If you want to implement the AppNoticeSDKProtocol without presenting a custom view, return false in the managePreferencesButtonPressed method.
 
 ### Supporting Multiple App Versions
 
