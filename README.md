@@ -85,7 +85,7 @@ AppNoticeSDK.sharedInstance().activateWithCompanyId("242", pubNoticeId: "6107")
 
 ### Asking For Consent
 
-There are two types of consent: **Implied** and **Explicit**. Implied is the recommended (and simpler) option, but you can choose either one based on which *showConsentFlow* SDK method you call. To be fully compliant with privacy regulations, you should ask for the user's consent as early as possible after your app launches.
+There are two types of consent: **Implied** and **Explicit**. Implied is the recommended (and simpler) option, but you can choose either one based on which *showConsentFlow* SDK method you call. To be fully compliant with privacy regulations, you should ask for the user's consent as early as possible after your app launches. And, if you are using explicit, the notice must appear first and prior to firing any tracking technologies.
 
 Call the *showConsentFlow* (or *showExplicitConsentFlow*) method from the viewDidAppear method of your main view controller. This way, the SDK can determine whether the dialog needs to be shown or not.
 
