@@ -50,7 +50,7 @@ typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NS
  
  @param onClose The on close block to be called after the dialog is closed
  @param presentingViewController The UIViewController that the preferences screen will be presented from (if the user opens the preferences from the consent dialog)
- @param repeatEvery30Days Causes the consent dialog to be shown every 30 days.
+ @param repeatEvery30Days Causes the consent dialog to be shown every 30 days if true, or appear only once if false.
  
  */
 - (void)showConsentFlowWithOnClose:(AppNoticeSDKConsentFlowCompletionBlock)onClose presentingViewController:(UIViewController*)vc repeatEvery30Days:(BOOL)repeat;

@@ -18,10 +18,10 @@ class ViewController: UIViewController {
     var trackers: Dictionary<String, NSNumber>!
     
     override func viewWillAppear(animated: Bool) {
-        NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: #selector(showPrivacyConsentFlow),
-            name: UIApplicationDidBecomeActiveNotification,
-            object: nil)
+        //NSNotificationCenter.defaultCenter().addObserver(self,
+        //    selector: #selector(showPrivacyConsentFlow),
+        //    name: UIApplicationDidBecomeActiveNotification,
+        //    object: nil)
         
         super.viewWillAppear(animated)
     }
@@ -34,9 +34,9 @@ class ViewController: UIViewController {
     }
     
     override func viewDidDisappear(animated: Bool) {
-        NSNotificationCenter.defaultCenter().removeObserver(self,
-            name: UIApplicationDidBecomeActiveNotification,
-            object: nil)
+        //NSNotificationCenter.defaultCenter().removeObserver(self,
+        //    name: UIApplicationDidBecomeActiveNotification,
+        //    object: nil)
         
         super.viewDidDisappear(animated)
     }
