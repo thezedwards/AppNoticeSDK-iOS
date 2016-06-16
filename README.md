@@ -67,15 +67,17 @@ Simply include the framework import statement wherever you want to use it
 
 ### 2. Activate the SDK <a name="activation"></a>
 
-You must activate the SDK before you can use the SDK features. You do so using your Company ID and Publisher Notice ID.
+You must activate the SDK before you can use the SDK features. You do so using your Company ID and Publisher Notice ID. 
 
-##### Swift
+Note that the SDK tracker list is only downloaded once and stored on the device for each publisher notice ID. This means if you make changes to the tracker list after your app is released, you'll want to create a new App Notice with a different notice ID for those changes to appear in the app.
+
+#### Swift
 
 ```swift
 AppNoticeSDK.sharedInstance().activateWithCompanyId("242", pubNoticeId: "6107")
 ```
 
-##### Objective-C
+#### Objective-C
 
 ```objective-c
 [[AppNoticeSDK sharedInstance] activateWithCompanyId:@"242" pubNoticeId:@"6107"];
@@ -211,6 +213,6 @@ Or, to change the consent dialog title from "We Care About Your Privacy" to some
 
 ### Supporting Multiple App Versions
 
-To support versions of your app that each have a different set of trackers, use unique App Notice configurations in each version of your app. Use the Ghostery control panel (https://my.ghosteryenterprise.com) to create an App Notice configuration for each version of your app that has a different combination of trackers.
+To support multiple versions of your app that each have a different set of trackers, use a unique App Notice configuration in each version of your app. Use the Ghostery control panel (https://my.ghosteryenterprise.com) to create an App Notice configuration for each version of your app that has a different combination of trackers.
 
 After creating an App Notice, make sure to use the correct App Notice ID in your app when you initialize the SDK as [shown above](#activation).
