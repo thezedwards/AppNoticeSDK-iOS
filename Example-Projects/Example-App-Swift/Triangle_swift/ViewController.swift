@@ -48,12 +48,6 @@ class ViewController: UIViewController {
                 // Decide which trackers/ads to use/show based on the trackersArray preferences.
                 // Each tracker has an id and a status. The id is the unique id for that tracker, and the status is a boolean value.
                 print("Trackers: \(trackers.debugDescription)")
-                
-                if let trackers = trackers as? Dictionary<String, NSNumber> {
-                    self.trackers = trackers
-                }
-                
-                self.toggleTrackers()
             }
             else if result == AppNoticeConsentDeclined {
                 // Consent was declined
@@ -68,10 +62,14 @@ class ViewController: UIViewController {
                 
                 self.presentViewController(alertController, animated: true, completion: nil)
             }
+            
+            self.toggleTrackers(trackers)
 
         }, presentingViewController: self, repeatEvery30Days:true)
     }
 
+//    func
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -83,18 +81,23 @@ class ViewController: UIViewController {
             //Handle what you want to do after the preferences screen is closed
             
             //Get the newly updated tracker preferences
-            if let trackers = AppNoticeSDK.sharedInstance().getTrackerPreferences() as? Dictionary<String, NSNumber> {
-                self.trackers = trackers
-                self.toggleTrackers()
-            }
+            let trackers = AppNoticeSDK.sharedInstance().getTrackerPreferences()
+            self.toggleTrackers(trackers)
+            
             }, presentingViewController: self)
     }
     
     //You will want to toggle all of your trackers in a similar manner based on the user's tracker preferences. Ensure that the trackers are not working behind the scenes
     //even if you have hidden the UI. You don't want any communications from and to the trackers if toggled off
-    func toggleTrackers() {
+    func toggleTrackers(trackerObjects: [NSObject : AnyObject]) {
+        if let trackerDictionary = trackerObjects as? Dictionary<String, NSNumber> {
+            self.trackers = trackerDictionary
+        }
+        else {
+            return
+        }
         
-        if let adMobStatus = self.trackers[ADMOB_ID] {
+        if let adMobStatus = trackers[ADMOB_ID] {
             
             // The trackers dictionary is formatted like this: "464": 1
             // Where "464" is a String key representing the unique Ghostery Ad Id and where 1 is an NSNumber Boolean value - 0 is off and 1 is on
