@@ -7,41 +7,4 @@
    <FileRef
       location = "group:Example-Projects/Example-App-Objc/triangle_objc/Triangle_objc.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:AppNotice.bundle">
-   </FileRef>
-   <Group
-      location = "group:AppNoticeSDKFramework.framework"
-      name = "AppNoticeSDKFramework.framework">
-      <FileRef
-         location = "group:AppNoticeSDKFramework">
-      </FileRef>
-      <FileRef
-         location = "group:Headers">
-      </FileRef>
-      <Group
-         location = "group:Versions"
-         name = "Versions">
-         <Group
-            location = "group:A"
-            name = "A">
-            <FileRef
-               location = "group:AppNoticeSDKFramework">
-            </FileRef>
-            <Group
-               location = "group:Headers"
-               name = "Headers">
-               <FileRef
-                  location = "group:AppNoticeSDK.h">
-               </FileRef>
-               <FileRef
-                  location = "group:AppNoticeSDKFramework.h">
-               </FileRef>
-            </Group>
-         </Group>
-         <FileRef
-            location = "group:Current">
-         </FileRef>
-      </Group>
-   </Group>
 </Workspace>
