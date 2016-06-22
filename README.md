@@ -203,13 +203,18 @@ NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance] getTrackerPrefere
 
 ### Localization and Text Customization
 
-The AppNotice SDK supports multiple languages (currently English, French, Italian, Dutch, German, and Spanish). If your app supports localization for a supported language, the AppNotice SDK will also be displayed in that langauge. To localize your app, you simply need a localization file in your project for each language you support.
+The AppNotice SDK supports multiple languages (currently English, French, Italian, Dutch, German, and Spanish). If your app supports localization for a supported language, the AppNotice SDK will also be displayed in that langauge. To localize your app, you simply need a localization file in your project for each language you support. See [Apple's documentation](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/LocalizingYourApp/LocalizingYourApp.html#//apple_ref/doc/uid/10000171i-CH5-SW2) for details on how to add localization to your app.
 
-To customize any of the strings shown in the SDK, simply open the Localizable.strings file in the `AppNotice.bundle` for the language you want to customize and change the value (not the key). For example, this screenshot highlights the English text to change for the `ghostery_dialog_explicit_message` field:
+To customize any of the strings shown in the SDK:
+
+1. Add a localization file to your project for the desired language (if it doesn't already exist).
+2. Find the string you want to customize. You'll find it in the Localizable.strings file of the SDK's `AppNotice.bundle`.
+2. Copy the key/value into Localizable.strings file *in your own app* for the language you want to customize.
+3. Set the value (not the key) of your newly added string to the text you want to display. For example, this screenshot highlights the English text to change for the `ghostery_dialog_explicit_message` field:
 
 ![](http://i.imgur.com/09ZRYXx.png)
 
-Or, to change the consent dialog title from "We Care About Your Privacy" to something else, edit the `ghostery_dialog_header_text` field. If you want to apply the same change for other languages, just edit the same `ghostery_dialog_header_text` field for each language (en.lproj/Localizable.strings for English, de.lproj/Localizable.strings for German, es.lproj/Localizable.strings for Spanish, etc.).
+Or, to change the consent dialog title from "We Care About Your Privacy" to something else, just copy the `ghostery_dialog_header_text` field into your Localizable.strings file and change the value. If you want to apply the same change for other languages, just update the same `ghostery_dialog_header_text` field for the corresponding Localizable.strings file (en.lproj/Localizable.strings for English, de.lproj/Localizable.strings for German, es.lproj/Localizable.strings for Spanish, etc.).
 
 ### Supporting Multiple App Versions
 
