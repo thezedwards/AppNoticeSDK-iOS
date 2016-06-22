@@ -1,0 +1,6 @@
+/* 
+  Localizable.strings
+  Triangle_swift
+*/
+
+"ghostery_dialog_implicit_message"= "Esta aplicación usa tecnologías terceros.\n\nSi sigue utilizando esta app se considerará que ha dado su consentimiento.";
