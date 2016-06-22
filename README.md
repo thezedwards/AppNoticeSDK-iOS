@@ -2,14 +2,14 @@
 
 
 # App Notice SDK for iOS<br/>Installation and Customization
-*Version: 1.3*</br>
+*Version: 2.0*</br>
 June 2016
 
 ## Features
 
 - [x] Implied Consent Tracking
 - [x] Explicit Consent Tracking
-- [x] Customize Text With Localization
+- [x] Text Customization and Localization
 - [x] User Tracking Toggling
 
 ## Prerequisites
@@ -208,13 +208,18 @@ The AppNotice SDK supports multiple languages (currently English, French, Italia
 To customize any of the strings shown in the SDK:
 
 1. Add a localization file to your project for the desired language (if it doesn't already exist).
-2. Find the string you want to customize. You'll find it in the Localizable.strings file of the SDK's `AppNotice.bundle`.
-2. Copy the key/value into Localizable.strings file *in your own app* for the language you want to customize.
-3. Set the value (not the key) of your newly added string to the text you want to display. For example, this screenshot highlights the English text to change for the `ghostery_dialog_explicit_message` field:
+2. Find the key for the string you want to customize. You'll find it in the Localizable.strings file of the SDK's `AppNotice.bundle`.
+2. Copy the key into Localizable.strings file *in your own app* for the language you want to customize.
+3. Set the value (not the key) of your newly added string to the text you want to display.
+ 
+For example, to customize the `ghostery_dialog_implicit_message` property in English, copy the key from en.lproj in the SDK AppNotice bundle shown here:
 
-![](http://i.imgur.com/09ZRYXx.png)
+![](http://i.imgur.com/Zze4J6Y.png)
 
-Or, to change the consent dialog title from "We Care About Your Privacy" to something else, just copy the `ghostery_dialog_header_text` field into your Localizable.strings file and change the value. If you want to apply the same change for other languages, just update the same `ghostery_dialog_header_text` field for the corresponding Localizable.strings file (en.lproj/Localizable.strings for English, de.lproj/Localizable.strings for German, es.lproj/Localizable.strings for Spanish, etc.).
+Paste it into your Localizable.strings file in your project and enter the desired text as the value:
+![](http://i.imgur.com/aiKt4iH.png)
+
+If you want to apply the same change for other languages, just update the same `ghostery_dialog_implicit_message` property for the corresponding Localizable.strings file (en.lproj/Localizable.strings for English, de.lproj/Localizable.strings for German, es.lproj/Localizable.strings for Spanish, etc.).
 
 ### Supporting Multiple App Versions
 
