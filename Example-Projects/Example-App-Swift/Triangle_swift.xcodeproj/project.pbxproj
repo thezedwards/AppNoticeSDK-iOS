@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		340C39591D1AFFBB00292F87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 340C395B1D1AFFBB00292F87 /* Localizable.strings */; };
 		341D38AC1C8DFF3D007A1740 /* HybridSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D38AB1C8DFF3D007A1740 /* HybridSettingsView.swift */; };
+		34D98EAA1D21933400A5F55A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D98EA81D21933400A5F55A /* Fabric.framework */; };
+		34D98EAB1D21933400A5F55A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D98EA91D21933400A5F55A /* Crashlytics.framework */; };
+		34D98EAE1D2194CE00A5F55A /* TriangleCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D98EAD1D2194CE00A5F55A /* TriangleCommon.swift */; };
 		34EC3AE91D185FEA001DA41A /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34EC3AE71D185FEA001DA41A /* AppNotice.bundle */; };
 		34EC3AEA1D185FEA001DA41A /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EC3AE81D185FEA001DA41A /* AppNoticeSDKFramework.framework */; };
 		D677445D1BB46B24009AA09B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D677445C1BB46B24009AA09B /* AppDelegate.swift */; };
@@ -29,6 +32,9 @@
 		3448991A1C1B817300230AB3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		3448991B1C1B817A00230AB3 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
 		3448991C1C1B818000230AB3 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		34D98EA81D21933400A5F55A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		34D98EA91D21933400A5F55A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		34D98EAD1D2194CE00A5F55A /* TriangleCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleCommon.swift; sourceTree = "<group>"; };
 		34EC3AE71D185FEA001DA41A /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
 		34EC3AE81D185FEA001DA41A /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
 		D67744591BB46B24009AA09B /* Triangle_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +61,8 @@
 			files = (
 				34EC3AEA1D185FEA001DA41A /* AppNoticeSDKFramework.framework in Frameworks */,
 				D67744701BB46B54009AA09B /* GoogleMobileAds.framework in Frameworks */,
+				34D98EAB1D21933400A5F55A /* Crashlytics.framework in Frameworks */,
+				34D98EAA1D21933400A5F55A /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +90,7 @@
 			children = (
 				D677445C1BB46B24009AA09B /* AppDelegate.swift */,
 				D677445E1BB46B24009AA09B /* ViewController.swift */,
+				34D98EAD1D2194CE00A5F55A /* TriangleCommon.swift */,
 				D677447D1BB46DC3009AA09B /* Triangle_swift-Bridging-Header.h */,
 				341D38AB1C8DFF3D007A1740 /* HybridSettingsView.swift */,
 				D67744601BB46B24009AA09B /* Main.storyboard */,
@@ -97,6 +106,8 @@
 		D677446E1BB46B43009AA09B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34D98EA81D21933400A5F55A /* Fabric.framework */,
+				34D98EA91D21933400A5F55A /* Crashlytics.framework */,
 				34EC3AE71D185FEA001DA41A /* AppNotice.bundle */,
 				34EC3AE81D185FEA001DA41A /* AppNoticeSDKFramework.framework */,
 				D67744751BB46B75009AA09B /* Mediation Adapters */,
@@ -128,6 +139,7 @@
 				D67744551BB46B24009AA09B /* Sources */,
 				D67744561BB46B24009AA09B /* Frameworks */,
 				D67744571BB46B24009AA09B /* Resources */,
+				34D98EA71D2192E700A5F55A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -187,6 +199,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34D98EA71D2192E700A5F55A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 070a5c393bb4657a359a1f933315c3d9f904ae09 d7f982e5623fff6922ea7aafc28e0545046af5e45e6b81b63b35681e55b5709d";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D67744551BB46B24009AA09B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -195,6 +223,7 @@
 				D677445F1BB46B24009AA09B /* ViewController.swift in Sources */,
 				341D38AC1C8DFF3D007A1740 /* HybridSettingsView.swift in Sources */,
 				D677445D1BB46B24009AA09B /* AppDelegate.swift in Sources */,
+				34D98EAE1D2194CE00A5F55A /* TriangleCommon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +354,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Triangle_swift",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Triangle_swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -344,6 +374,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Triangle_swift",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Triangle_swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

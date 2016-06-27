@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
 
-let ADMOB_ID = "464"
+let AdMobId = "464"
+let CrashlyticsId = "3140"
 
 class ViewController: UIViewController {
 
@@ -97,11 +100,10 @@ class ViewController: UIViewController {
             return
         }
         
-        if let adMobStatus = trackers[ADMOB_ID] {
-            
+        if let status = trackers[AdMobId] {
             // The trackers dictionary is formatted like this: "464": 1
             // Where "464" is a String key representing the unique Ghostery Ad Id and where 1 is an NSNumber Boolean value - 0 is off and 1 is on
-            if (adMobStatus.boolValue) {
+            if (status.boolValue) {
                 bannerView.hidden = false
                 bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
                 bannerView.rootViewController = self
@@ -116,8 +118,33 @@ class ViewController: UIViewController {
                 bannerView.hidden = true
             }
         }
+        
+        if let status = trackers[CrashlyticsId] {
+            let previouslyEnabled = TriangleCommon.instance.isCrashlyticsEnabled()
+            if (status.boolValue) {
+                // initialize Crashlytics
+                Fabric.with([Crashlytics.self])
+            }
+            
+            // update the user preference
+            TriangleCommon.instance.setIsCrashlyticsEnabled(status.boolValue)
+            
+            if (previouslyEnabled && !status.boolValue) {
+                // App restart is needed if Crashlytics was previously disabled
+                showRestartDialog()
+            }
+        }
     }
 
+    func showRestartDialog() {
+        // Tell user that a restart is needed.
+        let view = UIAlertView(title: "App Restart Needed",
+                               message: "Disabling Crashlytics requires an app restart before taking effect.",
+                               delegate: nil,
+                               cancelButtonTitle: "OK")
+        view.show()
+    }
+    
     @IBAction func resetSdkButtonPressed(sender: AnyObject) {
         AppNoticeSDK.sharedInstance().resetSDK()
         let alertView = UIAlertView.init(title: "Reset SDK", message: "The App Notice SDK has been reset.", delegate: nil, cancelButtonTitle: "OK")
