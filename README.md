@@ -69,7 +69,7 @@ Simply include the framework import statement wherever you want to use it
 
 You must activate the SDK before you can use the SDK features. You do so using your Company ID and Publisher Notice ID. 
 
-Note that the SDK tracker list is only downloaded once and stored on the device for each publisher notice ID. This means if you make changes to the tracker list after your app is released, you'll want to create a new App Notice with a different notice ID for those changes to appear in the app.
+Note that the SDK tracker list is only downloaded once and stored on the device for each publisher notice ID. This means if you make changes to the tracker list after your app is released, you'll need to create a new App Notice with a different notice ID. You will need to then update the SDK and re-publish your app before those changes will appear. 
 
 #### Swift
 
