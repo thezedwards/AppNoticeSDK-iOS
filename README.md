@@ -92,7 +92,7 @@ There are two types of consent: **Implied** and **Explicit**. Implied is the rec
 Call the *showConsentFlow* (or *showExplicitConsentFlow*) method from the viewDidAppear method of your main view controller. This way, the SDK can determine whether the dialog needs to be shown or not.
 
 #### Implied Consent
-Implied consent is essentially a read-only option. It informs the user that he is automaticaly giving consent simply by continuing to use the app. Therefore, it does not include **Accept** or **Decline** options. It also includes the *repeatEvery30Days* parameter, which causes the consent dialog to be redisplayed every 30 days if true. If false, the dialog will only appear once.
+Implied consent is essentially a disclosure-only option. It informs the user that he is automaticaly giving consent simply by continuing to use the app, but does also accommodate turning individual trackers on/off. As such, it does not include **Accept** or **Decline** options, just **Continue**. It also includes the *repeatEvery30Days* parameter, which causes the consent dialog to be redisplayed every 30 days if true. If false, the dialog will only appear once per notice ID.
 
 ##### Swift
 
