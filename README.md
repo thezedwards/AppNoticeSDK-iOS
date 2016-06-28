@@ -132,10 +132,12 @@ func showPrivacyConsentFlow() {
 
 #### Explicit Consent
 Explicit consent must either be accepted or declined by the user. If consent is accepted, your app may proceed as usual. However, if consent is declined there are a few cases that you'll need to handle:
-- If your app is fully functional without depending on any third party trackers, you can simply disable all trackers and let the user continue using the app.
-- If your app depends on any trackers that cannot be disabled, you must prevent the user from using the app (or at least the parts of the app that require trackers). If your app will allow the user to continue to use the app with limited functionality, notify the user about the limitations. You might say something like: "To enjoy the full functionality of this app, you must accept the privacy preferences in the app's settings. This app will now continue with limited functionality."
-- Inform the user if your app requires a restart before any newly changed tracker settings can take effect. Some trackers may require an app restart to be fully enabled/disabled.
-- Users have the right to withdraw consent at any time, even after they've already given it. The SDK's [Manage Preferences View](#preferences) should be accessible from within your app for this purpose. (This may typically be in some kind of app settings or preferences view, for example.)
+
+- If your app will not function without the disclosed trackers, the customer should be prevented from using the app. Their only option is to modify their preferences or uninstall (similar to acception Terms and Conditions or not).
+- If your app is fully functional without depending on any third party trackers, you can simply disable all optional trackers and let the user continue using the app.
+- If your app will allow the user to continue to use the app with limited functionality, notify the user about the limitations. You might say something like: "To enjoy the full functionality of this app, you must accept the privacy preferences in the app's settings. This app will now continue with limited functionality."
+- If necessary, inform the user that your app requires a restart before any newly-changed tracker settings can take effect. (Some trackers may require an app restart to be fully enabled/disabled.)
+- Users have the right to withdraw consent for individual trackers at any time, even after they've already given it. The SDK's [Manage Preferences View](#preferences) should be accessible from within your app for this purpose. (This may typically be in some kind of app settings or preferences view, for example.)
 
 ##### Swift
 
