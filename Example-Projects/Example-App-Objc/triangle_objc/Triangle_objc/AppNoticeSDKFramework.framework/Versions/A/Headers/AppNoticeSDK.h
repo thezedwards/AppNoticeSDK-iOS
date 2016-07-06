@@ -26,12 +26,16 @@ typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NS
 
 + (instancetype)sharedInstance;
 
+/**
+ The image for the company logo you want to display in the consent dialog.
+ */
+@property (nonatomic, strong, nullable) UIImage *logoImage;
+
 /** 
    Activates the SDK with your company id and pub notice id. Must be called before using SDK
  
    @param companyId The company id which was provided to you by Ghostery
    @param pubNoticeId The pub notice id which you created on the web portal
- 
  */
 - (void)activateWithCompanyId:(NSString*)companyId pubNoticeId:(NSString*)pubNoticeId;
 

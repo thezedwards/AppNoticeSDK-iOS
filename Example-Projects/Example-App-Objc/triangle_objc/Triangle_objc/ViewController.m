@@ -111,17 +111,14 @@
 }
 
 - (IBAction)openPrefs:(id)sender {
-    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"HybridSettingsView"];
-    [self.navigationController pushViewController:controller animated:YES];
-    
-    /*[[AppNoticeSDK sharedInstance]showManagePreferences:^{
+    [[AppNoticeSDK sharedInstance] showManagePreferences:^{
         //Handle what you want to do after the preferences screen is closed
         
         //Get the newly updated tracker preferences
         self.trackers = [[AppNoticeSDK sharedInstance]getTrackerPreferences];
         
         [self toggleTrackers];
-    } presentingViewController:self];*/
+    } presentingViewController:self];
 }
 
 #pragma mark - AppNoticeSDKProtocol

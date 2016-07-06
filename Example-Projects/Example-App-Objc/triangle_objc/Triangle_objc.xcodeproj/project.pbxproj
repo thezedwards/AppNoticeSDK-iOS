@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		341D38BF1C8E38FE007A1740 /* HybridSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341D38BE1C8E38FE007A1740 /* HybridSettingsViewController.m */; };
 		347B8DC81C91E0F100F11257 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347B8DC61C91E0F100F11257 /* AppNoticeSDKFramework.framework */; };
 		347B8DC91C91E0F100F11257 /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 347B8DC71C91E0F100F11257 /* AppNotice.bundle */; };
 		3E979A451B8CE306003475FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E979A441B8CE306003475FA /* main.m */; };
@@ -21,8 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		341D38BD1C8E38FE007A1740 /* HybridSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HybridSettingsViewController.h; sourceTree = "<group>"; };
-		341D38BE1C8E38FE007A1740 /* HybridSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HybridSettingsViewController.m; sourceTree = "<group>"; };
 		347B8DC61C91E0F100F11257 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
 		347B8DC71C91E0F100F11257 /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
 		3E979A3F1B8CE306003475FA /* Triangle_objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle_objc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,8 +72,6 @@
 				3E979A471B8CE306003475FA /* AppDelegate.m */,
 				3E979A491B8CE306003475FA /* ViewController.h */,
 				3E979A4A1B8CE306003475FA /* ViewController.m */,
-				341D38BD1C8E38FE007A1740 /* HybridSettingsViewController.h */,
-				341D38BE1C8E38FE007A1740 /* HybridSettingsViewController.m */,
 				3E979A4C1B8CE306003475FA /* Main.storyboard */,
 				3E979A4F1B8CE306003475FA /* Images.xcassets */,
 				3E979A511B8CE306003475FA /* LaunchScreen.xib */,
@@ -182,7 +177,6 @@
 				3E979A4B1B8CE306003475FA /* ViewController.m in Sources */,
 				3E979A481B8CE306003475FA /* AppDelegate.m in Sources */,
 				3E979A451B8CE306003475FA /* main.m in Sources */,
-				341D38BF1C8E38FE007A1740 /* HybridSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Must activate the SDK before you can use it
         AppNoticeSDK.sharedInstance().activateWithCompanyId("242", pubNoticeId: "6924")
+        AppNoticeSDK.sharedInstance().logoImage = UIImage(named: "ghostery-logo")
 
         // Initialize Crashlytics
         if TriangleCommon.instance.isCrashlyticsEnabled() {
