@@ -2,8 +2,8 @@
 
 
 # App Notice SDK for iOS<br/>Installation and Customization
-*Version: 2.0*</br>
-June 2016
+*Version: 2.1*</br>
+July 2016
 
 ## Features
 
@@ -222,6 +222,30 @@ Paste it into your Localizable.strings file in your project and enter the desire
 ![](http://i.imgur.com/aiKt4iH.png)
 
 If you want to apply the same change for other languages, just update the same `ghostery_dialog_implicit_message` property for the corresponding Localizable.strings file (en.lproj/Localizable.strings for English, de.lproj/Localizable.strings for German, es.lproj/Localizable.strings for Spanish, etc.).
+
+### UI Customization
+
+Perhaps you'd like to customize the look and feel of the AppNotice views to match the theme of your app. If all you need to do is change from the default light theme to a dark theme, simply set the appTheme property on AppNoticeSDK:
+
+```swift
+AppNoticeSDK.sharedInstance().appTheme = AppNoticeThemeDark
+```
+
+```objective-c
+[AppNoticeSDK sharedInstance].appTheme = AppNoticeThemeDark;
+```
+
+For more detailed customization, the following AppNoticeSDK UIColor properties are available:
+- *mainTextColor*: Color of the text within the SDK.
+- *backgroundColor*: Background color of all views.
+- *acceptButtonColor*: Tint/background color of the Accept/Continue buttons.
+- *acceptButtonTextColor*: Text color of the Accept/Continue buttons.
+- *declineButtonColor*: Color of the Decline buttons.
+- *navBarBackgroundColor*: Background color of the navigation bar.
+- *navBarTitleColor*: Color of the center title text of the navigation bar.
+- *tintColor*: The tint color applies to the checkboxes, the Settings button, and the back/forward buttons in the navigation bar.
+- *disabledColor*: The color of the disabled checkbox state (used in the essential tab).
+- *separatorColor*: The color for horizontal and vertical separators as well as the selected color of the preferences table view cells.
 
 ### Supporting Multiple App Versions
 
