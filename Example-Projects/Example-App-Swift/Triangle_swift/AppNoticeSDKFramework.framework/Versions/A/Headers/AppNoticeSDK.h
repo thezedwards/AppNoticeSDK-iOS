@@ -6,7 +6,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @class AppNoticeSDKConfiguration;
 
 typedef enum : NSUInteger {
@@ -16,8 +15,13 @@ typedef enum : NSUInteger {
     AppNoticeConsentSkipped,    // consent previously shown
 } AppNoticeConsent;
 
+typedef enum : NSUInteger {
+    AppNoticeThemeLight,  // light theme
+    AppNoticeThemeDark,   // dark theme
+} AppNoticeTheme;
+
 NS_ASSUME_NONNULL_BEGIN
-typedef void (^AppNoticeSDKPreferencesClosedBlock)();
+typedef void (^AppNoticeSDKPreferencesClosedBlock)(BOOL accepted);
 typedef void (^AppNoticeSDKConsentFlowCompletionBlock)(AppNoticeConsent result, NSDictionary *trackers);
 typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NSError *error);
 
@@ -75,6 +79,19 @@ typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NS
  */
 - (NSDictionary *)getTrackerPreferences;
 
+/** Optional UI customization properties. Note that the individual color properties will override the theme colors.
+ */
+@property (nonatomic, assign) AppNoticeTheme appTheme;
+@property (nonatomic, strong, nullable) UIColor *mainTextColor;
+@property (nonatomic, strong, nullable) UIColor *backgroundColor;
+@property (nonatomic, strong, nullable) UIColor *acceptButtonColor;
+@property (nonatomic, strong, nullable) UIColor *acceptButtonTextColor;
+@property (nonatomic, strong, nullable) UIColor *declineButtonColor;
+@property (nonatomic, strong, nullable) UIColor *navBarBackgroundColor;
+@property (nonatomic, strong, nullable) UIColor *navBarTitleColor;
+@property (nonatomic, strong, nullable) UIColor *tintColor;
+@property (nonatomic, strong, nullable) UIColor *disabledColor;
+@property (nonatomic, strong, nullable) UIColor *separatorColor;
 
 /** 
    Resets count on consent dialog appearances and resets all tracker settings for user

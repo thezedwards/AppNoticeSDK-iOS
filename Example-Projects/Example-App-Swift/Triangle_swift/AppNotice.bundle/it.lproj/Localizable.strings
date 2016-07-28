@@ -14,16 +14,15 @@ Customizable list of strings
 "ghostery_none"= "Nessuno";
 "ghostery_back" = "Indietro";
 
-"ghostery_dialog_explicit_message"= "La nostra applicazione utilizza tecnologie per consentire a noi e ai nostri partner di ricordarci di te e capire come utilizzi la nostra app.  Per visualizzare un elenco completo di queste tecnologie e comunicarci in modo chiaro se possono essere utilizzate sul tuo dispositivo, fai clic sul pulsante seguente \"Gestisci preferenze\". Per fornirci il consenso, fai clic sul pulsante \"Accetta\".";
-
 "ghostery_dialog_header_text"= "Per noi la tua privacy è importante";
 
-"ghostery_dialog_implicit_message"= "La nostra applicazione utilizza tecnologie per consentire a noi e ai nostri partner di ricordarci di te e capire come utilizzi la nostra app.  Per visualizzare un elenco completo di queste tecnologie e comunicarci se possono essere utilizzate sul tuo dispositivo, fai clic sul pulsante seguente \"Gestisci preferenze\". L'ulteriore utilizzo dell'app varrà come consenso.";
+"ghostery_dialog_explicit_message"= "";
+
+"ghostery_dialog_implicit_message"= "";
+
+"ghostery_manage_preferences_description"= "";
 
 "ghostery_dialog_pleaseWait"= "Attendere...";
-
-
-"ghostery_manage_preferences_description"= "La nostra azienda, con l'aiuto dei nostri partner, raccoglie i dati relativi al tuo utilizzo di questa app. Rispettiamo la tua privacy e se desideri limitare la raccolta dei dati da parte nostra, utilizza il seguente pannello di controllo. Per saperne di più sul nostro utilizzo dei dati, visita la pagina della nostra politica sulla privacy.";
 
 "ghostery_manage_preferences_detail_learnmore"= "Per maggiori informazioni sul modo in cui raccogliamo e utilizziamo le informazioni per le app per dispositivi mobili, visita:";
 
@@ -33,9 +32,9 @@ Customizable list of strings
 
 "ghostery_manage_preferences_empty_list"= "Impossibile caricare l'elenco di tracker. Verificare l'accesso a Internet e riprovare più tardi.";
 
-"ghostery_manage_preferences"= "Gestisci Preferenze";
+"ghostery_manage_preferences_title" = "";
 
-"ghostery_manage_preferences_button"= "Gestisci Preferenze";
+"ghostery_manage_preferences_button"= "";
 
 "ghostery_manage_preferences_optin_header"= "Consenti";
 

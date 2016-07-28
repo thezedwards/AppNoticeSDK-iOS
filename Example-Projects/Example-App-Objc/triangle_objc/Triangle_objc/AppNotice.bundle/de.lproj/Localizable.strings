@@ -16,16 +16,15 @@ Customizable list of strings
 
 "ghostery_dialog_button_decline"= "Ablehnen";
 
-"ghostery_dialog_explicit_message"= "Unsere Anwendung verwendet Technologien, damit wir und unsere Partner Sie wiedererkennen und verstehen können, wie Sie unsere App nutzen. Um eine vollständige Liste dieser Technologien zu sehen und uns mitzuteilen, ob diese auf Ihrem Gerät verwendet werden können, klicken Sie auf die Schaltfläche \"Voreinstellungen verwalten\" unten. Um uns Ihre Zustimmung zu geben, klicken Sie auf die Schaltfläche \"Akzeptieren\".";
-
 "ghostery_dialog_header_text"= "Der Schutz Ihrer Daten ist uns wichtig";
 
-"ghostery_dialog_implicit_message"= "Unsere Anwendung verwendet Technologien, damit wir und unsere Partner Sie wiedererkennen und verstehen können, wie Sie unsere App nutzen. Um eine vollständige Liste dieser Technologien zu sehen und uns mitzuteilen, ob diese auf Ihrem Gerät verwendet werden können, klicken Sie auf die Schaltfläche \"Voreinstellungen verwalten\" unten. Die weitere Nutzung dieser App wird als Zustimmung betrachtet.";
+"ghostery_dialog_explicit_message"= "";
+
+"ghostery_dialog_implicit_message"= "";
+
+"ghostery_manage_preferences_description"= "";
 
 "ghostery_dialog_pleaseWait"= "Bitte warten...";
-
-
-"ghostery_manage_preferences_description"= "Unsere Firma, mit Unterstützung von unseren Partnern, sammelt Daten über die Art und Weise, wie Sie diese App nutzen. Wir respektieren Ihre Privatsphäre, und wenn Sie die Erfassung der Daten einschränken möchten, verwenden Sie bitte das Bedienfeld unten. Für weitere Informationen darüber, wie wir Ihre Daten nutzen, lesen Sie bitte unsere Datenschutzrichtlinien.";
 
 "ghostery_manage_preferences_detail_learnmore"= "Um mehr zu erfahren, wie wir Informationen für mobile Apps sammeln und verwenden, besuchen Sie bitte:";
 
@@ -35,9 +34,9 @@ Customizable list of strings
 
 "ghostery_manage_preferences_empty_list"= "Die Liste der Tracker konnte nicht geladen werden. Stellen Sie bitte sicher, dass Sie Internetzugang haben, und versuchen Sie es später erneut.";
 
-"ghostery_manage_preferences"= "Voreinstellungen Verwalten";
+"ghostery_manage_preferences_title" = "";
 
-"ghostery_manage_preferences_button"= "Gérer Préférences";
+"ghostery_manage_preferences_button" = "";
 
 "ghostery_manage_preferences_optin_header"= "Opt In";
 

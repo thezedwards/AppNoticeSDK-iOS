@@ -16,6 +16,7 @@ let CrashlyticsId = "3140"
 class ViewController: UIViewController {
 
     @IBOutlet weak var bannerView: GADBannerView!
+    @IBOutlet weak var themeSegmentedControl: UISegmentedControl!
     var isShowingConsentDialog = false
     
     var trackers: Dictionary<String, NSNumber>!
@@ -45,6 +46,13 @@ class ViewController: UIViewController {
     }
     
     func showPrivacyConsentFlow() {
+        if self.themeSegmentedControl.selectedSegmentIndex == 0 {
+            AppNoticeSDK.sharedInstance().appTheme = AppNoticeThemeLight
+        }
+        else {
+            AppNoticeSDK.sharedInstance().appTheme = AppNoticeThemeDark
+        }
+        
         AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose({ (result, trackers) in
             // Handle what you want to do based on the user's consent choice.
             if result == AppNoticeConsentAccepted {
@@ -79,8 +87,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func openPrefs(sender: AnyObject) {
-        
-        AppNoticeSDK.sharedInstance().showManagePreferences({ () -> Void in
+        AppNoticeSDK.sharedInstance().showManagePreferences({ (accepted: Bool) -> Void in
             //Handle what you want to do after the preferences screen is closed
             
             //Get the newly updated tracker preferences

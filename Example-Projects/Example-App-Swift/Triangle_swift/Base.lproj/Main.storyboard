@@ -39,14 +39,23 @@
                                     <action selector="resetSdkButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="brZ-pL-2g2"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gMe-qR-Ss3">
+                                <rect key="frame" x="142" y="517" width="91" height="29"/>
+                                <segments>
+                                    <segment title="Light"/>
+                                    <segment title="Dark"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="gMe-qR-Ss3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Tw-Aa-gWY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aFW-ZS-GUY" secondAttribute="bottom" id="B40-Ea-DkE"/>
                             <constraint firstItem="f6Q-OB-q2D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BdP-Rh-KHR"/>
                             <constraint firstItem="NCi-1X-OuJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="X23-uz-Waj"/>
                             <constraint firstItem="aFW-ZS-GUY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bBb-4o-Mkv"/>
                             <constraint firstItem="aFW-ZS-GUY" firstAttribute="top" secondItem="f6Q-OB-q2D" secondAttribute="bottom" constant="32" id="gVM-Jr-Cgy"/>
+                            <constraint firstItem="f6Q-OB-q2D" firstAttribute="top" secondItem="gMe-qR-Ss3" secondAttribute="bottom" constant="8" id="hYA-Yq-Hao"/>
                             <constraint firstAttribute="trailing" secondItem="aFW-ZS-GUY" secondAttribute="trailing" id="jX4-C3-T4t"/>
                             <constraint firstItem="NCi-1X-OuJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vA3-1c-9sz"/>
                         </constraints>
@@ -61,6 +70,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="bannerView" destination="aFW-ZS-GUY" id="agZ-DT-qWy"/>
+                        <outlet property="themeSegmentedControl" destination="gMe-qR-Ss3" id="rtM-P0-t6A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

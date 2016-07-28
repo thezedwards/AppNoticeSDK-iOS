@@ -16,16 +16,15 @@ Customizable list of strings
 
 "ghostery_dialog_button_decline"= "Refuser";
 
-"ghostery_dialog_explicit_message"= "Notre application utilise des technologies afin de permettre à nos partenaires et nous-mêmes de nous souvenir de vous et de comprendre la manière dont vous utilisez notre application.  Pour avoir accès à une liste complète de ces technologies ou pour nous dire explicitement si elles peuvent être utilisées sur votre périphérique, cliquez sur la touche \« Gérer Préférences »\ ci-dessous. Pour nous donner votre consentement, cliquez sur la touche \« Accepter »\.";
+"ghostery_dialog_explicit_message"= "";
+
+"ghostery_dialog_implicit_message"= "";
+
+"ghostery_manage_preferences_description"= "";
 
 "ghostery_dialog_header_text"= "La protection de votre vie privée nous tient à cœur";
 
-"ghostery_dialog_implicit_message"= "Notre application utilise des technologies afin de permettre à nos partenaires et nous-mêmes de nous souvenir de vous et de comprendre la manière dont vous utilisez notre application.  Pour avoir accès à une liste complète de ces technologies ou pour nous dire si elles peuvent être utilisées sur votre périphérique, cliquez sur la touche \« Gérer Préférences »\ ci-dessous. En continuant d'utiliser cette application, vous donnez votre consentement.";
-
 "ghostery_dialog_pleaseWait"= "Veuillez patienter...";
-
-
-"ghostery_manage_preferences_description"= "Notre entreprise, avec l'aide de nos partenaires, recueille des données sur la manière dont vous utilisez cette application. Nous respectons votre vie privée et, si vous souhaitez limiter les données que nous recueillons, veuillez utiliser le panneau de commande ci-dessous. Pour en apprendre plus sur la manière dont nous utilisons les données, veuillez consulter notre politique de confidentialité.";
 
 "ghostery_manage_preferences_detail_learnmore"= "Pour en savoir plus sur la manière dont nous recueillons et utilisons des informations pour les applications mobiles, veuillez consulter:";
 
@@ -35,7 +34,7 @@ Customizable list of strings
 
 "ghostery_manage_preferences_empty_list"= "Impossible de charger la liste des mouchards. Assurez-vous d'avoir un accès Internet et réessayez à une date ultérieure.";
 
-"ghostery_manage_preferences"= "Gérer Préférences";
+"ghostery_manage_preferences_title"= "";
 
 "ghostery_manage_preferences_button"= "Gérer Préférences";
 

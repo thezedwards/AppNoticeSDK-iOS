@@ -111,7 +111,7 @@
 }
 
 - (IBAction)openPrefs:(id)sender {
-    [[AppNoticeSDK sharedInstance] showManagePreferences:^{
+    [[AppNoticeSDK sharedInstance] showManagePreferences:^(BOOL accepted) {
         //Handle what you want to do after the preferences screen is closed
         
         //Get the newly updated tracker preferences

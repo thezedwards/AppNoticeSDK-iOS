@@ -16,16 +16,15 @@ Customizable list of strings
 
 "ghostery_dialog_button_decline"= "Declinar";
 
-"ghostery_dialog_explicit_message"= "Nuestra aplicación usa tecnologías para que nosotros y nuestros colaboradores, podamos recordarle y comprender cómo usa usted nuestra app. Para ver una lista completa de estas tecnologías y para decirnos explícitamente si pueden ser utilizadas en su dispositivo, pulse el botón \"Gestionar preferencias\" que aparece más abajo. Para darnos su consentimiento pulse el botón \"Aceptar\".";
-
 "ghostery_dialog_header_text"= "Nos importa su privacidad";
 
-"ghostery_dialog_implicit_message"= "Nuestra aplicación usa tecnologías para que nosotros, y nuestros colaboradores, podamos recordarle y comprender cómo usa usted nuestra app. Para ver una lista completa de estas tecnologías y para decirnos si pueden ser utilizadas en su dispositivo, pulse el botón  \"Gestionar preferencias\" que aparece más abajo. Si sigue utilizando esta app se considerará que ha dado su consentimiento.";
+"ghostery_dialog_explicit_message"= "";
+
+"ghostery_dialog_implicit_message"= "";
+
+"ghostery_manage_preferences_description"= "";
 
 "ghostery_dialog_pleaseWait"= "Por favor espere...";
-
-
-"ghostery_manage_preferences_description"= "Nuestra empresa, con la ayuda de nuestros colaboradores, recoge datos sobre el uso que hace usted de esta app. Respetamos su privacidad y si desea limitar los datos que recogemos, por favor use el panel de control que aparece más abajo. Por favor visite nuestra política de privacidad para ver más información sobre cómo usamos los datos.";
 
 "ghostery_manage_preferences_detail_learnmore"= "Para más información sobre cómo recogemos y usamos la información para apps móviles por favor visite:";
 
@@ -35,9 +34,9 @@ Customizable list of strings
 
 "ghostery_manage_preferences_empty_list"= "No se pudo cargar la lista de rastreadores. Por favor asegúrese de que tiene acceso a Internet e inténtelo de nuevo más tarde.";
 
-"ghostery_manage_preferences"= "Gestionar Preferencias";
+"ghostery_manage_preferences_title" = "";
 
-"ghostery_manage_preferences_button"= "Gestionar Preferencias";
+"ghostery_manage_preferences_button"= "";
 
 "ghostery_manage_preferences_optin_header"= "Optar por inclusión";
 
