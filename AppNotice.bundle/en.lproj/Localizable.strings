@@ -56,7 +56,7 @@ Customizable list of strings
 "ghostery_manage_preferences_web_based_title" = "Web-based";
 "ghostery_manage_preferences_web_based_description" = "Some portions of this app utilize webviews, which may use cookies. Cookie-based opt-out is available later within the app settings.";
 
-"ghostery_manage_preferences_footer_text" = "Privacy controls by Ghostery, Inc.";
+"ghostery_manage_preferences_footer_text" = "Privacy Controls by Ghostery, Inc.";
 
 "ghostery_manage_preferences_allow_header"= "Allow";
 
