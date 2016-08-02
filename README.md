@@ -205,7 +205,7 @@ NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance] getTrackerPrefere
 
 ### Localization and Text Customization
 
-The AppNotice SDK supports multiple languages (currently English, French, Italian, Dutch, German, and Spanish). If your app supports localization for a supported language, the AppNotice SDK will also be displayed in that langauge. To localize your app, you simply need a localization file in your project for each language you support. See [Apple's documentation](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/LocalizingYourApp/LocalizingYourApp.html#//apple_ref/doc/uid/10000171i-CH5-SW2) for details on how to add localization to your app.
+The AppNotice SDK can support multiple languages (currently English only, but French, Italian, Dutch, German, Spanish and Portuguese will be available soon). If your app supports localization for a supported language, the AppNotice SDK will also be displayed in that langauge. To localize your app, you simply need a localization file in your project for each language you support. See [Apple's documentation](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/LocalizingYourApp/LocalizingYourApp.html#//apple_ref/doc/uid/10000171i-CH5-SW2) for details on how to add localization to your app.
 
 To customize any of the strings shown in the SDK:
 
