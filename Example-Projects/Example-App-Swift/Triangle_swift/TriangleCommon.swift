@@ -15,16 +15,16 @@ class TriangleCommon : NSObject {
     
     let CrashlyticsEnabledKey = "CrashlyticsEnabled"
     
-    func userDefaults() -> NSUserDefaults {
-        return NSUserDefaults.standardUserDefaults()
+    func userDefaults() -> UserDefaults {
+        return UserDefaults.standard
     }
 
-    func setIsCrashlyticsEnabled(value: Bool) {
-        userDefaults().setBool(value, forKey: CrashlyticsEnabledKey)
+    func setIsCrashlyticsEnabled(_ value: Bool) {
+        userDefaults().set(value, forKey: CrashlyticsEnabledKey)
         userDefaults().synchronize()
     }
     
     func isCrashlyticsEnabled() -> Bool {
-        return userDefaults().boolForKey(CrashlyticsEnabledKey)
+        return userDefaults().bool(forKey: CrashlyticsEnabledKey)
     }
 }

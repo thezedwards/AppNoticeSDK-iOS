@@ -10,13 +10,13 @@ import UIKit
 
 class HybridSettingsViewController: UIViewController {
 
-    @IBAction func inAppPrivacyButtonPressed(sender: AnyObject) {
+    @IBAction func inAppPrivacyButtonPressed(_ sender: AnyObject) {
         AppNoticeSDK.sharedInstance().showManagePreferences({ (accepted: Bool) -> Void in
             //Handle what you want to do after the preferences screen is closed
             //if let trackers = AppNoticeSDK.sharedInstance().getTrackerPreferences() as? Dictionary<String, NSNumber> {
                 // update the trackers list within the app if any settings were changed
             //}
-            }, presentingViewController: self)        
+            }, presenting: self)        
     }
     
 }

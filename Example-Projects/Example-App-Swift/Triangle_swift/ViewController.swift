@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     var trackers: Dictionary<String, NSNumber>!
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         //NSNotificationCenter.defaultCenter().addObserver(self,
         //    selector: #selector(showPrivacyConsentFlow),
         //    name: UIApplicationDidBecomeActiveNotification,
@@ -30,14 +30,14 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         // show the privacy consent flow if needed
         showPrivacyConsentFlow()
         
         super.viewDidAppear(animated)
     }
     
-    override func viewDidDisappear(animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {
         //NSNotificationCenter.defaultCenter().removeObserver(self,
         //    name: UIApplicationDidBecomeActiveNotification,
         //    object: nil)
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
             AppNoticeSDK.sharedInstance().appTheme = AppNoticeThemeDark
         }
         
-        AppNoticeSDK.sharedInstance().showConsentFlowWithOnClose({ (result, trackers) in
+        AppNoticeSDK.sharedInstance().showConsentFlowWith(onClose: { (result, trackers) in
             // Handle what you want to do based on the user's consent choice.
             if result == AppNoticeConsentAccepted {
                 // Decide which trackers/ads to use/show based on the trackersArray preferences.
@@ -64,19 +64,19 @@ class ViewController: UIViewController {
                 // Consent was declined
                 let alertController = UIAlertController(title: "Consent Declined",
                     message: "To enjoy the full functionality of this app, you must accept the privacy preferences. To do so, either open preferences or restart the app. The app will now continue with limited functionality.",
-                    preferredStyle: .Alert)
+                    preferredStyle: .alert)
                 
-                let okAction = UIAlertAction(title: "OK", style: .Default, handler: { (UIAlertAction) -> Void in
+                let okAction = UIAlertAction(title: "OK", style: .default, handler: { (UIAlertAction) -> Void in
                     // Limit app functionality here
                 })
                 alertController.addAction(okAction)
                 
-                self.presentViewController(alertController, animated: true, completion: nil)
+                self.present(alertController, animated: true, completion: nil)
             }
             
             self.toggleTrackers(trackers)
 
-        }, presentingViewController: self, repeatEvery30Days:true)
+        }, presenting: self, repeatEvery30Days:true)
     }
 
 //    func
@@ -86,7 +86,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func openPrefs(sender: AnyObject) {
+    @IBAction func openPrefs(_ sender: AnyObject) {
         AppNoticeSDK.sharedInstance().showManagePreferences({ (accepted: Bool) -> Void in
             //Handle what you want to do after the preferences screen is closed
             
@@ -94,12 +94,12 @@ class ViewController: UIViewController {
             let trackers = AppNoticeSDK.sharedInstance().getTrackerPreferences()
             self.toggleTrackers(trackers)
             
-            }, presentingViewController: self)
+            }, presenting: self)
     }
     
     //You will want to toggle all of your trackers in a similar manner based on the user's tracker preferences. Ensure that the trackers are not working behind the scenes
     //even if you have hidden the UI. You don't want any communications from and to the trackers if toggled off
-    func toggleTrackers(trackerObjects: [NSObject : AnyObject]) {
+    func toggleTrackers(_ trackerObjects: [AnyHashable: Any]) {
         if let trackerDictionary = trackerObjects as? Dictionary<String, NSNumber> {
             self.trackers = trackerDictionary
         }
@@ -111,18 +111,18 @@ class ViewController: UIViewController {
             // The trackers dictionary is formatted like this: "464": 1
             // Where "464" is a String key representing the unique Ghostery Ad Id and where 1 is an NSNumber Boolean value - 0 is off and 1 is on
             if (status.boolValue) {
-                bannerView.hidden = false
+                bannerView.isHidden = false
                 bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
                 bannerView.rootViewController = self
                 
                 let request = GADRequest()
                 request.testDevices = ["2077ef9a63d2b398840261c8221a0c9a"]
-                bannerView.loadRequest(request)
+                bannerView.load(request)
             } else {
                 //Turn off tracker
                 bannerView.adUnitID = nil
                 bannerView.rootViewController = nil
-                bannerView.hidden = true
+                bannerView.isHidden = true
             }
         }
         
@@ -152,7 +152,7 @@ class ViewController: UIViewController {
         view.show()
     }
     
-    @IBAction func resetSdkButtonPressed(sender: AnyObject) {
+    @IBAction func resetSdkButtonPressed(_ sender: AnyObject) {
         AppNoticeSDK.sharedInstance().resetSDK()
         let alertView = UIAlertView.init(title: "Reset SDK", message: "The App Notice SDK has been reset.", delegate: nil, cancelButtonTitle: "OK")
         alertView.show()
@@ -163,7 +163,7 @@ class ViewController: UIViewController {
     
     func managePreferencesButtonPressed() -> Bool {
         // Show your custom view and return true, or return false and do nothing.
-        if let controller = storyboard?.instantiateViewControllerWithIdentifier("HybridSettingsView") {
+        if let controller = storyboard?.instantiateViewController(withIdentifier: "HybridSettingsView") {
             navigationController?.pushViewController(controller, animated: true)
         }
         
