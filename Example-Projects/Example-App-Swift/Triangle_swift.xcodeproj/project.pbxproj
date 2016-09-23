@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		340C39591D1AFFBB00292F87 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 340C395B1D1AFFBB00292F87 /* Localizable.strings */; };
 		341D38AC1C8DFF3D007A1740 /* HybridSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341D38AB1C8DFF3D007A1740 /* HybridSettingsView.swift */; };
+		34591F5233056BA16D3401DA /* Pods_Triangle_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D93B04618F59D828735D9AA /* Pods_Triangle_swift.framework */; };
 		34D98EAA1D21933400A5F55A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D98EA81D21933400A5F55A /* Fabric.framework */; };
 		34D98EAB1D21933400A5F55A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D98EA91D21933400A5F55A /* Crashlytics.framework */; };
 		34D98EAE1D2194CE00A5F55A /* TriangleCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D98EAD1D2194CE00A5F55A /* TriangleCommon.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F502C7C6EACC5BFD8F3C3CD /* Pods-Triangle_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Triangle_swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Triangle_swift/Pods-Triangle_swift.debug.xcconfig"; sourceTree = "<group>"; };
 		340C395E1D1B018000292F87 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		340C39631D1B2BE200292F87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		341D38AB1C8DFF3D007A1740 /* HybridSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HybridSettingsView.swift; sourceTree = "<group>"; };
@@ -37,6 +39,8 @@
 		34D98EAD1D2194CE00A5F55A /* TriangleCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleCommon.swift; sourceTree = "<group>"; };
 		34EC3AE71D185FEA001DA41A /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
 		34EC3AE81D185FEA001DA41A /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
+		4D93B04618F59D828735D9AA /* Pods_Triangle_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Triangle_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B079EB43566266B50779F3 /* Pods-Triangle_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Triangle_swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Triangle_swift/Pods-Triangle_swift.release.xcconfig"; sourceTree = "<group>"; };
 		D67744591BB46B24009AA09B /* Triangle_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D677445C1BB46B24009AA09B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D677445E1BB46B24009AA09B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,17 +67,37 @@
 				D67744701BB46B54009AA09B /* GoogleMobileAds.framework in Frameworks */,
 				34D98EAB1D21933400A5F55A /* Crashlytics.framework in Frameworks */,
 				34D98EAA1D21933400A5F55A /* Fabric.framework in Frameworks */,
+				34591F5233056BA16D3401DA /* Pods_Triangle_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		218173C159B59283258EE82D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D93B04618F59D828735D9AA /* Pods_Triangle_swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58F9BCCA8A342139FAAE1771 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F502C7C6EACC5BFD8F3C3CD /* Pods-Triangle_swift.debug.xcconfig */,
+				D5B079EB43566266B50779F3 /* Pods-Triangle_swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D67744501BB46B24009AA09B = {
 			isa = PBXGroup;
 			children = (
 				D677445B1BB46B24009AA09B /* Triangle_swift */,
 				D677445A1BB46B24009AA09B /* Products */,
+				58F9BCCA8A342139FAAE1771 /* Pods */,
+				218173C159B59283258EE82D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,10 +160,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D677446B1BB46B24009AA09B /* Build configuration list for PBXNativeTarget "Triangle_swift" */;
 			buildPhases = (
+				FF1DE0D7D2443B40AB682345 /* [CP] Check Pods Manifest.lock */,
 				D67744551BB46B24009AA09B /* Sources */,
 				D67744561BB46B24009AA09B /* Frameworks */,
 				D67744571BB46B24009AA09B /* Resources */,
 				34D98EA71D2192E700A5F55A /* ShellScript */,
+				85304FFA94FF4C826DADE36C /* [CP] Embed Pods Frameworks */,
+				96E36CF6A836911513802812 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,6 +242,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run 070a5c393bb4657a359a1f933315c3d9f904ae09 d7f982e5623fff6922ea7aafc28e0545046af5e45e6b81b63b35681e55b5709d";
+		};
+		85304FFA94FF4C826DADE36C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Triangle_swift/Pods-Triangle_swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96E36CF6A836911513802812 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Triangle_swift/Pods-Triangle_swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF1DE0D7D2443B40AB682345 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -351,6 +423,7 @@
 		};
 		D677446C1BB46B24009AA09B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F502C7C6EACC5BFD8F3C3CD /* Pods-Triangle_swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -374,6 +447,7 @@
 		};
 		D677446D1BB46B24009AA09B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B079EB43566266B50779F3 /* Pods-Triangle_swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ghostery, Inc. (HPY23A294X)";
