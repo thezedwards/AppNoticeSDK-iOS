@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 AppNotice lets you inform your users which third party SDKs your app is using. It lets the user opt out of using any optional SDKs like usage analytics, for example. It also records whether a consent notice has been shown, accepted, declined, etc.
                        DESC
 
-  s.homepage         = 'https://github.com/ghostery/AppNoticeSDK-iOS'
+  s.homepage         = 'https://www.ghostery.com/our-solutions/ghostery-privacy/for-your-brands/'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Joe Swindler' => 'jswindler@ghostery.com' }
-  s.source           = { :git => 'https://github.com/ghostery/AppNoticeSDK-iOS', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ghostery/AppNoticeSDK-iOS.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/Ghostery'
 
   s.ios.deployment_target = '8.1'
