@@ -1,0 +1,23 @@
+{
+  "name": "AppNotice",
+  "version": "2.2.0",
+  "summary": "A short description of AppNotice.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ghostery/AppNoticeSDK-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Joe Swindler": "jswindler@ghostery.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/AppNotice.git",
+    "tag": "2.2.0"
+  },
+  "platforms": {
+    "ios": "8.1"
+  },
+  "vendored_frameworks": "AppNotice/AppNoticeSDKFramework.framework",
+  "resources": "AppNotice/AppNotice.bundle"
+}
