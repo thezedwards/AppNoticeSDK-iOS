@@ -1,4 +1,4 @@
-# App Notice SDK for iOS<br/>Installation and Customization
+# AppNotice SDK for iOS<br/>Installation and Customization
 *Version: 2.1*</br>
 August 2016
 
