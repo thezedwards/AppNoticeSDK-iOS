@@ -1,8 +1,7 @@
 # AppNotice SDK for iOS<br/>Installation and Customization
-*Version: 2.1*</br>
-August 2016
+*Version: 2.1.5*</br>
+September 2016
 
-[![CI Status](http://img.shields.io/travis/Joe Swindler/AppNotice.svg?style=flat)](https://travis-ci.org/Joe Swindler/AppNotice)
 [![Version](https://img.shields.io/cocoapods/v/AppNotice.svg?style=flat)](http://cocoapods.org/pods/AppNotice)
 [![License](https://img.shields.io/cocoapods/l/AppNotice.svg?style=flat)](http://cocoapods.org/pods/AppNotice)
 [![Platform](https://img.shields.io/cocoapods/p/AppNotice.svg?style=flat)](http://cocoapods.org/pods/AppNotice)
@@ -20,21 +19,6 @@ This repo comes with two example projects to demonstrate how to use the SDK. The
 
 To run the Triangle project, clone the repo, and run `pod install` from the Example/Triangle directory. 
 
-## Prerequisites
-
-- iOS 8.0+
-- Xcode 7.0+
-- A valid App Notice ID from the Ghostery control panel. See your Ghostery Customer Success Manager for details.
-
-## Installation
-
-AppNotice is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "AppNotice"
-```
-
 ## Author
 
 Joe Swindler, Ghostery
@@ -43,7 +27,32 @@ Joe Swindler, Ghostery
 
 AppNotice is available under the MIT license. See the LICENSE file for more info.
 
-## SDK Activatation <a name="activation"></a>
+## Prerequisites
+
+- iOS 8.0+
+- Xcode 7.0+
+- A valid App Notice ID from the Ghostery control panel. See your Ghostery Customer Success Manager for details.
+
+## Installation
+
+AppNotice is available through [CocoaPods](http://cocoapods.org). To install:
+
+Add the following line to your Podfile, then run 'pod install' and open your xcworkspace file.
+
+```ruby
+pod 'AppNotice'
+```
+
+If you are using the SDK with an Objective-C project, just add the following line to import the framework in any file that uses it. If you have a Swift project, you'll need to add this line to your bridging header file instead. (See [creating a bridging header](#bridging-header) below for how to do this.)
+```Objective-C
+#import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
+```
+
+### Creating a bridging header for Swift projects <a name="bridging-header"/>
+
+If your project is in Swift and you don't already have a bridging header file, the easiest way to create it is to add a new Objective-C file to your project. Xcode will then ask if you want it to configure an Objective-C briding header. Select "Create Bridging Header", and then you can delete the extra Objective-C file you just created.
+
+## SDK Activation <a name="activation"/>
 
 You must activate the SDK before you can use the SDK features. You do so using your Company ID and Publisher Notice ID. 
 
