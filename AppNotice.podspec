@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppNotice'
-  s.version          = '2.1.3'
+  s.version          = '2.1.4'
   s.summary          = 'AppNotice lets you inform your users which third party SDKs your app is using.'
 
 # This description is used to generate tags and improve search results.
@@ -31,5 +31,4 @@ AppNotice lets you inform your users which third party SDKs your app is using. I
   s.ios.deployment_target = '8.1'
   s.vendored_frameworks = 'AppNoticeSDKFramework.framework'
   s.resources = 'AppNotice.bundle'
-  s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/AppNotice/Frameworks"' }
 end
