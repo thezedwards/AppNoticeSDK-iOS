@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppNotice'
-  s.version          = '2.1.0'
+  s.version          = '2.1.1'
   s.summary          = 'AppNotice lets you inform your users which third party SDKs your app is using.'
 
 # This description is used to generate tags and improve search results.
