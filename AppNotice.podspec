@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppNotice'
-  s.version          = '2.1.1'
+  s.version          = '2.1.2'
   s.summary          = 'AppNotice lets you inform your users which third party SDKs your app is using.'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,6 @@ AppNotice lets you inform your users which third party SDKs your app is using. I
   s.social_media_url = 'https://twitter.com/Ghostery'
 
   s.ios.deployment_target = '8.1'
-  s.vendored_frameworks = 'AppNotice/AppNoticeSDKFramework.framework'
-  s.resources = 'AppNotice/AppNotice.bundle'
-  s.requires_arc = true
+  s.vendored_frameworks = 'AppNoticeSDKFramework.framework'
+  s.resources = 'AppNotice.bundle'
 end
