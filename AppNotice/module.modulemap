@@ -1,0 +1,4 @@
+module AppNotice {
+  header "AppNoticeSDKFramework/AppNoticeSDKFramework.h"
+  export *
+}

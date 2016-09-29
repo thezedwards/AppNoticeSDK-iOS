@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppNotice'
-  s.version          = '2.1.6'
+  s.version          = '2.1.7'
   s.summary          = 'AppNotice lets you inform your users which third party SDKs your app is using.'
   s.description      = <<-DESC
 AppNotice lets you inform your users which third party SDKs your app is using. It lets the user opt out of using any optional SDKs like usage analytics, for example. It also records whether a consent notice has been shown, accepted, declined, etc.
@@ -23,7 +23,7 @@ AppNotice lets you inform your users which third party SDKs your app is using. I
 
   s.ios.deployment_target = '8.1'
   s.frameworks = 'UIKit', 'Foundation'
-  s.vendored_frameworks = 'AppNoticeSDKFramework.framework'
-  s.resources = 'AppNotice.bundle'
-  s.module_map = 'AppNotice.modulemap'
+  s.vendored_frameworks = 'AppNotice/AppNoticeSDKFramework.framework'
+  s.resources = 'AppNotice/AppNotice.bundle'
+  s.module_map = 'AppNotice/module.modulemap'
 end

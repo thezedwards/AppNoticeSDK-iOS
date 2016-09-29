@@ -1,3 +1,0 @@
-module AppNotice {
-  #import <AppNoticeSDKFramework/AppNoticeSDKFramework.h>
-}
