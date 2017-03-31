@@ -1,0 +1,46 @@
+/*
+Localizable.strings
+Ghostery, Inc.
+Customizable list of strings
+*/
+
+"ghostery_all"= "Tous";
+"ghostery_none"= "Aucun";
+"ghostery_back" = "Retour";
+
+"ghostery_tracker_details" = "Détails des Mouchards";
+
+"ghostery_dialog_button_close" = "Fermer";
+
+"ghostery_dialog_button_consent"= "Accepter";
+
+"ghostery_dialog_button_decline"= "Refuser";
+
+"ghostery_dialog_explicit_message"= "";
+
+"ghostery_dialog_implicit_message"= "";
+
+"ghostery_manage_preferences_description"= "";
+
+"ghostery_dialog_header_text"= "La protection de votre vie privée nous tient à cœur";
+
+"ghostery_dialog_pleaseWait"= "Veuillez patienter...";
+
+"ghostery_manage_preferences_detail_learnmore"= "Pour en savoir plus sur la manière dont nous recueillons et utilisons des informations pour les applications mobiles, veuillez consulter:";
+
+"ghostery_manage_preferences_detail_learnmore_not_provided"= "Politique de confidentialité non fournie";
+
+"ghostery_manage_preferences_detail_trackerinfo"= "Info des mouchards";
+
+"ghostery_manage_preferences_empty_list"= "Impossible de charger la liste des mouchards. Assurez-vous d'avoir un accès Internet et réessayez à une date ultérieure.";
+
+"ghostery_manage_preferences_title"= "";
+
+"ghostery_manage_preferences_button"= "Gérer Préférences";
+
+"ghostery_manage_preferences_optin_header"= "Opt In";
+
+"ghostery_manage_preferences_optin_text"= "Pour tous les mouchards indiqués ci-dessous.";
+
+"ghostery_tracker_learnmore_title"= "En savoir plus";
+

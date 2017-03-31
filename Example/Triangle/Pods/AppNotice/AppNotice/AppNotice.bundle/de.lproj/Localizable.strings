@@ -1,0 +1,46 @@
+/*
+Localizable.strings
+Ghostery, Inc.
+Customizable list of strings
+*/
+
+"ghostery_all"= "Alle";
+"ghostery_none"= "Keine";
+"ghostery_back" = "Zurück";
+
+"ghostery_tracker_details" = "Tracker-Detail";
+
+"ghostery_dialog_button_close" = "Schließen";
+
+"ghostery_dialog_button_consent"= "Akzeptieren";
+
+"ghostery_dialog_button_decline"= "Ablehnen";
+
+"ghostery_dialog_header_text"= "Der Schutz Ihrer Daten ist uns wichtig";
+
+"ghostery_dialog_explicit_message"= "";
+
+"ghostery_dialog_implicit_message"= "";
+
+"ghostery_manage_preferences_description"= "";
+
+"ghostery_dialog_pleaseWait"= "Bitte warten...";
+
+"ghostery_manage_preferences_detail_learnmore"= "Um mehr zu erfahren, wie wir Informationen für mobile Apps sammeln und verwenden, besuchen Sie bitte:";
+
+"ghostery_manage_preferences_detail_learnmore_not_provided"= "Datenschutzrichtlinien nicht angegeben";
+
+"ghostery_manage_preferences_detail_trackerinfo"= "Tracker-Info";
+
+"ghostery_manage_preferences_empty_list"= "Die Liste der Tracker konnte nicht geladen werden. Stellen Sie bitte sicher, dass Sie Internetzugang haben, und versuchen Sie es später erneut.";
+
+"ghostery_manage_preferences_title" = "";
+
+"ghostery_manage_preferences_button" = "";
+
+"ghostery_manage_preferences_optin_header"= "Opt In";
+
+"ghostery_manage_preferences_optin_text"= "Zu allen unten aufgelisteten Trackers.";
+
+"ghostery_tracker_learnmore_title"= "Weitere Informationen";
+
