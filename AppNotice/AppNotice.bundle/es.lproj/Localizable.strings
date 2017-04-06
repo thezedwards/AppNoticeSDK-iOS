@@ -4,42 +4,52 @@ Ghostery, Inc.
 Customizable list of strings
 */
 
-"ghostery_all"= "Todos";
-"ghostery_none"= "Ninguno";
+"ghostery_all" = "Todos";
+"ghostery_none" = "Ninguno";
 "ghostery_back" = "Atrás";
 
-"ghostery_tracker_details" = "Información de Rastreador";
+"ghostery_dialog_button_implied_consent" = "Continuar";
 
-"ghostery_dialog_button_close" = "Cerrar";
+"ghostery_dialog_button_explicit_consent" = "Aceptar Todo";
 
-"ghostery_dialog_button_consent"= "Aceptar";
+"ghostery_dialog_button_decline" = "Rechazar Todo";
 
-"ghostery_dialog_button_decline"= "Declinar";
+"ghostery_dialog_header_text" = "Nos importa su privacidad";
 
-"ghostery_dialog_header_text"= "Nos importa su privacidad";
+"ghostery_dialog_explicit_message" = "Esta aplicación usa tecnologías para que nosotros y nuestros colaboradores, podamos recordarle y comprender cómo usa la aplicación.  Para ver una lista de estas tecnologías y decidir si permite su uso, gestione sus preferencias.";
 
-"ghostery_dialog_explicit_message"= "";
+"ghostery_dialog_implicit_message" = "Esta aplicación usa tecnologías para que nosotros y nuestros colaboradores, podamos recordarle y comprender cómo usa la aplicación.  Para ver una lista de estas tecnologías y decidir si permite su uso, gestione sus preferencias más abajo. Si sigue utlizando esta aplicación se considerará que ha dado su consentimiento.";
 
-"ghostery_dialog_implicit_message"= "";
+"ghostery_manage_preferences_description" = "Para más información sobre las tecnologías usadas en esta aplicación, consulte la lista que se muestra a continuación.";
 
-"ghostery_manage_preferences_description"= "";
+"ghostery_dialog_please_wait" = "Por favor espere...";
 
-"ghostery_dialog_pleaseWait"= "Por favor espere...";
+"ghostery_manage_preferences_detail_learnmore" = "Para obtener más información, visite:";
 
-"ghostery_manage_preferences_detail_learnmore"= "Para más información sobre cómo recogemos y usamos la información para apps móviles por favor visite:";
+"ghostery_manage_preferences_title" = "Preferencias de privacidad";
 
-"ghostery_manage_preferences_detail_learnmore_not_provided"= "Política de privacidad no provista";
+"ghostery_manage_preferences_button" = "Gestionar Preferencias";
 
-"ghostery_manage_preferences_detail_trackerinfo"= "Información de rastreador";
+"ghostery_tracker_learnmore_title" = "Más información";
 
-"ghostery_manage_preferences_empty_list"= "No se pudo cargar la lista de rastreadores. Por favor asegúrese de que tiene acceso a Internet e inténtelo de nuevo más tarde.";
+"ghostery_manage_preferences_optional_title" = "Opcional";
+"ghostery_manage_preferences_optional_description" = "Las siguientes tecnologías opcionales pueden desactivarse si lo desea.";
 
-"ghostery_manage_preferences_title" = "";
+"ghostery_manage_preferences_essential_title" = "Esencial";
+"ghostery_manage_preferences_essential_description" = "Las siguientes tecnologías son necesarias para que la aplicación funcione y se enumeran solo a título informativo.";
 
-"ghostery_manage_preferences_button"= "";
+"ghostery_manage_preferences_web_based_title" = "Vía web";
+"ghostery_manage_preferences_web_based_description" = "Algunas partes de esta aplicación usan vistas web que pueden usar cookies.  Puede desactivar cookies ulteriormente, en configuraciones de la aplicación.";
 
-"ghostery_manage_preferences_optin_header"= "Optar por inclusión";
+"ghostery_manage_preferences_footer_text" = "Controles de privacidad, Ghostery, Inc.";
 
-"ghostery_manage_preferences_optin_text"= "Para todos los rastreadores listados a continuación.";
+"ghostery_manage_preferences_allow_header" = "Permitir";
 
-"ghostery_tracker_learnmore_title"= "Más información";
+"ghostery_manage_preferences_explicit_accept_button" = "Aceptar";
+
+"ghostery_consent_declined_header" = "Se requiere su consentimiento";
+
+"ghostery_consent_declined_body" = "Para usar esta aplicación, debe dar su consentimiento a nuestro uso de tecnologías. Puede volver atrás y modificar sus preferencias de privacidad, desactivando cualquier tecnología opcional, o desinstalar la aplicación.";
+
+"connection_error" = "Error de conexión";
+

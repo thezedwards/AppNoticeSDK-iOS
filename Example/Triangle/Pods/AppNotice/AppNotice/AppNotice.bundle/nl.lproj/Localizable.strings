@@ -4,43 +4,51 @@ Ghostery, Inc.
 Customizable list of strings
 */
 
-"ghostery_all"= "Alle";
-"ghostery_none"= "Geen";
+"ghostery_all" = "Alle";
+"ghostery_none" = "Geen";
 "ghostery_back" = "Terug";
 
-"ghostery_tracker_details" = "Tracker Details";
+"ghostery_dialog_button_implied_consent" = "Doorgaan";
 
-"ghostery_dialog_button_close" = "Sluiten";
+"ghostery_dialog_button_explicit_consent" = "Alles Accepteren";
 
-"ghostery_dialog_button_consent"= "Accepteren";
+"ghostery_dialog_button_decline" = "Alles Weigeren";
 
-"ghostery_dialog_button_decline"= "Weigeren";
+"ghostery_dialog_header_text" = "Uw privacy is belangrijk voor ons";
 
-"ghostery_dialog_header_text"= "Uw privacy is belangrijk voor ons";
+"ghostery_dialog_explicit_message" = "Deze app bevat technologieën waarmee wij en onze partners u kunnen herkennen en begrijpen op welke wijze u de app gebruikt. Als u wilt zien welke technologieën dat zijn en wilt aangeven of ze kunnen worden toegepast, ga dan naar Voorkeuren.";
 
-"ghostery_dialog_explicit_message"= "";
+"ghostery_dialog_implicit_message" = "Deze app bevat technologieën waarmee wij en onze partners u kunnen herkennen en begrijpen op welke wijze u de app gebruikt. Als u wilt zien welke technologieën dat zijn en wilt aangeven of ze kunnen worden toegepast, ga dan naar Voorkeuren hieronder. Bij verder gebruik van deze app wordt ervan uitgegaan dat u toestemming hebt gegeven.";
 
-"ghostery_dialog_implicit_message"= "";
+"ghostery_manage_preferences_description" = "In de onderstaande lijst vindt u een overzicht van de technologieën die in deze app zijn toegepast.";
 
-"ghostery_manage_preferences_description"= "";
+"ghostery_dialog_please_wait" = "Een ogenblik geduld a.u.b.";
 
-"ghostery_dialog_pleaseWait"= "Een ogenblik geduld a.u.b.";
+"ghostery_manage_preferences_detail_learnmore" = "Voor meer informatie kunt u terecht op:";
 
-"ghostery_manage_preferences_detail_learnmore"= "Meer informatie over hoe we informatie voor mobiele apps verzamelen en gebruiken, vindt u hier:";
+"ghostery_manage_preferences_title" = "Privacyvoorkeuren";
 
-"ghostery_manage_preferences_detail_learnmore_not_provided"= "privacybeleid niet geleverd";
+"ghostery_manage_preferences_button" = "Voorkeuren Beheren";
 
-"ghostery_manage_preferences_detail_trackerinfo"= "Tracker informatie";
+"ghostery_tracker_learnmore_title" = "Meer informatie";
 
-"ghostery_manage_preferences_empty_list"= "De lijst met trackers kon niet geladen worden. Controleer of u toegang hebt tot het internet en probeer het nogmaals.";
+"ghostery_manage_preferences_optional_title" = "Optioneel";
+"ghostery_manage_preferences_optional_description" = "U kunt naar eigen inzicht de volgende optionele technologieën in- of uitschakelen.";
 
-"ghostery_manage_preferences_title" = "";
+"ghostery_manage_preferences_essential_title" = "Essentieel";
+"ghostery_manage_preferences_essential_description" = "De volgende essentiële technologieën zijn nodig voor de correcte werking van de app en worden alleen genoemd omwille van de volledigheid.";
 
-"ghostery_manage_preferences_button" = "";
+"ghostery_manage_preferences_web_based_title" = "Web-based";
+"ghostery_manage_preferences_web_based_description" = "Sommige onderdelen van de app maken gebruik van webviews, die cookies kunnen toepassen. De mogelijkheid om cookies te weigeren vindt u verderop in de app-instellingen.";
 
-"ghostery_manage_preferences_optin_header"= "Opt In";
+"ghostery_manage_preferences_footer_text" = "Privacy Controls door Ghostery, Inc.";
 
-"ghostery_manage_preferences_optin_text"= "Aan alle onderstaande trackers.";
+"ghostery_manage_preferences_allow_header" = "Toestaan";
 
-"ghostery_tracker_learnmore_title"= "Meer informatie";
+"ghostery_manage_preferences_explicit_accept_button" = "Aanvaarden";
 
+"ghostery_consent_declined_header" = "Uw toestemming is vereist";
+
+"ghostery_consent_declined_body" = "Om met deze app te kunnen werken moet u erin toestemmen dat wij bepaalde technologieën toepassen. U kunt teruggaan en uw privacyvoorkeuren aanpassen door optionele technologieën uit te schakelen, of u kunt de app van uw toestel verwijderen.";
+
+"connection_error" = "Verbindingsfout";

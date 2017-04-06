@@ -1,0 +1,56 @@
+/*
+Localizable.strings
+Ghostery, Inc.
+Customizable list of strings
+*/
+
+"ghostery_none" = "None";
+
+"ghostery_all" = "All";
+
+"ghostery_back" = "Voltar";
+
+"ghostery_manage_preferences_title" = "Preferências de Privacidade";
+
+"ghostery_manage_preferences_button" = "Gerir Preferências";
+
+"ghostery_dialog_button_implied_consent" = "Continuar";
+
+"ghostery_dialog_button_explicit_consent" = "Aceitar Todas";
+
+"ghostery_dialog_button_decline" = "Recusar Todas";
+
+"ghostery_dialog_header_text" = "Preocupamo-nos com a sua privacidade";
+
+"ghostery_dialog_explicit_message" = "Esta aplicação utiliza tecnologias de modo a que nós e os nossos parceiros nos lembremos de si e entendamos como utiliza a nossa aplicação. Para ver uma lista destas tecnologias e decidir se podem ser utilizadas, defina as suas preferências.";
+
+"ghostery_dialog_implicit_message" = "Esta aplicação utiliza tecnologias de modo a que nós e os nossos parceiros nos lembremos de si e entendamos como utiliza a nossa aplicação. Para ver uma lista destas tecnologias e decidir se podem ser utilizadas, defina as suas preferências abaixo. Optar pela utilização desta aplicação será considerado como aprovado.";
+
+"ghostery_manage_preferences_description" = "Saiba mais sobre as tecnologias utilizadas nesta aplicação consultando a lista abaixo.";
+
+"ghostery_dialog_please_wait" = "Por favor espere...";
+
+"ghostery_manage_preferences_optional_title" = "Opcional";
+"ghostery_manage_preferences_optional_description" = "As seguintes tecnologias opcionais podem ser desativadas de acordo com a sua preferência.";
+
+"ghostery_manage_preferences_essential_title" = "Essencial";
+"ghostery_manage_preferences_essential_description" = "As seguintes tecnologias são essencialmente necessárias para o funcionamento da aplicação e são listadas apenas para fins informativos.";
+
+"ghostery_manage_preferences_web_based_title" = "Baseado na Web";
+"ghostery_manage_preferences_web_based_description" = "Algumas partes desta aplicação utilizam webviews que podem utilizar cookies. Os opt-out são baseados em cookies e estão disponíveis dentro das configurações da aplicação.";
+
+"ghostery_manage_preferences_footer_text" = "Controlos de Privacidade por Ghostery, Inc.";
+
+"ghostery_manage_preferences_allow_header" = "Permitir";
+
+"ghostery_manage_preferences_explicit_accept_button" = "Aceitar";
+
+"ghostery_manage_preferences_detail_learnmore" = "Para saber mais, visite:";
+
+"ghostery_consent_declined_header" = "É necessário o seu consentimento";
+
+"ghostery_consent_declined_body" = "Para usar esta aplicação é necessário o seu consentimento para que possamos utilizar as tecnologias. Pode voltar e modificar as suas preferências de privacidade desativando qualquer tecnologia opcional ou desinstalando a aplicação.";
+
+"ghostery_tracker_learnmore_title" = "Mais informação";
+
+"connection_error" = "Erro de conexão";

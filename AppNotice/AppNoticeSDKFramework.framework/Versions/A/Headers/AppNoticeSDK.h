@@ -36,13 +36,10 @@ typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NS
 @property (nonatomic, strong, nullable) UIImage *logoImage;
 
 /** 
-   Activates the SDK with your company id and pub notice id. Must be called before using SDK
- 
-   @param companyId The company id which was provided to you by Ghostery
-   @param pubNoticeId The pub notice id which you created on the web portal
+   Activates the SDK with your SDK token. Must be called before using SDK.
+   @param token The App Notice token configured for your app.
  */
-- (void)activateWithCompanyId:(NSString*)companyId pubNoticeId:(NSString*)pubNoticeId;
-
+- (void)activateWithToken:(NSString*)token;
 
 /** 
    Presents the user with an explicit consent dialog.
@@ -92,6 +89,14 @@ typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NS
 @property (nonatomic, strong, nullable) UIColor *tintColor;
 @property (nonatomic, strong, nullable) UIColor *disabledColor;
 @property (nonatomic, strong, nullable) UIColor *separatorColor;
+
+/** Determines whether the web-based tab should appear in the Manage Preferences view or not.
+ */
+@property (nonatomic, assign) BOOL hideWebBasedTab;
+
+/** Prints debug output to the console if enabled. Off by default.
+ */
+@property (nonatomic, assign) BOOL isLogEnabled;
 
 /** 
    Resets count on consent dialog appearances and resets all tracker settings for user

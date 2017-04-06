@@ -20,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Must activate the SDK before you can use it
-        AppNoticeSDK.sharedInstance().activate(withCompanyId: "242", pubNoticeId: "6924")
+        // Another test token: "186078635eab44a199269cc61458fe23"
+        AppNoticeSDK.sharedInstance().activate(withToken: "bff0f04910354fb8a042650840056c9d")
         AppNoticeSDK.sharedInstance().logoImage = UIImage(named: "ghostery-logo")
 
         // Initialize Crashlytics
