@@ -1,5 +1,5 @@
 PODS:
-  - AppNotice (2.1.9)
+  - AppNotice (2.2)
   - Crashlytics (3.7.3):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.8)
@@ -12,7 +12,7 @@ DEPENDENCIES:
   - GoogleMobileAds
 
 SPEC CHECKSUMS:
-  AppNotice: 38bc2c1bd86966a4062aa6fa320aadf484373a6b
+  AppNotice: c0e780a3fc95c3098bb081b072365367c59b565a
   Crashlytics: 76f6beaff70acf226139582c09c78461597c2b98
   Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
   GoogleMobileAds: c79931d6eef16b1e4c35d331cf23c47e0dd490d2

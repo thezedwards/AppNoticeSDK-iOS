@@ -18,7 +18,7 @@ AppNotice lets you inform your users which third party SDKs your app is using. I
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.source           = { :git => 'https://github.com/evidon/AppNoticeSDK-iOS.git', :tag => s.version.to_s }
-  s.author           = { 'Evidon' => '' }
+  s.author           = { 'Evidon' => 'mobiledev@evidon.com' }
   s.social_media_url = 'https://twitter.com/Evidon'
   s.ios.deployment_target = '8.1'
   s.frameworks = 'UIKit', 'Foundation'

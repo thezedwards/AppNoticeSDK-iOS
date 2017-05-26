@@ -1,6 +1,6 @@
 # AppNotice SDK for iOS<br/>Installation and Customization
-*Version: 2.1.5*</br>
-September 2016
+*Version: 2.2*</br>
+May 2017
 
 [![Version](https://img.shields.io/cocoapods/v/AppNotice.svg?style=flat)](http://cocoapods.org/pods/AppNotice)
 [![License](https://img.shields.io/cocoapods/l/AppNotice.svg?style=flat)](http://cocoapods.org/pods/AppNotice)
@@ -54,20 +54,20 @@ If your project is in Swift and you don't already have a bridging header file, t
 
 ## SDK Activation <a name="activation"/>
 
-You must activate the SDK before you can use the SDK features. You do so using your Company ID and Publisher Notice ID. 
+You must activate the SDK before you can use the SDK features. You do so using your activation token. 
 
-Note that the SDK tracker list is only downloaded once and stored on the device for each publisher notice ID. This means if you make changes to the tracker list after your app is released, you'll need to create a new App Notice with a different notice ID. You will need to then update the SDK and re-publish your app before those changes will appear. 
+Note that the SDK tracker list is only downloaded once and stored on the device for each activation token. This means if you make changes to the tracker list after your app is released, you'll need to create a new App Notice with a different activation token. You will need to then update the SDK and re-publish your app before those changes will appear. 
 
 ### Swift
 
 ```swift
-AppNoticeSDK.sharedInstance().activateWithCompanyId("242", pubNoticeId: "6107")
+AppNoticeSDK.sharedInstance().activateWithToken("bff0f04910354fb8a042650840056c9d")
 ```
 
 ### Objective-C
 
 ```objective-c
-[[AppNoticeSDK sharedInstance] activateWithCompanyId:@"242" pubNoticeId:@"6107"];
+[[AppNoticeSDK sharedInstance] activateWithToken:@"bff0f04910354fb8a042650840056c9d"];
 ```
 
 ## Usage
