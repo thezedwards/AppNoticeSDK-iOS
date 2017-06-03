@@ -41,7 +41,7 @@ Customizable list of strings
 "ghostery_manage_preferences_web_based_title" = "Web-based";
 "ghostery_manage_preferences_web_based_description" = "Sommige onderdelen van de app maken gebruik van webviews, die cookies kunnen toepassen. De mogelijkheid om cookies te weigeren vindt u verderop in de app-instellingen.";
 
-"ghostery_manage_preferences_footer_text" = "Privacy Controls door Ghostery, Inc.";
+"ghostery_manage_preferences_footer_text" = "Privacy Controls door Evidon, Inc.";
 
 "ghostery_manage_preferences_allow_header" = "Toestaan";
 
