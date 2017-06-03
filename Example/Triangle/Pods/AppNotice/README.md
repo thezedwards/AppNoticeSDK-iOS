@@ -1,5 +1,5 @@
 # AppNotice SDK for iOS<br/>Installation and Customization
-*Version: 2.2*</br>
+*Version: 2.2.1*</br>
 May 2017
 
 [![Version](https://img.shields.io/cocoapods/v/AppNotice.svg?style=flat)](http://cocoapods.org/pods/AppNotice)
@@ -21,7 +21,7 @@ To run the Triangle project, clone the repo, and run `pod install` from the Exam
 
 ## Author
 
-Joe Swindler, Ghostery
+Evidon
 
 ## License
 

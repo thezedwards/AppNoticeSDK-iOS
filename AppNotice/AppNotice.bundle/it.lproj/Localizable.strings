@@ -41,7 +41,7 @@ Customizable list of strings
 "ghostery_manage_preferences_web_based_title" = "Basato sul Web";
 "ghostery_manage_preferences_web_based_description" = "Alcune parti di questa app utilizzano webview, che potrebbero utilizzare cookie. La negazione del consenso basata su cookie è disponibile in seguito nelle impostazioni della app.";
 
-"ghostery_manage_preferences_footer_text" = "Controlli sulla privacy di Ghostery, Inc.";
+"ghostery_manage_preferences_footer_text" = "Controlli sulla privacy di Evidon, Inc.";
 
 "ghostery_manage_preferences_allow_header" = "Consentire";
 
