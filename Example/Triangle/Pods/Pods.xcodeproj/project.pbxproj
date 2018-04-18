@@ -14,7 +14,7 @@
 
 /* Begin PBXFileReference section */
 		037096A8531BB30A4F4184840A195F2C /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
-		0544FE3C9BEEF9A0900024B1BA6E8DE1 /* Pods-Triangle_swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Triangle_swift.modulemap"; sourceTree = "<group>"; };
+		0544FE3C9BEEF9A0900024B1BA6E8DE1 /* Pods-Triangle_swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Triangle_swift.modulemap"; sourceTree = "<group>"; };
 		0D630A4F5F83484390B509244F0399F7 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
 		1AC54951B0E9D98FD2A078AE1AD165B8 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
 		256B7EFC8C6C25A4F17A69E91664EF90 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
@@ -24,11 +24,9 @@
 		659BA0907650CF97B5DDFBAB110CAB43 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
 		6F98703394E149EC06E85DE91BE58BC8 /* Pods-Triangle_swift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Triangle_swift-resources.sh"; sourceTree = "<group>"; };
 		70FE2D604CBEC5106E188634E233CAAF /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
-		801CA0E16ACB4ADB81477607525FCBE4 /* Pods_Triangle_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Triangle_swift.framework; path = "Pods-Triangle_swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		84DD9301ACC00E48656DA0EB4DC988AA /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppNoticeSDKFramework.framework; path = AppNotice/AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		801CA0E16ACB4ADB81477607525FCBE4 /* Pods_Triangle_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Triangle_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FE951E8A496975D4B69B474BF373AFA /* Pods-Triangle_swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Triangle_swift-umbrella.h"; sourceTree = "<group>"; };
-		A1A8C7974ED37E1C0D3814D1C5040B03 /* AppNotice.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AppNotice.bundle; path = AppNotice/AppNotice.bundle; sourceTree = "<group>"; };
 		A39D696C2F4412AE99C72B76190EBFD7 /* Pods-Triangle_swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Triangle_swift-acknowledgements.plist"; sourceTree = "<group>"; };
 		A838912D98EA676ECF7399EFED36BDE7 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		BD4E1D68C960C55BA24B9CA16ABE8FF0 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
@@ -39,6 +37,7 @@
 		E8E34B88674EFE1923FC825231132667 /* Pods-Triangle_swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Triangle_swift-dummy.m"; sourceTree = "<group>"; };
 		E9A76FDAF538142E1B7E08F0A3DD6646 /* Pods-Triangle_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Triangle_swift.debug.xcconfig"; sourceTree = "<group>"; };
 		F0DB5D4EE31FD1DA526D235F2DD3D499 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		F570E1C12087EB4E003CE10B /* AppNotice */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppNotice; sourceTree = "<group>"; };
 		FD61992ED74B03DB1BCEA557A0BF03F8 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,14 +53,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		000D40F5530EFC5482A21A04A06F8FD6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				84DD9301ACC00E48656DA0EB4DC988AA /* AppNoticeSDKFramework.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		0D17B0C8BB835B505C27E0E306178A12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,7 +66,6 @@
 			children = (
 				42DE91C224C5E87F15B9056FE3D243C4 /* Frameworks */,
 			);
-			name = GoogleMobileAds;
 			path = GoogleMobileAds;
 			sourceTree = "<group>";
 		};
@@ -109,7 +99,6 @@
 				3AA2BBB1D9F38336B054125892E5696E /* Crashlytics.h */,
 				0D17B0C8BB835B505C27E0E306178A12 /* Frameworks */,
 			);
-			name = Crashlytics;
 			path = Crashlytics;
 			sourceTree = "<group>";
 		};
@@ -127,16 +116,6 @@
 				26CF7445519EFD22751E8E73EB5E30AC /* Pods-Triangle_swift */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		5CCBB226ED2E4CBE7D7B7B07DCE92668 /* AppNotice */ = {
-			isa = PBXGroup;
-			children = (
-				000D40F5530EFC5482A21A04A06F8FD6 /* Frameworks */,
-				91162BBE5A82D22A79E7A5EDAC3C7360 /* Resources */,
-			);
-			name = AppNotice;
-			path = AppNotice;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -165,16 +144,7 @@
 				C32C95D4C70C4E66417099B8436E032C /* Fabric.h */,
 				BF4EAAA4272D18AB4AAB370A1FB76351 /* Frameworks */,
 			);
-			name = Fabric;
 			path = Fabric;
-			sourceTree = "<group>";
-		};
-		91162BBE5A82D22A79E7A5EDAC3C7360 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A1A8C7974ED37E1C0D3814D1C5040B03 /* AppNotice.bundle */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		B9E78BB4617F0B98822E8FDB2688353E /* Products */ = {
@@ -204,7 +174,7 @@
 		CED38C4F8B3D750450FDE8F4350F3505 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5CCBB226ED2E4CBE7D7B7B07DCE92668 /* AppNotice */,
+				F570E1C12087EB4E003CE10B /* AppNotice */,
 				402F139F13DAAB9ED07CCC00E3FA0E43 /* Crashlytics */,
 				7DC675A2508B0DBFD5B4AB48C6E2B5AA /* Fabric */,
 				196F56BA0935FFD5CF653F4E883FB9C0 /* GoogleMobileAds */,
@@ -365,11 +335,12 @@
 			baseConfigurationReference = E9A76FDAF538142E1B7E08F0A3DD6646 /* Pods-Triangle_swift.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

@@ -16,7 +16,7 @@
 		D67744621BB46B24009AA09B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67744601BB46B24009AA09B /* Main.storyboard */; };
 		D67744641BB46B24009AA09B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67744631BB46B24009AA09B /* Assets.xcassets */; };
 		D67744671BB46B24009AA09B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67744651BB46B24009AA09B /* LaunchScreen.storyboard */; };
-		F570E1B32087D728003CE10B /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F74FEE2087BDF7006690AB /* AppNoticeSDKFramework.framework */; };
+		F570E1C32087ECD4003CE10B /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F570E1C22087ECD4003CE10B /* AppNoticeSDKFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,6 @@
 		340C39631D1B2BE200292F87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		341D38AB1C8DFF3D007A1740 /* HybridSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HybridSettingsView.swift; sourceTree = "<group>"; };
 		34D98EAD1D2194CE00A5F55A /* TriangleCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleCommon.swift; sourceTree = "<group>"; };
-		34EC3AE71D185FEA001DA41A /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
-		34EC3AE81D185FEA001DA41A /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
 		4D93B04618F59D828735D9AA /* Pods_Triangle_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Triangle_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B079EB43566266B50779F3 /* Pods-Triangle_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Triangle_swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Triangle_swift/Pods-Triangle_swift.release.xcconfig"; sourceTree = "<group>"; };
 		D67744591BB46B24009AA09B /* Triangle_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +40,7 @@
 		D81F157B1E95F243005B4B57 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D81F157C1E95F249005B4B57 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D81F157D1E95F269005B4B57 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F5F74FEE2087BDF7006690AB /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppNoticeSDKFramework.framework; path = "../../../AppNotice-iOS/Framework Files/AppNoticeSDKFramework.framework"; sourceTree = "<group>"; };
+		F570E1C22087ECD4003CE10B /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppNoticeSDKFramework.framework; path = Pods/AppNotice/AppNotice/AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F570E1B32087D728003CE10B /* AppNoticeSDKFramework.framework in Frameworks */,
+				F570E1C32087ECD4003CE10B /* AppNoticeSDKFramework.framework in Frameworks */,
 				34591F5233056BA16D3401DA /* Pods_Triangle_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,7 +59,7 @@
 		218173C159B59283258EE82D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F5F74FEE2087BDF7006690AB /* AppNoticeSDKFramework.framework */,
+				F570E1C22087ECD4003CE10B /* AppNoticeSDKFramework.framework */,
 				4D93B04618F59D828735D9AA /* Pods_Triangle_swift.framework */,
 			);
 			name = Frameworks;
@@ -115,8 +113,6 @@
 		D677446E1BB46B43009AA09B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				34EC3AE71D185FEA001DA41A /* AppNotice.bundle */,
-				34EC3AE81D185FEA001DA41A /* AppNoticeSDKFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -412,6 +408,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Triangle_swift",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/AppNotice/AppNotice",
 				);
 				INFOPLIST_FILE = Triangle_swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -448,6 +445,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Triangle_swift",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pods/AppNotice/AppNotice",
 				);
 				INFOPLIST_FILE = Triangle_swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
