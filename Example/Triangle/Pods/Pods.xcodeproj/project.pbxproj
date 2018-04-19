@@ -10,6 +10,7 @@
 		455EECBFF27E651A59C7E248126104EF /* Pods-Triangle_swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FE951E8A496975D4B69B474BF373AFA /* Pods-Triangle_swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B23D480246A97C1D9D5030141E482D9 /* Pods-Triangle_swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E34B88674EFE1923FC825231132667 /* Pods-Triangle_swift-dummy.m */; };
 		8921E341B61E8BCF0A357025351FB7EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		F585796A2088FFB2001E8ADB /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58579682088FFB2001E8ADB /* AppNoticeSDKFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +38,11 @@
 		E8E34B88674EFE1923FC825231132667 /* Pods-Triangle_swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Triangle_swift-dummy.m"; sourceTree = "<group>"; };
 		E9A76FDAF538142E1B7E08F0A3DD6646 /* Pods-Triangle_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Triangle_swift.debug.xcconfig"; sourceTree = "<group>"; };
 		F0DB5D4EE31FD1DA526D235F2DD3D499 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
-		F570E1C12087EB4E003CE10B /* AppNotice */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppNotice; sourceTree = "<group>"; };
+		F585795B2088FE8E001E8ADB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F585795F2088FE8E001E8ADB /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		F58579602088FE8E001E8ADB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F58579682088FFB2001E8ADB /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppNoticeSDKFramework.framework; path = ../../../../../AppNotice/AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
+		F58579692088FFB2001E8ADB /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AppNotice.bundle; path = ../../../../../AppNotice/AppNotice.bundle; sourceTree = "<group>"; };
 		FD61992ED74B03DB1BCEA557A0BF03F8 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F585796A2088FFB2001E8ADB /* AppNoticeSDKFramework.framework in Frameworks */,
 				8921E341B61E8BCF0A357025351FB7EC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,12 +180,32 @@
 		CED38C4F8B3D750450FDE8F4350F3505 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F570E1C12087EB4E003CE10B /* AppNotice */,
+				F585795A2088FE8E001E8ADB /* AppNotice */,
 				402F139F13DAAB9ED07CCC00E3FA0E43 /* Crashlytics */,
 				7DC675A2508B0DBFD5B4AB48C6E2B5AA /* Fabric */,
 				196F56BA0935FFD5CF653F4E883FB9C0 /* GoogleMobileAds */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F585795A2088FE8E001E8ADB /* AppNotice */ = {
+			isa = PBXGroup;
+			children = (
+				F585795B2088FE8E001E8ADB /* LICENSE */,
+				F585795C2088FE8E001E8ADB /* AppNotice */,
+				F58579602088FE8E001E8ADB /* README.md */,
+			);
+			path = AppNotice;
+			sourceTree = "<group>";
+		};
+		F585795C2088FE8E001E8ADB /* AppNotice */ = {
+			isa = PBXGroup;
+			children = (
+				F58579692088FFB2001E8ADB /* AppNotice.bundle */,
+				F58579682088FFB2001E8ADB /* AppNoticeSDKFramework.framework */,
+				F585795F2088FE8E001E8ADB /* module.modulemap */,
+			);
+			path = AppNotice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +291,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppNotice/AppNotice",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Triangle_swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -345,6 +375,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppNotice/AppNotice",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Triangle_swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
