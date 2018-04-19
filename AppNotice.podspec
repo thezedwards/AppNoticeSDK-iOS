@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppNotice'
-  s.version          = '2.2.1'
+  s.version          = '2.2.2'
   s.summary          = 'AppNotice lets you inform your users which third party SDKs your app is using.'
   s.description      = <<-DESC
 AppNotice lets you inform your users which third party SDKs your app is using. It lets the user opt out of using any optional SDKs like usage analytics, for example. It also records whether a consent notice has been shown, accepted, declined, etc.
@@ -18,7 +18,7 @@ AppNotice lets you inform your users which third party SDKs your app is using. I
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.source           = { :git => 'https://github.com/evidon/AppNoticeSDK-iOS.git', :tag => s.version.to_s }
-  s.author           = { 'Evidon' => 'mobiledev@evidon.com' }
+  s.author           = { 'Evidon by Crownpeak' => 'jake.odowd@crownpeak.com' }
   s.social_media_url = 'https://twitter.com/Evidon'
   s.ios.deployment_target = '8.1'
   s.frameworks = 'UIKit', 'Foundation'
