@@ -425,7 +425,7 @@
 					"-isystem",
 					"\"${PODS_ROOT}/Headers/Public/GoogleMobileAds\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Evidon.InAppConsentSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Evidon.InAppConsentSDK.Triangle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -462,7 +462,7 @@
 					"-isystem",
 					"\"${PODS_ROOT}/Headers/Public/GoogleMobileAds\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Evidon.InAppConsentSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Evidon.InAppConsentSDK.Triangle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
