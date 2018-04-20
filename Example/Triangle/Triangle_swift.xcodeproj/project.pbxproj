@@ -41,6 +41,7 @@
 		D81F157C1E95F249005B4B57 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D81F157D1E95F269005B4B57 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F58579662088FF9B001E8ADB /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppNoticeSDKFramework.framework; path = Pods/AppNotice/AppNotice/AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
+		F585796B208A5C0D001E8ADB /* AppNoticeSDKFramework */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = AppNoticeSDKFramework; path = ../../../AppNotice/AppNoticeSDKFramework.framework/Versions/A/AppNoticeSDKFramework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +114,7 @@
 		D677446E1BB46B43009AA09B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F585796B208A5C0D001E8ADB /* AppNoticeSDKFramework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
