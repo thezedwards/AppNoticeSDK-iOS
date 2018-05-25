@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## AppNotice
+## App-Notice
 
 Copyright (c) 2016 Joe Swindler <jswindler@ghostery.com>
 

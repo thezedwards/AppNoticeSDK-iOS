@@ -31,7 +31,7 @@ AppNotice is available under the MIT license. See the LICENSE file for more info
 
 - iOS 8.0+
 - Xcode 7.0+
-- A valid App Notice ID from the Evidon control panel. See your Evidon Customer Success Manager for details.
+- A valid App Notice ID from the Ghostery control panel. See your Ghostery Customer Success Manager for details.
 
 ## Installation
 
@@ -236,6 +236,6 @@ For more detailed customization, the following AppNoticeSDK UIColor properties a
 
 ### Supporting Multiple App Versions
 
-To support multiple versions of your app that each have a different set of trackers, use a unique App Notice configuration in each version of your app. Use the Evidon Privacy control panel (https://privacy.evidon.com/AppNotice) to create an App Notice configuration for each version of your app that has a different combination of trackers.
+To support multiple versions of your app that each have a different set of trackers, use a unique App Notice configuration in each version of your app. Use the Ghostery control panel (https://my.ghosteryenterprise.com) to create an App Notice configuration for each version of your app that has a different combination of trackers.
 
 After creating an App Notice, make sure to use the correct App Notice ID in your app when you initialize the SDK as [shown above](#activation).

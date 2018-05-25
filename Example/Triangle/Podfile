@@ -6,7 +6,7 @@ target 'Triangle_swift' do
   use_frameworks!
 
   # Pods for Triangle_swift
-  pod 'AppNotice'
+  pod 'App-Notice'
   pod 'Fabric'
   pod 'Crashlytics'
   pod 'GoogleMobileAds'

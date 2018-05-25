@@ -16,7 +16,7 @@
 		D67744621BB46B24009AA09B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67744601BB46B24009AA09B /* Main.storyboard */; };
 		D67744641BB46B24009AA09B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67744631BB46B24009AA09B /* Assets.xcassets */; };
 		D67744671BB46B24009AA09B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67744651BB46B24009AA09B /* LaunchScreen.storyboard */; };
-		F58579672088FF9B001E8ADB /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58579662088FF9B001E8ADB /* AppNoticeSDKFramework.framework */; };
+		F570673F20B8BBE5005BD7E4 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F570673E20B8BBE5005BD7E4 /* AppNoticeSDKFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 		D81F157B1E95F243005B4B57 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D81F157C1E95F249005B4B57 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D81F157D1E95F269005B4B57 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F58579662088FF9B001E8ADB /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppNoticeSDKFramework.framework; path = Pods/AppNotice/AppNotice/AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
+		F570673E20B8BBE5005BD7E4 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppNoticeSDKFramework.framework; path = "Pods/App-Notice/AppNotice/AppNoticeSDKFramework.framework"; sourceTree = "<group>"; };
 		F585796B208A5C0D001E8ADB /* AppNoticeSDKFramework */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = AppNoticeSDKFramework; path = ../../../AppNotice/AppNoticeSDKFramework.framework/Versions/A/AppNoticeSDKFramework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F58579672088FF9B001E8ADB /* AppNoticeSDKFramework.framework in Frameworks */,
+				F570673F20B8BBE5005BD7E4 /* AppNoticeSDKFramework.framework in Frameworks */,
 				34591F5233056BA16D3401DA /* Pods_Triangle_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,7 +60,7 @@
 		218173C159B59283258EE82D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F58579662088FF9B001E8ADB /* AppNoticeSDKFramework.framework */,
+				F570673E20B8BBE5005BD7E4 /* AppNoticeSDKFramework.framework */,
 				4D93B04618F59D828735D9AA /* Pods_Triangle_swift.framework */,
 			);
 			name = Frameworks;
@@ -233,9 +233,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Triangle_swift/Pods-Triangle_swift-resources.sh",
+				"${PODS_ROOT}/App-Notice/AppNotice/AppNotice.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppNotice.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -248,13 +251,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Triangle_swift-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -411,6 +417,7 @@
 					"$(PROJECT_DIR)/Triangle_swift",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Pods/AppNotice/AppNotice",
+					"$(PROJECT_DIR)/Pods/App-Notice/AppNotice",
 				);
 				INFOPLIST_FILE = Triangle_swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -448,6 +455,7 @@
 					"$(PROJECT_DIR)/Triangle_swift",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Pods/AppNotice/AppNotice",
+					"$(PROJECT_DIR)/Pods/App-Notice/AppNotice",
 				);
 				INFOPLIST_FILE = Triangle_swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

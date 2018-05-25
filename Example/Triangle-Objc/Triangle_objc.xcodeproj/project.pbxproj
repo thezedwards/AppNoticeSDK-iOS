@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		347B8DC81C91E0F100F11257 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347B8DC61C91E0F100F11257 /* AppNoticeSDKFramework.framework */; };
-		347B8DC91C91E0F100F11257 /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 347B8DC71C91E0F100F11257 /* AppNotice.bundle */; };
 		3E979A451B8CE306003475FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E979A441B8CE306003475FA /* main.m */; };
 		3E979A481B8CE306003475FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E979A471B8CE306003475FA /* AppDelegate.m */; };
 		3E979A4B1B8CE306003475FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E979A4A1B8CE306003475FA /* ViewController.m */; };
@@ -17,11 +15,12 @@
 		3E979A531B8CE306003475FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E979A511B8CE306003475FA /* LaunchScreen.xib */; };
 		3E979A6B1B8CE45B003475FA /* Mediation Adapters in Resources */ = {isa = PBXBuildFile; fileRef = 3E979A691B8CE45B003475FA /* Mediation Adapters */; };
 		D68885431BB33D69001EF980 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68885421BB33D69001EF980 /* GoogleMobileAds.framework */; };
+		F5D38942209A1B5C008B9CBE /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D38941209A1B5C008B9CBE /* AppNoticeSDKFramework.framework */; };
+		F5D38944209A1B77008B9CBE /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D38943209A1B77008B9CBE /* AppNoticeSDKFramework.framework */; };
+		F5D38946209A1B81008B9CBE /* AppNotice.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5D38945209A1B81008B9CBE /* AppNotice.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		347B8DC61C91E0F100F11257 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
-		347B8DC71C91E0F100F11257 /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
 		3E979A3F1B8CE306003475FA /* Triangle_objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle_objc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E979A431B8CE306003475FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E979A441B8CE306003475FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -34,6 +33,10 @@
 		3E979A521B8CE306003475FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3E979A691B8CE45B003475FA /* Mediation Adapters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Mediation Adapters"; sourceTree = "<group>"; };
 		D68885421BB33D69001EF980 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		F5D3893A209A195D008B9CBE /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppNoticeSDKFramework.framework; path = ../../AppNotice/AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
+		F5D38941209A1B5C008B9CBE /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppNoticeSDKFramework.framework; path = Triangle_objc/AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
+		F5D38943209A1B77008B9CBE /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
+		F5D38945209A1B81008B9CBE /* AppNotice.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppNotice.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,8 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				347B8DC81C91E0F100F11257 /* AppNoticeSDKFramework.framework in Frameworks */,
+				F5D38942209A1B5C008B9CBE /* AppNoticeSDKFramework.framework in Frameworks */,
 				D68885431BB33D69001EF980 /* GoogleMobileAds.framework in Frameworks */,
+				F5D38944209A1B77008B9CBE /* AppNoticeSDKFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +58,7 @@
 			children = (
 				3E979A411B8CE306003475FA /* Triangle_objc */,
 				3E979A401B8CE306003475FA /* Products */,
+				F5D38939209A195D008B9CBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,9 +99,18 @@
 		3E979A6C1B8CE460003475FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				347B8DC61C91E0F100F11257 /* AppNoticeSDKFramework.framework */,
-				347B8DC71C91E0F100F11257 /* AppNotice.bundle */,
+				F5D38945209A1B81008B9CBE /* AppNotice.bundle */,
+				F5D38943209A1B77008B9CBE /* AppNoticeSDKFramework.framework */,
 				D68885421BB33D69001EF980 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5D38939209A195D008B9CBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5D38941209A1B5C008B9CBE /* AppNoticeSDKFramework.framework */,
+				F5D3893A209A195D008B9CBE /* AppNoticeSDKFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,12 +141,12 @@
 		3E979A371B8CE306003475FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Ghostery;
 				TargetAttributes = {
 					3E979A3E1B8CE306003475FA = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 86Z976V88Y;
+						DevelopmentTeam = YKJW8PFXHD;
 					};
 				};
 			};
@@ -159,7 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				347B8DC91C91E0F100F11257 /* AppNotice.bundle in Resources */,
+				F5D38946209A1B81008B9CBE /* AppNotice.bundle in Resources */,
 				3E979A6B1B8CE45B003475FA /* Mediation Adapters in Resources */,
 				3E979A4E1B8CE306003475FA /* Main.storyboard in Resources */,
 				3E979A531B8CE306003475FA /* LaunchScreen.xib in Resources */,
@@ -210,13 +224,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -255,13 +277,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -291,6 +321,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YKJW8PFXHD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Triangle_objc",
@@ -310,6 +341,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YKJW8PFXHD;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Triangle_objc",
