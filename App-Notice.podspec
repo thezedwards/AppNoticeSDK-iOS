@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint AppNotice.podspec' to ensure this is a
+# Be sure to run `pod lib lint App-Notice.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -8,10 +8,10 @@
 
 Pod::Spec.new do |s|
   s.name             = 'App-Notice'
-  s.version          = '1.0.0'
+  s.version          = '2.0.0'
   s.summary          = 'AppNotice lets you inform your users which third party SDKs your app is using.'
   s.description      = <<-DESC
-AppNotice lets you inform your users which third party SDKs your app is using. It lets the user opt out of using any optional SDKs like usage analytics, for example. It also records whether a consent notice has been shown, accepted, declined, etc.
+AppNotice (GDPR) lets you inform your users which third party SDKs your app is using. It lets the user opt out of using any optional SDKs like usage analytics, for example. It also records whether a consent notice has been shown, accepted, declined, etc.
                        DESC
 
   s.homepage         = 'https://www.evidon.com/digital-governance-solutions/site-notice/'
