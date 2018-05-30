@@ -10,6 +10,7 @@
 		455EECBFF27E651A59C7E248126104EF /* Pods-Triangle_swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B99F50BD239E4BA543C94E702740385 /* Pods-Triangle_swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B23D480246A97C1D9D5030141E482D9 /* Pods-Triangle_swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7162CDD00974EF0AE63EA59C79DC5FD /* Pods-Triangle_swift-dummy.m */; };
 		F45DECD789E3E28583BB928686434F83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		F5962C9720BF173200213222 /* AppNoticeSDKFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5962C9620BF173200213222 /* AppNoticeSDKFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,18 +28,18 @@
 		5F9D69D7EF83C7313DE12AB290F1118E /* AppNotice.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AppNotice.bundle; path = AppNotice/AppNotice.bundle; sourceTree = "<group>"; };
 		61D3C1B6EC0A5D5161BDC6C647FDE1B4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		801CA0E16ACB4ADB81477607525FCBE4 /* Pods_Triangle_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Triangle_swift.framework; path = "Pods-Triangle_swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		801CA0E16ACB4ADB81477607525FCBE4 /* Pods_Triangle_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Triangle_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		827F0076642B360B7EC669D36675936E /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
 		939AA0E1EC74BF7D10392A289FE7F28A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93EA761530A8EDA69CD0BD27B8AE270C /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
 		A6C4D3FA53FD22F958504D6F59AEAB2E /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 		C4FD2B9B859D9E3236DD77633CACCC68 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
 		D0C8937A9042A2F6FE2A5E3AD2C01EA0 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		DA6BEF6C648DA4C2B5FFEA1E176BC7C2 /* Pods-Triangle_swift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Triangle_swift-frameworks.sh"; sourceTree = "<group>"; };
 		E68446D418DE1B35072AF98CD4313D56 /* Pods-Triangle_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Triangle_swift.release.xcconfig"; sourceTree = "<group>"; };
-		EA2548DD49A34CBBB86DC90FC61A7004 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppNoticeSDKFramework.framework; path = AppNotice/AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
 		EFC2DA187BFF78CFD5A46230A0DE1452 /* Pods-Triangle_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Triangle_swift.debug.xcconfig"; sourceTree = "<group>"; };
+		F5962C9620BF173200213222 /* AppNoticeSDKFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppNoticeSDKFramework.framework; path = ../../../../AppNotice/AppNoticeSDKFramework.framework; sourceTree = "<group>"; };
 		F7162CDD00974EF0AE63EA59C79DC5FD /* Pods-Triangle_swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Triangle_swift-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5962C9720BF173200213222 /* AppNoticeSDKFramework.framework in Frameworks */,
 				F45DECD789E3E28583BB928686434F83 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,7 +102,6 @@
 				3FC767C08AE5FA08F1078472F5A19555 /* Crashlytics.h */,
 				FD586BA2DC54DC8E22E10C9591570367 /* Frameworks */,
 			);
-			name = Crashlytics;
 			path = Crashlytics;
 			sourceTree = "<group>";
 		};
@@ -121,7 +122,6 @@
 				D396FA5C8F669B17D39554F2E2C0EC20 /* Frameworks */,
 				BE89666E7417190370EFB01D42E6C078 /* Resources */,
 			);
-			name = "App-Notice";
 			path = "App-Notice";
 			sourceTree = "<group>";
 		};
@@ -132,7 +132,6 @@
 				57CA7D556CD9C758A26D17E17C71FC15 /* Fabric.h */,
 				6D2B26558695C581985C9140BF620CBF /* Frameworks */,
 			);
-			name = Fabric;
 			path = Fabric;
 			sourceTree = "<group>";
 		};
@@ -179,7 +178,7 @@
 		D396FA5C8F669B17D39554F2E2C0EC20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EA2548DD49A34CBBB86DC90FC61A7004 /* AppNoticeSDKFramework.framework */,
+				F5962C9620BF173200213222 /* AppNoticeSDKFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -200,7 +199,6 @@
 			children = (
 				BF8950C8BD47E0E2ECB94C4AE4E6D328 /* Frameworks */,
 			);
-			name = GoogleMobileAds;
 			path = GoogleMobileAds;
 			sourceTree = "<group>";
 		};

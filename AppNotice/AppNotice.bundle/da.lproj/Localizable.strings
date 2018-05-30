@@ -57,6 +57,6 @@ Customizable list of strings
 
 "connection_error" = "Forbindelsesfejl";
 
-"evidon_notification_title" = "Your Privacy Rights";
+"evidon_notification_title" = "Dine personlige rettigheder";
 
-"evidon_notification_summary" = "We rely on advertising to support this app. To do so, we work with partners that may serve advertising based on your interests. To manage your privacy preferences, tap below.";
+"evidon_notification_summary" = "Vi er afhængige af annoncering for at understøtte denne app. For at gøre det, arbejder vi sammen med partnere, der kan tjene reklame baseret på dine interesser. For at administrere dine personlige oplysninger, tryk på nedenstående.";
