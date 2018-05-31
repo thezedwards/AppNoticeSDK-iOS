@@ -32,12 +32,12 @@ Customizable list of strings
 
 "ghostery_manage_preferences_optional_title" = "Valgfri";
 "ghostery_manage_preferences_optional_description" = "Følgende valgfri teknologier kan deaktiveres efter ønske.";
-"
+
 "ghostery_manage_preferences_essential_title" = "Vigtig";
 "ghostery_manage_preferences_essential_description" = "Følgende vigtige teknologier er nødvendige, for at appen kan fungere, og de er kun anført til din information.";
 
 "ghostery_manage_preferences_web_based_title" = "Internetbaseret";
-"ghostery_manage_preferences_web_based_description" = "Nogle dele af denne app bruger webviews, som kan bruge cookies.Cookie-baseret framelding er mulig senere i app-indstillingerne.
+"ghostery_manage_preferences_web_based_description" = "Nogle dele af denne app bruger webviews, som kan bruge cookies.Cookie-baseret framelding er mulig senere i app-indstillingerne.";
 
 "ghostery_manage_preferences_footer_text" = "Privatlivskontroller af Evidon, Inc.";
 

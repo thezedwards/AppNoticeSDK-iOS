@@ -28,11 +28,13 @@ Customizable list of strings
 
 "ghostery_manage_preferences_description" = "Dowiedz się więcej o wykorzystywanych w tej aplikacji technologiach, przeglądając poniższą listę.";
 
+"ghostery_consent_declined_body" = "Aby móc korzystać z aplikacji, należy wyrazić zgodę na wykorzystywanie przez nas technologii.Możesz wrócić i zmienić swoje preferencje dotyczące prywatności, wyłączając możliwość korzystania z opcjonalnych technologii lub odinstalowując aplikację.";
+
 "ghostery_dialog_please_wait" = "Proszę czekać...";
 
 "ghostery_manage_preferences_optional_title" = "Opcjonalne";
 "ghostery_manage_preferences_optional_description" = "Następujące opcjonalne technologie można wyłączyć wedle uznania.";
-"
+
 "ghostery_manage_preferences_essential_title" = "Niezbędne";
 "ghostery_manage_preferences_essential_description" = "Następujące niezbędne technologie są konieczne do prawidłowego działania aplikacji i zostały wymienione wyłącznie w celach informacyjnych.";
 

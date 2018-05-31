@@ -51,9 +51,9 @@ Customizable list of strings
 
 "ghostery_consent_declined_body" = "Para usar esta aplicación, debe dar su consentimiento a nuestro uso de tecnologías. Puede regresar y modificar sus preferencias de privacidad desactivando cualquier tecnología opcional, o desinstalar la aplicación.";
 
-"evidon_notification_title" = "Your Privacy Rights";
+"evidon_notification_title" = "Sus derechos de privacidad";
 
-"evidon_notification_summary" = "We rely on advertising to support this app. To do so, we work with partners that may serve advertising based on your interests. To manage your privacy preferences, tap below.";
+"evidon_notification_summary" = "Confiamos en que la publicidad sea compatible con esta aplicación. Para hacerlo, trabajamos con socios que pueden brindarle publicidad en función de sus intereses. Para administrar sus preferencias de privacidad, toque debajo.";
 
 "connection_error" = "Error de conexión";
 
