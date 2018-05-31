@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'App-Notice'
-  s.version          = '2.0.1'
+  s.version          = '2.0.2'
   s.summary          = 'AppNotice lets you inform your users which third party SDKs your app is using.'
   s.description      = <<-DESC
 AppNotice (GDPR) lets you inform your users which third party SDKs your app is using. It lets the user opt out of using any optional SDKs like usage analytics, for example. It also records whether a consent notice has been shown, accepted, declined, etc.
