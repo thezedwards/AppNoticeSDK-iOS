@@ -1,6 +1,6 @@
 # App-Notice SDK for iOS<br/>Installation and Customization
-*Version: 2.0.1*</br>
-May 30, 2018
+*Version: 2.0.3*</br>
+May 31, 2018
 
 [![Version](https://img.shields.io/cocoapods/v/App-Notice.svg?style=flat)](http://cocoapods.org/pods/App-Notice)
 [![License](https://img.shields.io/cocoapods/l/App-Notice.svg?style=flat)](http://cocoapods.org/pods/App-Notice)
