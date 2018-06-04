@@ -1,5 +1,5 @@
 PODS:
-  - App-Notice (2.0.0)
+  - App-Notice (2.0.4)
   - Crashlytics (3.7.3):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.8)
@@ -11,12 +11,19 @@ DEPENDENCIES:
   - Fabric
   - GoogleMobileAds
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - App-Notice
+    - Crashlytics
+    - Fabric
+    - GoogleMobileAds
+
 SPEC CHECKSUMS:
-  App-Notice: 92066c92adae4622d9b2b73f5542f0c9ea1ed3bb
+  App-Notice: 9be74eb7037323bd28ccce73bb6e8038636811ea
   Crashlytics: 76f6beaff70acf226139582c09c78461597c2b98
   Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
   GoogleMobileAds: c79931d6eef16b1e4c35d331cf23c47e0dd490d2
 
 PODFILE CHECKSUM: 8f635aa4109816ab0409995cdd76993705c89b2d
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

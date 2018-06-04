@@ -129,7 +129,6 @@
 				D67744561BB46B24009AA09B /* Frameworks */,
 				D67744571BB46B24009AA09B /* Resources */,
 				34D98EA71D2192E700A5F55A /* ShellScript */,
-				85304FFA94FF4C826DADE36C /* [CP] Embed Pods Frameworks */,
 				96E36CF6A836911513802812 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -209,21 +208,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/Fabric/run 070a5c393bb4657a359a1f933315c3d9f904ae09 d7f982e5623fff6922ea7aafc28e0545046af5e45e6b81b63b35681e55b5709d";
-		};
-		85304FFA94FF4C826DADE36C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Triangle_swift/Pods-Triangle_swift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		96E36CF6A836911513802812 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

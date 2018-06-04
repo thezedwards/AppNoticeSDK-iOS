@@ -1,10 +1,10 @@
-# AppNotice SDK for iOS<br/>Installation and Customization
-*Version: 2.2.2*</br>
-April 2018
+# App-Notice SDK for iOS<br/>Installation and Customization
+*Version: 2.0.5*</br>
+June 4, 2018
 
-[![Version](https://img.shields.io/cocoapods/v/AppNotice.svg?style=flat)](http://cocoapods.org/pods/AppNotice)
-[![License](https://img.shields.io/cocoapods/l/AppNotice.svg?style=flat)](http://cocoapods.org/pods/AppNotice)
-[![Platform](https://img.shields.io/cocoapods/p/AppNotice.svg?style=flat)](http://cocoapods.org/pods/AppNotice)
+[![Version](https://img.shields.io/cocoapods/v/App-Notice.svg?style=flat)](http://cocoapods.org/pods/App-Notice)
+[![License](https://img.shields.io/cocoapods/l/App-Notice.svg?style=flat)](http://cocoapods.org/pods/App-Notice)
+[![Platform](https://img.shields.io/cocoapods/p/App-Notice.svg?style=flat)](http://cocoapods.org/pods/App-Notice)
 
 ## Features
 
@@ -12,35 +12,36 @@ April 2018
 - [x] Explicit Consent Tracking
 - [x] Text Customization and Localization
 - [x] User Tracking Toggling
+- [x] GDPR compliance by Region
 
 ## Example
 
 This repo comes with two example projects to demonstrate how to use the SDK. The 'Triangle' project is in Swift and Triangle-Objc is written in Objective-C. These are located in the Example folder.
 
-To run the Triangle project, clone the repo, and run `pod install` from the Example/Triangle directory. 
+To run the Triangle project, clone the repo, and run `pod install` from the Example/Triangle directory. If previously installed, run `pod update App-Notice`.
 
 ## Author
 
-Evidon
+[Evidon](https://www.evidon.com/)
 
 ## License
 
-AppNotice is available under the MIT license. See the LICENSE file for more info.
+App-Notice is available under the MIT license. See the LICENSE file for more info.
 
 ## Prerequisites
 
 - iOS 8.0+
 - Xcode 7.0+
-- A valid App Notice ID from the Ghostery control panel. See your Ghostery Customer Success Manager for details.
+- A valid App Notice ID from the Evidon Privacy control panel. See your Evidon Customer Success Manager for details.
 
 ## Installation
 
-AppNotice is available through [CocoaPods](http://cocoapods.org). To install:
+App-Notice is available through [CocoaPods](http://cocoapods.org). To install:
 
 Add the following line to your Podfile, then run 'pod install' and open your xcworkspace file.
 
 ```ruby
-pod 'AppNotice'
+pod 'App-Notice'
 ```
 
 If you are using the SDK with an Objective-C project, just add the following line to import the framework in any file that uses it. If you have a Swift project, you'll need to add this line to your bridging header file instead. (See [creating a bridging header](#bridging-header) below for how to do this.)
@@ -192,7 +193,7 @@ NSDictionary *updatedTrackers = [[AppNoticeSDK sharedInstance] getTrackerPrefere
 
 ### Localization and Text Customization
 
-The AppNotice SDK can support multiple languages (currently English only, but French, Italian, Dutch, German, Spanish and Portuguese will be available soon). If your app supports localization for a supported language, the AppNotice SDK will also be displayed in that langauge. To localize your app, you simply need a localization file in your project for each language you support. See [Apple's documentation](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/LocalizingYourApp/LocalizingYourApp.html#//apple_ref/doc/uid/10000171i-CH5-SW2) for details on how to add localization to your app.
+The AppNotice SDK can support multiple languages (currently English only, but French, Italian, Dutch, German, Spanish and Portuguese will be available soon). If your app supports localization for a supported language, the AppNotice SDK will also be displayed in that language. To localize your app, you simply need a localization file in your project for each language you support. See [Apple's documentation](https://developer.apple.com/library/ios/documentation/MacOSX/Conceptual/BPInternational/LocalizingYourApp/LocalizingYourApp.html#//apple_ref/doc/uid/10000171i-CH5-SW2) for details on how to add localization to your app.
 
 To customize any of the strings shown in the SDK:
 
