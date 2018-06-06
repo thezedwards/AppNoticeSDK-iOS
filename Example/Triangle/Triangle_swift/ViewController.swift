@@ -53,6 +53,8 @@ class ViewController: UIViewController {
             AppNoticeSDK.sharedInstance().appTheme = AppNoticeThemeDark
         }
         
+        // update this for implied flow
+        //AppNoticeSDK.sharedInstance().showConsentFlowWith(onClose: { (result, trackers) in [...] , repeatEvery30Days:true)
         AppNoticeSDK.sharedInstance().showExplicitConsentFlowWith(onClose: { (result, trackers) in
             // Handle what you want to do based on the user's consent choice.
             if result == AppNoticeConsentAccepted {
