@@ -53,7 +53,7 @@ class ViewController: UIViewController {
             AppNoticeSDK.sharedInstance().appTheme = AppNoticeThemeDark
         }
         
-        AppNoticeSDK.sharedInstance().showConsentFlowWith(onClose: { (result, trackers) in
+        AppNoticeSDK.sharedInstance().showExplicitConsentFlowWith(onClose: { (result, trackers) in
             // Handle what you want to do based on the user's consent choice.
             if result == AppNoticeConsentAccepted {
                 // Decide which trackers/ads to use/show based on the trackersArray preferences.
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
             
             self.toggleTrackers(trackers)
 
-        }, presenting: self, repeatEvery30Days:true)
+        }, presenting: self) //, repeatEvery30Days:true)
     }
 
 //    func
