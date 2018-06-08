@@ -1,0 +1,63 @@
+/*
+Localizable.strings
+Ghostery, Inc.
+Customizable list of strings
+*/
+
+"ghostery_none" = "None";
+
+"ghostery_all" = "All";
+
+"ghostery_back" = "Back";
+
+"ghostery_manage_preferences_title" = "Privacy Preferences";
+
+"ghostery_manage_preferences_button" = "Manage Preferences";
+
+"ghostery_dialog_button_implied_consent" = "Continue";
+
+"ghostery_dialog_button_explicit_consent" = "Accept All";
+
+"ghostery_dialog_button_decline" = "Decline All";
+
+"ghostery_dialog_header_text" = "We Care About Your Privacy";
+
+"ghostery_dialog_explicit_message" = "This app uses technologies so that we, and our partners, can remember you and understand how you use our app. To see a list of these technologies and choose whether they can be used, please manage your preferences. ";
+
+"ghostery_dialog_implicit_message" = "This app uses technologies so that we, and our partners, can remember you and understand how you use our app. To see a list of these technologies and choose whether they can be used, please manage your preferences below. Further use of this app will be considered consent.";
+
+"ghostery_manage_preferences_description" = "Learn more about the technologies used in this app by reviewing the list below.";
+
+"ghostery_dialog_please_wait" = "Please Wait...";
+
+"ghostery_manage_preferences_optional_title" = "Optional";
+"ghostery_manage_preferences_optional_description" = "The following optional technologies can be disabled at your discretion.";
+
+"ghostery_manage_preferences_essential_title" = "Essential";
+"ghostery_manage_preferences_essential_description" = "The following essential technologies are necessary for the app to function and are listed for informational purposes only.";
+
+"ghostery_manage_preferences_web_based_title" = "Web-based";
+"ghostery_manage_preferences_web_based_description" = "Some portions of this app utilize webviews, which may use cookies. Cookie-based opt-out is available later within the app settings.";
+
+"ghostery_manage_preferences_footer_text" = "Privacy Controls by Evidon, Inc.";
+
+"ghostery_manage_preferences_allow_header" = "Allow";
+
+"ghostery_manage_preferences_explicit_accept_button" = "Accept";
+
+"ghostery_manage_preferences_detail_learnmore" = "To learn more, please visit:";
+
+"ghostery_consent_declined_title" = "Consent Required";
+
+"ghostery_consent_declined_header" = "Your Consent is Required";
+
+"ghostery_consent_declined_body" = "To use this app, your consent for us to use technologies is required. You can go back and modify your privacy preferences by turning off any optional technology or uninstall the app.";
+
+"ghostery_tracker_learnmore_title" = "Learn More";
+
+"connection_error" = "Connection Error";
+
+"evidon_notification_title" = "Your Privacy Rights";
+
+"evidon_notification_summary" = "We rely on advertising to support this app. To do so, we work with partners that may serve advertising based on your interests. To manage your privacy preferences, tap below.";
+

@@ -1,0 +1,59 @@
+/*
+Localizable.strings
+Ghostery, Inc.
+Customizable list of strings
+*/
+
+"ghostery_none" = "Żadne";
+
+"ghostery_all" = "Wszystkie";
+
+"ghostery_back" = "Wstecz";
+
+"ghostery_manage_preferences_title" = "Preferencje dotyczące prywatności";
+
+"ghostery_manage_preferences_button" = "Zarządzaj preferencjami";
+
+"ghostery_dialog_button_implied_consent" = "Kontynuuj";
+
+"ghostery_dialog_button_explicit_consent" = "Zaakceptuj wszystko";
+
+"ghostery_dialog_button_decline" = "Odrzuć wszystko";
+
+"ghostery_dialog_header_text" = "Dbamy o Twoją prywatność";
+
+"ghostery_dialog_explicit_message" = "Ta aplikacja wykorzystuje technologie umożliwiające nam i naszym partnerom zapamiętanie Cię i zrozumienie sposobu, w jaki korzystasz z naszej aplikacji.Aby wyświetlić listę tych technologii i podjąć decyzję o możliwości ich wykorzystania, skorzystaj z ustawień preferencji. ";
+
+"ghostery_dialog_implicit_message" = "Ta aplikacja wykorzystuje technologie umożliwiające nam i naszym partnerom zapamiętanie Cię i zrozumienie sposobu, w jaki korzystasz z naszej aplikacji.Aby wyświetlić listę tych technologii i podjąć decyzję o możliwości ich wykorzystania, skorzystaj z poniższych ustawień preferencji.Dalsze korzystanie z aplikacji będzie oznaczać zgodę na wykorzystywanie wspominanych technologii.";
+
+"ghostery_manage_preferences_description" = "Dowiedz się więcej o wykorzystywanych w tej aplikacji technologiach, przeglądając poniższą listę.";
+
+"ghostery_consent_declined_body" = "Aby móc korzystać z aplikacji, należy wyrazić zgodę na wykorzystywanie przez nas technologii.Możesz wrócić i zmienić swoje preferencje dotyczące prywatności, wyłączając możliwość korzystania z opcjonalnych technologii lub odinstalowując aplikację.";
+
+"ghostery_dialog_please_wait" = "Proszę czekać...";
+
+"ghostery_manage_preferences_optional_title" = "Opcjonalne";
+"ghostery_manage_preferences_optional_description" = "Następujące opcjonalne technologie można wyłączyć wedle uznania.";
+
+"ghostery_manage_preferences_essential_title" = "Niezbędne";
+"ghostery_manage_preferences_essential_description" = "Następujące niezbędne technologie są konieczne do prawidłowego działania aplikacji i zostały wymienione wyłącznie w celach informacyjnych.";
+
+"ghostery_manage_preferences_web_based_title" = "Sieciowe";
+"ghostery_manage_preferences_web_based_description" = "Niektóre z funkcji aplikacji korzystają z odsłon sieciowych, które mogą wykorzystywać pliki cookie.Z otrzymywania plików cookie można zrezygnować później, zmieniając ustawienia aplikacji.";
+
+"ghostery_manage_preferences_footer_text" = "Ustawienia prywatności Evidon, Inc.";
+
+"ghostery_manage_preferences_allow_header" = "Zgoda";
+
+"ghostery_manage_preferences_explicit_accept_button" = "Zaakceptuj";
+
+"ghostery_manage_preferences_detail_learnmore" = "Aby dowiedzieć się więcej, odwiedź:";
+
+"ghostery_consent_declined_title" = "Wymagana zgoda";
+
+"ghostery_consent_declined_header" = "Twoja zgoda jest wymagana";
+
+"evidon_notification_title" = "Twoje prawa do prywatności";
+
+"evidon_notification_summary" = "Reklamy wspierają działanie tej aplikacji, dlatego też współpracujemy z partnerami, którzy mogą dostarczać reklamy w oparciu o Twoje zainteresowania. Aby zmienić swoje preferencje dotyczące prywatności, dotknij przycisku poniżej.";
+

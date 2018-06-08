@@ -1,0 +1,58 @@
+/*
+Localizable.strings
+Ghostery, Inc.
+Customizable list of strings
+*/
+
+"ghostery_all" = "Alle";
+"ghostery_none" = "Keine";
+"ghostery_back" = "Zurück";
+
+"ghostery_dialog_button_implied_consent" = "Weiter";
+
+"ghostery_dialog_button_explicit_consent" = "Alle Akzeptieren";
+
+"ghostery_dialog_button_decline" = "Alle Ablehnen";
+
+"ghostery_dialog_header_text" = "Der Schutz Ihrer Daten ist uns wichtig";
+
+"ghostery_dialog_explicit_message" = "Diese App verwendet Technologien, damit wir und unsere Partner Sie wiedererkennen und verstehen können, wie Sie unsere App nutzen. Um eine Liste dieser Technologien anzuzeigen und zu bestimmen, ob sie verwendet werden können, verwalten Sie bitte Ihre Voreinstellungen.";
+
+"ghostery_dialog_implicit_message" = "Diese App verwendet Technologien, damit wir und unsere Partner Sie wiedererkennen und verstehen können, wie Sie unsere App nutzen. Um eine Liste dieser Technologien anzuzeigen und zu bestimmen, ob sie verwendet werden können, verwalten Sie bitte Ihre Voreinstellungen unten. Die weitere Nutzung dieser App wird als Zustimmung betrachtet.";
+
+"ghostery_manage_preferences_description" = "Erfahren Sie mehr über die in dieser App verwendeten Technologien, indem Sie die Liste unten überprüfen.";
+
+"ghostery_dialog_please_wait" = "Bitte warten...";
+
+"ghostery_manage_preferences_detail_learnmore" = "Um mehr zu erfahren, besuchen Sie bitte:";
+
+"ghostery_manage_preferences_title" = "Datenschutzvoreinstellungen";
+
+"ghostery_manage_preferences_button" = "Voreinstellungen Verwalten";
+
+"ghostery_tracker_learnmore_title" = "Weitere Informationen";
+
+"ghostery_manage_preferences_optional_title" = "Optional";
+"ghostery_manage_preferences_optional_description" = "Die folgenden optionalen Technologien können in Ihrem Ermessen deaktiviert werden.";
+
+"ghostery_manage_preferences_essential_title" = "Essential";
+"ghostery_manage_preferences_essential_description" = "Die folgenden wesentlichen Technologien sind für das Funktionieren dieser App notwendig und sind nur zu Informationszwecken aufgelistet.";
+
+"ghostery_manage_preferences_web_based_title" = "Webbasiert";
+"ghostery_manage_preferences_web_based_description" = "Gewisse Teile dieser App nutzen Webansichten, die womöglich Cookies verwenden. Cookie-basiertes Verzichten ist später in den Einstellungen der App verfügbar.";
+
+"ghostery_manage_preferences_footer_text" = "Datenschutzsteuerungen von Evidon, Inc.";
+
+"ghostery_manage_preferences_allow_header" = "Zulassen";
+
+"ghostery_manage_preferences_explicit_accept_button" = "Akzeptieren";
+
+"ghostery_consent_declined_header" = "Ihre Zustimmung ist erforderlich";
+
+"ghostery_consent_declined_body" = "Um diese App nutzen zu können, müssen Sie uns Ihre Zustimmung zur Verwendung dieser Technologien geben. Sie können zurückgehen und Ihre Datenschutzvoreinstellungen ändern, indem Sie die optionalen Technologien deaktivieren oder die App deinstallieren.";
+
+"connection_error" = "Verbindungsfehler";
+
+"evidon_notification_title" = "Ihre Datenschutzrechte";
+
+"evidon_notification_summary" = "Wir setzen auf Werbung, um diese App zu unterstützen. Dazu arbeiten wir mit Partnern zusammen, die auf Grundlage Ihrer Interessen Werbung schalten. Tippen Sie unten auf, um Ihre Datenschutzeinstellungen zu verwalten.";

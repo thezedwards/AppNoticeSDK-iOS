@@ -1,0 +1,62 @@
+/*
+Localizable.strings
+Ghostery, Inc.
+Customizable list of strings
+*/
+
+"ghostery_none" = "Ingen";
+
+"ghostery_all" = "Alle";
+
+"ghostery_back" = "Tilbage";
+
+"ghostery_manage_preferences_title" = "Privatlivspræferencer";
+
+"ghostery_manage_preferences_button" = "Administrer præferencer";
+
+"ghostery_dialog_button_implied_consent" = "Fortsæt";
+
+"ghostery_dialog_button_explicit_consent" = "Acceptér alle";
+
+"ghostery_dialog_button_decline" = "Afvis alle";
+
+"ghostery_dialog_header_text" = "Vi tager dit privatliv alvorligt";
+
+"ghostery_dialog_explicit_message" = "Denne app bruger teknologier, således at vi og vores partnere kan huske dig og forstå, hvordan du bruger vores app.Du kan se en liste over disse teknologier og vælge, om de kan bruges, ved at administrere dine præferencer. ";
+
+"ghostery_dialog_implicit_message" = "Denne app bruger teknologier, således at vi og vores partnere kan huske dig og forstå, hvordan du bruger vores app.Du kan se en liste over disse teknologier og vælge, om de kan bruges, ved at administrere dine præferencer nedenfor.Videre brug af denne app vil blive betragtet som samtykke.";
+
+"ghostery_manage_preferences_description" = "Lær mere om teknologierne anvendt i denne app ved at se listen nedenfor.";
+
+"ghostery_dialog_please_wait" = "Vent venligst …";
+
+"ghostery_manage_preferences_optional_title" = "Valgfri";
+"ghostery_manage_preferences_optional_description" = "Følgende valgfri teknologier kan deaktiveres efter ønske.";
+
+"ghostery_manage_preferences_essential_title" = "Vigtig";
+"ghostery_manage_preferences_essential_description" = "Følgende vigtige teknologier er nødvendige, for at appen kan fungere, og de er kun anført til din information.";
+
+"ghostery_manage_preferences_web_based_title" = "Internetbaseret";
+"ghostery_manage_preferences_web_based_description" = "Nogle dele af denne app bruger webviews, som kan bruge cookies.Cookie-baseret framelding er mulig senere i app-indstillingerne.";
+
+"ghostery_manage_preferences_footer_text" = "Privatlivskontroller af Evidon, Inc.";
+
+"ghostery_manage_preferences_allow_header" = "Tillad";
+
+"ghostery_manage_preferences_explicit_accept_button" = "Acceptér";
+
+"ghostery_manage_preferences_detail_learnmore" = "Du kan læse mere på:";
+
+"ghostery_consent_declined_title" = "Samtykke påkrævet";
+
+"ghostery_consent_declined_header" = "Dit samtykke er påkrævet";
+
+"ghostery_consent_declined_body" = "For at bruge denne app skal vi have dit samtykke til at bruge teknologier.Du kan gå tilbage og ændre dine privatlivspræferencer ved at deaktivere valgfrie teknologier eller afinstallere appen";
+
+"ghostery_tracker_learnmore_title" = "Læs mere";
+
+"connection_error" = "Forbindelsesfejl";
+
+"evidon_notification_title" = "Din ret til beskyttelse af dine personlige oplysninger";
+
+"evidon_notification_summary" = "Vi er afhængige af reklamer for at finansiere denne app. Vi arbejder derfor sammen med partnere, der kan levere reklamer baseret på dine interesser. Tryk nedenfor for at administrere dine privatlivsindstillinger.";

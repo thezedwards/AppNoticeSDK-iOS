@@ -1,0 +1,58 @@
+/*
+Localizable.strings
+Ghostery, Inc.
+Customizable list of strings
+*/
+
+"ghostery_dialog_button_implied_consent" = "Continua";
+
+"ghostery_dialog_button_explicit_consent" = "Accetta Tutto";
+
+"ghostery_dialog_button_decline" = "Rifiuta Tutto";
+
+"ghostery_all" = "Tutti";
+"ghostery_none" = "Nessuno";
+"ghostery_back" = "Indietro";
+
+"ghostery_dialog_header_text" = "Per noi la tua privacy è importante";
+
+"ghostery_dialog_explicit_message" = "Questa app utilizza tecnologie per consentire a noi e ai nostri partner di ricordarci di te e capire come utilizzi la nostra app.  Per visualizzare un elenco di queste tecnologie e scegliere se possono essere utilizzate, gestisci le tue preferenze.";
+
+"ghostery_dialog_implicit_message" = "Questa app utilizza tecnologie per consentire a noi e ai nostri partner di ricordarci di te e capire come utilizzi la nostra app.  Per visualizzare un elenco di queste tecnologie e scegliere se possono essere utilizzate, gestisci le tue preferenze nel seguito. L'ulteriore utilizzo dell'app varrà come consenso.";
+
+"ghostery_manage_preferences_description" = "Per maggiori informazioni sulle tecnologie utilizzate in questa app rivedi l'elenco nel seguito.";
+
+"ghostery_dialog_please_wait" = "Si prega di attendere...";
+
+"ghostery_manage_preferences_detail_learnmore" = "Per ulteriori informazioni, visitare il sito:";
+
+"ghostery_manage_preferences_title" = "Preferenze di privacy";
+
+"ghostery_manage_preferences_button" = "Gestisci Preferenze";
+
+"ghostery_tracker_learnmore_title" = "Scopri di più";
+
+"ghostery_manage_preferences_optional_title" = "Opzionale";
+"ghostery_manage_preferences_optional_description" = "Le seguenti tecnologie opzionali possono essere disabilitate a tua discrezione.";
+
+"ghostery_manage_preferences_essential_title" = "Essenziale";
+"ghostery_manage_preferences_essential_description" = "Le seguenti tecnologie essenziali sono necessarie per il funzionamento della app e sono elencate solo a scopo informativo.";
+
+"ghostery_manage_preferences_web_based_title" = "Basato sul Web";
+"ghostery_manage_preferences_web_based_description" = "Alcune parti di questa app utilizzano webview, che potrebbero utilizzare cookie. La negazione del consenso basata su cookie è disponibile in seguito nelle impostazioni della app.";
+
+"ghostery_manage_preferences_footer_text" = "Controlli sulla privacy di Evidon, Inc.";
+
+"ghostery_manage_preferences_allow_header" = "Consentire";
+
+"ghostery_manage_preferences_explicit_accept_button" = "Accettare";
+
+"ghostery_consent_declined_header" = "Il tuo consenso è richiesto";
+
+"ghostery_consent_declined_body" = "Per utilizzare questa app, è richiesto il tuo consenso al nostro utilizzo delle tecnologie. Puoi tornare indietro e modificare le tue preferenze di privacy disattivando qualsiasi tecnologia opzionale o disinstallare la app.";
+
+"connection_error" = "Errore di connessione";
+
+"evidon_notification_title" = "I tuoi diritti sulla privacy";
+
+"evidon_notification_summary" = "Facciamo affidamento sulla pubblicità per supportare questa app. Per farlo, lavoriamo con partner che potrebbero servire pubblicità in base ai tuoi interessi.Per gestire le tue preferenze sulla privacy, tocca qui sotto.";
