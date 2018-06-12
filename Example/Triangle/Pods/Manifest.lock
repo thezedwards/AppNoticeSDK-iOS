@@ -1,5 +1,5 @@
 PODS:
-  - App-Notice (2.3.1)
+  - App-Notice (2.3.2)
   - Crashlytics (3.7.3):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.8)
@@ -19,7 +19,7 @@ SPEC REPOS:
     - GoogleMobileAds
 
 SPEC CHECKSUMS:
-  App-Notice: 5c50f1ab252150b34fc1a4fc16ba79456ecbadb6
+  App-Notice: a62739d1ef44f04c5a6b1c5e992c17e726b55052
   Crashlytics: 76f6beaff70acf226139582c09c78461597c2b98
   Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
   GoogleMobileAds: c79931d6eef16b1e4c35d331cf23c47e0dd490d2
