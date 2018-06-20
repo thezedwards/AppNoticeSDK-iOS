@@ -1,6 +1,6 @@
 # App-Notice SDK for iOS<br/>Installation and Customization
-*Version: 2.3.4*</br>
-June 13, 2018
+*Version: 2.3.5*</br>
+June 20, 2018
 
 [![Version](https://img.shields.io/cocoapods/v/App-Notice.svg?style=flat)](http://cocoapods.org/pods/App-Notice)
 [![License](https://img.shields.io/cocoapods/l/App-Notice.svg?style=flat)](http://cocoapods.org/pods/App-Notice)
@@ -14,6 +14,7 @@ June 13, 2018
 - [x] User Tracking Toggling
 - [x] GDPR compliance by Region
 - [x] GDPR compliance via manual setter
+- [x] GDPR compliance via manual country list
 
 ## Example
 

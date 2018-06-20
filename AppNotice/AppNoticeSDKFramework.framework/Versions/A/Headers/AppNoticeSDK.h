@@ -109,9 +109,29 @@ typedef void (^AppNoticeSDKSessionCompletionBlock)(NSDictionary *resultsDict, NS
  */
 - (void)resetSDK;
 
-/** GDPR Compliance Indicator. Resolves itself on App Launch by default
+/** GDPR Compliance Indicator.
+    YES/TRUE: Enforces the GDPR app experience regardless of country.
+    NO/FALSE: Allows the app to determine if the GDPR experience is required based on the
+              gdprCountriesArray/Default GDPR Countries Array.
+ 
+    To disable GDPR completely insert a place holder not matching an ISO country code in the gdprCountriesArray.
  */
 @property (nonatomic, assign) BOOL gdprRequired;
+
+/** EU-GDPR Compliance Country List.
+ Primary collection that designates the countries which the GDPR compliant workflow will apply to.
+ 
+ Adding country codes to this collection will apply the GDPR compliant workflow to users' experiences
+ who are determined to be from that country.
+ 
+ Input ISO-3166 compliant country codes only. (Example: "FR", "NL", "IT")
+ https://www.iso.org/iso-3166-country-codes.html
+ https://www.iso.org/obp/ui/#search/code/
+ 
+ Ensure this array is being populated before calling the activateWithToken method.
+ If this list is found to be nil, then a default list of GDPR countries will be used.
+ */
+@property (nonatomic, assign) NSArray *gdprCountriesArray;
 
 @end
 NS_ASSUME_NONNULL_END
